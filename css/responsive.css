@@ -1,0 +1,43 @@
+@media screen and (max-width: 1440px) {
+}
+@media screen and (max-width: 1280px) {
+}
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 800px) {
+}
+@media screen and (max-width: 768px) {
+    #automovil {
+        margin-top: 50px !important;
+    }
+    #patrimoniales {
+        margin-top: 50px !important;
+    }
+    .text-welcome {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 640px) {
+    .banner .text-cotiza {
+        width: 90%;
+    }
+    .user-type {
+        text-align: center;
+    }
+    .text-cotiza h1 {
+        font-size: 20px !important;
+    }
+    .banner {
+        height: 300px;
+    }
+}
+@media screen and (max-width: 600px) {
+}
+@media screen and (max-width: 480px) {
+}
+@media screen and (max-width: 414px) {
+}
+@media screen and (max-width: 360px) {
+}
+@media screen and (max-width: 320px) {
+}
