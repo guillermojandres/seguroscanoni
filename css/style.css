@@ -456,3 +456,65 @@ footer .greybar {
     font-size: 17px;
     font-weight: bold;
 }
+
+.banner-glossary {
+    /*height: 715px;
+    max-height: 715px;*/
+    overflow: hidden;
+    margin-top: 120px;
+    padding-bottom: 3rem;
+}
+
+.banner-glossary .img-glossary {
+    width: 100%;
+    height: auto;
+}
+
+.banner-glossary .text-glossary {
+    width: 70%;
+    position: absolute;
+    bottom: 15%;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.glossary-icon {
+    color: #165da9;
+}
+
+.glossary-icon.active {
+    color: white;
+}
+.card {
+    border: none !important;
+    border-top: 1px solid #165da9 !important;
+}
+
+.card-header {
+    background-color: white !important;
+}
+
+.collapse-title-show {
+    background-color: #165da9 !important;
+    color: white !important;
+}
+
+.collapsing {
+    background-color: #165da9;
+    color: white;
+}
+
+.collapse.show {
+    background-color: #165da9;
+    color: white;
+}
+
+.collapse-title {
+    color: black;
+}
+
+.collapse-title:link, .collapse-title:visited, .collapse-title:active {
+    text-decoration: none;
+}
