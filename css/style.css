@@ -456,3 +456,89 @@ footer .greybar {
     font-size: 17px;
     font-weight: bold;
 }
+
+.history-banner {
+    height: fit-content;
+    max-height: 715px;
+    margin-top: 156px;
+    margin-bottom: -21rem;
+}
+
+.display-more-history {
+    margin-bottom: 1rem;
+}
+
+.history-banner .text {
+    width: 60%;
+    position: absolute;
+    bottom: 90%;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.history-banner .text.text-body {
+    width: 26%;
+    bottom: 64%;
+    right: 42rem;
+}
+
+.history-banner .text.text-body-hidden-1 {
+    width: 26%;
+    bottom: 0;
+    right: 42rem;
+    top: 15rem;
+    display: none;
+}
+
+.history-banner .text.text-body-hidden-2 {
+    width: 26%;
+    bottom: 0;
+    right: 0;
+    left: 1rem;
+    top: 26.8rem;
+    display: none;
+}
+
+.history-banner .text.text-body-hidden-3 {
+    width: 26%;
+    bottom: 0;
+    right: 0;
+    left: 48rem;
+    top: 26.8rem;
+    display: none;
+}
+
+.history-banner .btn-body {
+    width: 26%;
+    position: absolute;
+    bottom: 56%;
+    right: 24rem;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.card-caroni {
+    border-radius: 25px !important;
+    box-shadow: 0 5px 3px lightgrey;
+}
+
+.container-primary {
+    background-color: #165da9;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    text-align: center;
+    height: 50vh;
+}
+
+.container-secondary {
+    background-color: white;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    text-align: center;
+    height: 50vh;
+}
