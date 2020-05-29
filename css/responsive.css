@@ -3,8 +3,22 @@
 @media screen and (max-width: 1280px) {
 }
 @media screen and (max-width: 1024px) {
+header img{width: 80%;}
+#navbarNav li {
+padding: 2px;
+}
+.banner{margin-top: 0px; }
+.header2 img {
+    width: 70%;
+}
+
 }
 @media screen and (max-width: 800px) {
+
+    #navbarNav li a {font-size: 10px;}
+    .header2 img{width: 60%;}
+    header img{width: 70%;}
+    .pagar{border-radius: 0px 0px 15px 15px;    padding: 5%;}
 }
 @media screen and (max-width: 768px) {
     #automovil {
@@ -32,6 +46,7 @@
     }
 }
 @media screen and (max-width: 600px) {
+    
 }
 @media screen and (max-width: 480px) {
 }
