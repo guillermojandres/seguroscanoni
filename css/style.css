@@ -489,3 +489,38 @@ footer .greybar {
     font-weight: bold;
     text-align: center;
 }
+
+/*cambios menú responsive*/
+
+.dropleft{
+    margin-left: 37%;
+    display: none!important;
+}
+
+.closebtn{
+    display: none;
+}
+
+.collapse-list {
+    display: inline;
+}
+
+.logopeq {
+    display: none;
+}
+
+.toggle {
+    display: none!important;
+}
+
+.rightMenu {
+    display: none;
+}
+
+.topcolors2 {
+    display: none;
+}
+
+.mobile-overwall {
+    visibility: hidden;
+}

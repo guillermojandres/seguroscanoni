@@ -46,6 +46,138 @@ padding: 2px;
     }
 }
 @media screen and (max-width: 600px) {
+
+    .mobile-overwall{
+        opacity: .7;
+        background-color: #000 !important;
+        cursor: pointer;
+        height: 100% !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+
+    header .navbar{
+        margin: 10px 0;
+        position: relative!important;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        background-color:white;
+        margin-left: 50%;
+        width:0px;
+        position: fixed;
+        top: 0!important;
+        right:0;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        transition: 0.5s;
+    }
+
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+
+    .navbar-nav>li {
+        float: none;
+    }
+
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .topcolors2 {
+        display: inline;
+        background-color: #9864a5 ;
+        background-image: 
+        linear-gradient(to right,#9864a5,#b36c98,#5bafd8,#0158a7);
+        margin-left: 0%!important;
+    }
+
+    .rightMenu {
+        display: inline;
+        position: absolute!important;
+        background-color:   #165da9!important;
+        border-radius: 0!important;
+        margin-right: 14%!important;
+    }
+
+    .rightMenu>a:hover {
+        background-color:  #1455b4!important; 
+    }
+
+    .closebtn{
+        display: inline;
+    }    
+
+    .rightMenu>a{
+        color: white!important;
+        text-align: right!important;
+    }
+
+    .dropleft{
+        margin-left: 37%;
+        display: inline!important;
+    }
+
+    .toggle{
+        margin-left: 40%;
+        display: inline!important;
+        text-align: center!important;
+    }
+
+    .dropdown-toggle {
+        display: none!important;
+    }
+
+    .logopeq {
+        display: inline-block;
+        border-bottom: solid 2px;
+    }
+
+    .topcolors2 {
+        display: inline;
+    }
+
+    .mobile-overwall{
+        opacity: .7;
+        background-color: #000 !important;
+        cursor: pointer;
+        height: 100% !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .dropdown-menu{
+    position: absolute!important;
+    left: -84%!important;}
+
+    .dropdown-menu{
+    border-radius: 0 0 0 0!important;
+    }
+    .btn-pago-movil{
+    padding-top: 0!important;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 16%!important;
+    background-color: #165da9;
+    border-radius: 0px 0px 20px 20px;
+}
+.btn-pago-movil a{
+    font-size: 16px!important;
+    text-align: center!important;
+    padding-right: 14px!important;
+    padding-left: 10px!important;
+    color: #FFF!important;
+}
     
 }
 @media screen and (max-width: 480px) {
