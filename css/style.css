@@ -97,7 +97,7 @@ header {
     box-shadow: 0 0.1rem 0.3rem 0 rgba(0,0,0,.1);
 }
 
-.dropdown-menu{ 
+.dropdown-menu{
     background-color: #165da9!important;
     border-radius: 0 0 20px 20px!important;
     width: 50%;
@@ -384,7 +384,7 @@ header .navbar {
     margin-left: auto;
     padding-top: 2%;
     padding-bottom: 2%;
- 
+
 
 }
 .container-link h4 {
@@ -529,7 +529,7 @@ footer .greybar {
     font-size: 3rem!important;
     color: #165da9;
 }
-.list-group-item img{   
+.list-group-item img{
      float: left;
     margin-right: 5px;
     width: 80px;}
@@ -551,7 +551,7 @@ footer .greybar {
     text-decoration: none!important;
 }
 .horarios{width: 100%;}
-.horarios td{ 
+.horarios td{
     width: 50%;
     padding-right: 5%;
     padding-left: 5%;
@@ -561,7 +561,7 @@ footer .greybar {
 }
 footer{width: 100%; background-color: #424242;}
 
-.btn-contacto{  
+.btn-contacto{
  padding: 5%;
 }
 .flotante{  position: fixed; z-index: 999999999999999999;bottom: 50%; right: 1%;text-align: center;}
@@ -612,7 +612,180 @@ footer{width: 100%; background-color: #424242;}
 .glosary .card-header{ background-color: transparent!important;}
 .glosary .card-header {padding: 1.2rem 1.25rem!important;border:none!important;}
 .show{ background-color: #165da9!important; color: #FFF; transition: 0.4s;}
- 
+
  .btn.focus, .btn:focus {box-shadow: none!important;}
 
 
+
+.banner-glossary {
+    /*height: 715px;
+    max-height: 715px;*/
+    overflow: hidden;
+    margin-top: 120px;
+    padding-bottom: 3rem;
+}
+
+.banner-glossary .img-glossary {
+    width: 100%;
+    height: auto;
+}
+
+.banner-glossary .text-glossary {
+    width: 70%;
+    position: absolute;
+    bottom: 15%;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.glossary-icon {
+    color: #165da9;
+}
+
+.glossary-icon.active {
+    color: white;
+}
+.card {
+    border: none !important;
+    border-top: 1px solid #165da9 !important;
+}
+
+.card-header {
+    background-color: white !important;
+}
+
+.collapse-title-show {
+    background-color: #165da9 !important;
+    color: white !important;
+}
+
+.collapsing {
+    background-color: #165da9;
+    color: white;
+}
+
+.collapse.show {
+    background-color: #165da9;
+    color: white;
+}
+
+.collapse-title {
+    color: black;
+}
+
+.collapse-title:link, .collapse-title:visited, .collapse-title:active {
+    text-decoration: none;
+}
+.history-banner {
+    height: fit-content;
+    max-height: 715px;
+    margin-top: 156px;
+    margin-bottom: -21rem;
+    position: absolute;
+}
+
+.display-more-history {
+    margin-bottom: 1rem;
+}
+
+.history-banner .text {
+    width: 60%;
+    position: absolute;
+    bottom: 90%;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.history-banner .text.text-body {
+    width: 26%;
+    bottom: 64%;
+    right: 42rem;
+}
+
+.history-banner .text.text-body-hidden-1 {
+    width: 26%;
+    bottom: 0;
+    right: 42rem;
+    top: 15rem;
+    display: none;
+}
+
+.history-banner .text.text-body-hidden-2 {
+    width: 26%;
+    bottom: 0;
+    right: 0;
+    left: 1rem;
+    top: 26.8rem;
+    display: none;
+}
+
+.history-banner .text.text-body-hidden-3 {
+    width: 26%;
+    bottom: 0;
+    right: 0;
+    left: 48rem;
+    top: 26.8rem;
+    display: none;
+}
+
+.history-banner .btn-body {
+    width: 26%;
+    position: absolute;
+    bottom: 56%;
+    right: 24rem;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.card-caroni {
+    border-radius: 25px !important;
+    box-shadow: 0 5px 3px lightgrey;
+}
+
+.container-primary {
+    background-color: #165da9;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    text-align: center;
+    height: 50vh;
+}
+
+.container-secondary {
+    background-color: white;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    text-align: center;
+    height: 50vh;
+}
+
+.title-card {
+    padding-left: 4rem;
+}
+
+#section-center {
+    position: relative;
+}
+
+li {
+    font-family: "WorkSans-Regular" !important;
+}
+
+ul.ul-caroni {
+    list-style: none;
+}
+
+ul.ul-caroni li::before {
+    content: "\2022";
+    color: #ba5389;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
