@@ -590,7 +590,7 @@ footer{width: 100%; background-color: #424242;}
     margin-right: auto!important;
 }
 
-.btn-link span.icon{
+ .btn-link span.icon{
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -611,5 +611,8 @@ footer{width: 100%; background-color: #424242;}
 }
 .glosary .card-header{ background-color: transparent!important;}
 .glosary .card-header {padding: 1.2rem 1.25rem!important;border:none!important;}
+.show{ background-color: #165da9!important; color: #FFF; transition: 0.4s;}
+ 
+ .btn.focus, .btn:focus {box-shadow: none!important;}
 
 

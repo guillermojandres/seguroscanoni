@@ -15,7 +15,12 @@ $(document).ready(function () {
 		closeNav();
 	});
 
-   
+	$(".btn-link").click(function(){
+
+	 $("#accordionExample").toggleClass("main");	
+
+
+});
 });
 
 function openNav() {

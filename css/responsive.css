@@ -33,6 +33,7 @@ padding: 2px;
     }
 }
 @media screen and (max-width: 640px) {
+    .flotante{display:none!important;}
     .banner .text-cotiza {
         width: 90%;
     }
@@ -50,6 +51,7 @@ padding: 2px;
 }
 @media screen and (max-width: 600px) {
 
+    .banner-seguros{margin-top:70px;}
     .mobile-overwall{
         opacity: .7;
         background-color: #000 !important;
