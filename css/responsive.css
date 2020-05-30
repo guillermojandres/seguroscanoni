@@ -1,3 +1,4 @@
+
 @media screen and (max-width: 1440px) {
 }
 @media screen and (max-width: 1280px) {
@@ -35,6 +36,8 @@ padding: 2px;
     .banner .text-cotiza {
         width: 90%;
     }
+
+    .banner .image{height: 300px;}
     .user-type {
         text-align: center;
     }
@@ -178,8 +181,13 @@ padding: 2px;
     padding-left: 10px!important;
     color: #FFF!important;
 }
+.greybar h2{font-size: 25px;}
     
 }
+.container-link{background-image: none;}
+.greybar .fs p {
+    font-size: 15px;}
+.box{    margin-top: -42px;}
 @media screen and (max-width: 480px) {
 }
 @media screen and (max-width: 414px) {
