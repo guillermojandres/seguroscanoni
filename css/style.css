@@ -572,3 +572,44 @@ footer{width: 100%; background-color: #424242;}
 .socialmedia-container a{color:#fff;}
 .cintillo{    background-color: #FFF!important;}
 .greybar .fs p{font-size: 25px;font-weight: 200;margin: 0!important;}
+/* css glosario */
+
+.seguros .card-img-overlay{
+    bottom: 5%!important;
+    top: auto!important;
+}
+.card-img-overlay h3{color: #165da9;}
+.glosary{
+    padding: 5%;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-left: auto!important;
+    margin-right: auto!important;
+}
+
+.btn-link span.icon{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(../images/menos.png) no-repeat center center;
+    border-radius: 10px;
+}
+
+.collapsed span.icon{
+    background: url(../images/mas.png) no-repeat center center;
+}
+.glosary .card-header p{display: inline-block;font-size: 25px;}
+.glosary .card{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: solid 2px!important;
+    border-color: #165da9!important;
+}
+.glosary .card-header{ background-color: transparent!important;}
+.glosary .card-header {padding: 1.2rem 1.25rem!important;border:none!important;}
+
+
