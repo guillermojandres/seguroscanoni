@@ -16,22 +16,30 @@
         <div class="row topcolors">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 py-2"></div>
         </div>
-        <div class="row">
-            <div class="col-md-4 col-lg-4 col-6 text-right mt-4">
-                <img src="images/logo.png"/>
+        <div class="row navigation">
+            <div class="col-md-4 col-lg-4 col-8 text-right">
+                <img src="images/logo-principal.png">
             </div>
-            <div class="col-md-5 col-lg-5 col-6">
-                <nav class="navbar navbar-expand-lg">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="col-md-5 col-lg-5 col-2">
+                <nav class="navbar navbar-expand-sm">
+                    <button class="navbar-toggler" type="button">
                         <span class="fa fa-bars"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <div class="row topcolors2">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 py-2">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-sm-12 text-center py-4 logopeq">
+                            <img src="images/logopeq.png">
+                        </div>
                         <ul class="navbar-nav">
+                            <li class="nav-item d-block d-md-none d-lg-none btn-pago-movil ">
+                                <a class="nav-link" href="#">Pago en línea</a>
+                            </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                                   aria-haspopup="true" aria-expanded="false">
-                                    Seguros Caroni
+                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Seguros </br> Caroní
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="#">Historía</a>
@@ -45,7 +53,7 @@
                                 <a class="nav-link" href="#">Oficinas</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Servicios en linea</a>
+                                <a class="nav-link" href="glosario.html">Servicios en linea</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Contacto</a>
@@ -146,9 +154,7 @@
         <div class="row text-left">
             <div class="col-md-3 col-lg-3 col-sm-12">
                 <h4>Nosotros</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 <small class="custom-text"><i class="fa fa-envelope"></i> youremail@domainname.com</small>
                 <small class="custom-text"><i class="fa fa-phone"></i> +2- 012- 24627169</small>
                 <small class="custom-text"><i class="fa fa-map-marker"></i> Caracas Venezuela</small>
@@ -163,38 +169,90 @@
                     <li>Getting evidence of a USA</li>
                 </ul>
             </div>
-            <div class="col-md-3 col-lg-3 col-sm-1 d-none d-md-block d-lg-block">
+            <div class="col-md-3 col-lg-3 col-sm-1 d-none d-md-block d-lg-block pl-lg-2">
                 <h4>Oficinas</h4>
+                <div class="list-group">
+                    <div class="list-group-item">
+                        <a href="#"><img src="images/oficina-1.png" class="thumbnail"/></a>
+                        <div class="newstext text-left">
+                            <a href=""><p class="title">Caracas</p></a>
+                            <a href=""><p class="title">Altamira, Chacao</p></a>
+                            <span class="clearfix"></span>
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <a href="#"><img src="images/oficina-1.png" class="thumbnail"/></a>
+                        <div class="newstext text-left">
+                            <a href=""><p class="title">Caracas</p></a>
+                            <a href=""><p class="title">La lagunita, El Hatillo</p></a>
+                            <span class="clearfix"></span>
+                        </div>
+                    </div>
+                </div>
+                <a class="oficinas" href="#">todas las oficinas ></a>
             </div>
             <div class="col-md-3 col-lg-3 col-sm-12">
                 <h4>Información Caroní</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur </p>
+                <table class="horarios">
+                    <tr>
+                        <td>MON - FRI: </td>
+                        <td>9AM - 9PM</td>
+                    </tr>
+                    <tr>
+                        <td>SATURDAY:</td>
+                        <td>9AM - 5PM</td>
+                    </tr>
+                    <tr>
+                        <td>SUNDAY:</td>
+                        <td>9AM - 5PM</td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
     <footer>
         <div class="row greybar">
-            <div class="col-md-4 col-lg-4 col-sm-12">
-                <h2>Síguenos en nuestras redes sociales</h2>
+            <div class="col-md-4 col-lg-4 col-sm-12 fs d-none d-md-block d-lg-block">
+                <p>Síguenos</p>
+                <p> en nuestras redes sociales</p>
+                <div class="socialmedia-container text-left">
+                    <a href="" title="Instagram" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+                    <a href="" title="Facebook" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+                    <a href="" title="WhatsApp" target="_blank"><i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i></a>
+                </div>
             </div>
             <div class="col-md-4 col-lg-4 col-sm-12 text-center">
                 <p>Atención a los clientes</p>
                 <h2>0500CARONI - 1</h2>
             </div>
             <div class="col-md-4 col-lg-4 col-sm-12">
-                IMG
+                <div class="btn-contacto">
+                    <img src="images/img-bottom.PNG" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12 fs d-block d-md-none d-lg-none">
+                <p>Síguenos</p>
+                <p> en nuestras redes sociales</p>
+                <div class="socialmedia-container text-left">
+                    <a href="" title="Instagram" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+                    <a href="" title="Facebook" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+                    <a href="" title="WhatsApp" target="_blank"><i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i></a>
+                </div>
             </div>
         </div>
-        <div class="row text-center">
+        <div class="row text-center cintillo ">
             <div class="col-md-12 col-lg-12 col-sm-12">
-                <p>Empresa de Seguros Inscrita en la Superintendencia de la Actividad Aseguradora bajo el No 110.</p>
-                <p>Rif. J-xxxxxxxxxxxx</p>
+                <p class="py-0 my-0">Empresa de Seguros Inscrita en la Superintendencia de la Actividad Aseguradora bajo el No 110.</p>
+                <p class="py-0 my-0">Rif. J-xxxxxxxxxxxx</p>
             </div>
         </div>
     </footer>
 </div>
+<div class="flotante" style="display: block;">
+    <a href="#" class="inlinebrandicon-flotante"><img src="images/boton_chat.png"></a>
+</div>
+<div class="mobile-overwall"></div>
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
