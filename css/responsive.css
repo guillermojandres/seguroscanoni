@@ -185,11 +185,16 @@ padding: 2px;
 }
 .greybar h2{font-size: 25px;}
     
-}
+
 .container-link{background-image: none;}
 .greybar .fs p {
     font-size: 15px;}
+
 .box{    margin-top: -42px;}
+.esvisible{display:block;}
+.col-historia{  padding-right: 15%!important;}
+
+}
 @media screen and (max-width: 480px) {
 }
 @media screen and (max-width: 414px) {

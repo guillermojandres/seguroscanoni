@@ -18,9 +18,16 @@ $(document).ready(function () {
 	$(".btn-link").click(function(){
 
 	 $("#accordionExample").toggleClass("main");	
+	 });
+	 
+	 $("#btn-leer").click(function(){
+		
+		$("#more-text").addClass('esvisible');
+		$("#more-text").removeClass('es0culto');
+		$('#btn-leer').css('display','none');
+		$("#parrafo").css('display','block');
+	 });
 
-
-});
 });
 
 function openNav() {
