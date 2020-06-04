@@ -684,3 +684,133 @@ footer{width: 100%; background-color: #424242;}
 }
 .btn-w:hover{color: #FFF;}
 .nuestra-historia .cintillo p{text-align: center!important;}
+.modal0ficina .modal-header{ padding: 3rem 5rem!important;border-bottom:none!important;    position: relative;}
+
+ /* select*/
+
+ content-input input,
+.content-select select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+.content-select select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+/* Eliminamos la fecha que por defecto aparece en el desplegable */
+.content-select select::-ms-expand {
+    display: none;
+}
+.content-select{
+	max-width: 250px;
+    position: relative;
+    display: inline-block;
+    width: 50%;
+
+}
+ 
+.content-select select{
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
+  	padding: 7px 10px;
+  	height: 42px;
+  	outline: 0; 
+  	border: 0;
+	border-radius: 0;
+	background: #eef4fe;;
+	color: #7b7b7b;
+	font-size: 1em;
+	color: #999;
+	font-family: 
+	'Quicksand', sans-serif;
+	border:2px solid rgba(0,0,0,0.2);
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.25s ease;
+}
+ 
+.content-select select:hover{
+background-color: #eef4fe;
+}
+.modal-body label {display:block!important;    color: #335274;
+    font-weight: bold;
+    font-size: 1.2rem;}
+.content-select i{
+	position: absolute;
+	right: 20px;
+	top: calc(50% - 13px);
+	width: 16px;
+	height: 16px;
+	display: block;
+	border-left:4px solid #eef4fe;;
+	border-bottom:4px solid #eef4fe;;
+	transform: rotate(-45deg); /* Giramos el cuadrado */
+	transition: all 0.25s ease;
+}
+ 
+.content-select:hover i{
+	margin-top: 3px;
+}
+
+.modal0ficina .line{  
+     height: 5px;
+    width: 35%;
+    position: absolute;
+    background: #b36c98;
+    bottom: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    right: 0;
+    left: 0;
+}
+.modal-title{  color: #165da9;
+    font-weight: bold;    width: 100%;
+    text-align: center;}
+
+.modal0ficina .modal-body{padding: 1rem 5rem 4rem!important;width: 100%;
+    text-align: center;}
+
+ .OficinasSearch .modal-header{padding-top: 1rem!important;  padding-bottom: 0!important;border: none!important;}
+ .OficinasSearch .line{ 
+    height: 5px;
+    width: 35%;
+    position: absolute;
+    background: #b36c98;
+    top: 60px;
+    left: 0;
+ }
+ 
+.OficinasSearch .modal-body{padding: 1rem 3rem 3rem!important;}
+.OficinasSearch .modal-body i{ 
+     color: #0265b5;
+    font-size: 25px!important;
+    padding: 10px;
+    width: 30px;
+    text-align: center;
+    display: table-cell!important;
+}
+.OficinasSearch .modal-body p{ 
+   display: table-cell!important;
+}
+.iconos-modal{  
+     text-align: center;
+    padding-top: 3rem;}
+.iconos-modal img{padding: 5%;}
+.OficinasSearch .modal-title{text-align:left!important;}
+.title-aliados{  
+    padding: 5%;
+    width: 80%;
+    margin-right: auto!important;
+    margin-left: auto!important;
+    padding-top: 2%;
+    padding-bottom: 2%;}
+.content-box-aliados{    padding: 5%;
+    width: 60%;
+    margin-right: auto!important;
+    margin-left: auto!important;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;}
+.content-box-aliados .btn{background-color: #165da9; padding: 40%!important;}

@@ -27,6 +27,7 @@ $(document).ready(function () {
 		$('#btn-leer').css('display','none');
 		$("#parrafo").css('display','block');
 	 });
+	
 
 });
 
