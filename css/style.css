@@ -814,3 +814,31 @@ background-color: #eef4fe;
     padding-top: 0.5%;
     padding-bottom: 0.5%;}
 .content-box-aliados .btn{background-color: #165da9; padding: 40%!important;}
+
+div.dataTables_wrapper div.dataTables_filter{float:right}
+div.dataTables_wrapper div.dataTables_filter input{ 
+       border: solid 1px!important;
+    border-radius: 10px;}
+.titulo-table h4{text-align: center;
+    display: inline;
+    font-weight: bold;
+    color: #165da9;
+    font-size: 1.9rem;
+}
+.titulo-table h2{color:#165da9}
+.modal-table .modal-header{
+    padding: 1rem 4rem;
+    border-bottom: none!important;
+}
+.modal-table .line{ 
+    height: 5px;
+    width: 84%;
+    position: absolute;
+    background: #b36c98;
+    top: 120px;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+ }
+ 

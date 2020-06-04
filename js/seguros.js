@@ -1,4 +1,24 @@
 $(document).ready(function () {
+
+	$('#TableMedico').DataTable({
+		"language": {
+			"sProcessing":    "Procesando...",
+			"sSearch":        "Buscar:",
+			"sLoadingRecords": "Cargando...",
+			"oPaginate": {
+				"sFirst":    "Primero",
+				"sLast":    "Último",
+				"sNext":    "Siguiente",
+				"sPrevious": "Anterior"
+			},
+			"oAria": {
+				"sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
+				"sSortDescending": ": Activar para ordenar la columna de manera descendente"
+			}
+		}
+	 });
+
+
     $(window).scroll(function () {
         if ($(this).scrollTop() > 0) {
             $("header").addClass("header2");
@@ -27,7 +47,18 @@ $(document).ready(function () {
 		$('#btn-leer').css('display','none');
 		$("#parrafo").css('display','block');
 	 });
+
+	 $('#MyModal').click(function(){
+		$("#Oficinas").modal({backdrop: 'static', keyboard: false});      	
+	   });
+	   
+	   $('#MyModal2').click(function(){
+		 $('#Oficinas').modal('hide');
+			$("#Oficinas2").modal({backdrop: 'static', keyboard: false});  
+	   });
+
 	
+	 
 
 });
 
