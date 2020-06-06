@@ -3,7 +3,6 @@ $(document).ready(function () {
 	$('.table-allies').DataTable({
 		"paging": false,
 		"info": false,
-		"responsive": true,
 		"language": {
 			"search": "_INPUT_",
 			"searchPlaceholder": "Buscar...",

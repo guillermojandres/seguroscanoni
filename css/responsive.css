@@ -19,7 +19,6 @@ padding: 2px;
         width: 17%;
     }
     div.dataTables_wrapper div.dataTables_filter {
-        margin-top: 0 !important;
         float: left;
     }
     .titulo-table h1 {
