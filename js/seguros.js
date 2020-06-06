@@ -3,6 +3,7 @@ $(document).ready(function () {
 	$('.table-allies').DataTable({
 		"paging": false,
 		"info": false,
+		"responsive": true,
 		"language": {
 			"search": "_INPUT_",
 			"searchPlaceholder": "Buscar...",
@@ -69,10 +70,6 @@ $(document).ready(function () {
 		 $('#Oficinas').modal('hide');
 			$("#Oficinas2").modal({backdrop: true, keyboard: false});
 	   });
-
-	
-	 
-
 });
 
 function openNav() {
