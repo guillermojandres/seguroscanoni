@@ -841,4 +841,18 @@ div.dataTables_wrapper div.dataTables_filter input{
     margin-right: auto;
     margin-left: auto;
  }
- 
+
+.modal-content  {
+    -webkit-border-radius: 25px !important;
+    -moz-border-radius: 25px !important;
+    border-radius: 25px !important;
+}
+
+.phone-number {
+    color: #212529 !important;
+    text-decoration: none !important;
+}
+
+.phone-number:hover {
+    font-weight: bold;
+}
