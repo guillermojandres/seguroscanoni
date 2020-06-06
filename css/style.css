@@ -800,7 +800,8 @@ background-color: #eef4fe;
     padding-top: 3rem;}
 .iconos-modal img{padding: 5%;}
 .OficinasSearch .modal-title{text-align:left!important;}
-.title-aliados{  
+.title-aliados{
+    color: #165da9;
     padding: 5%;
     width: 80%;
     margin-right: auto!important;
@@ -813,12 +814,37 @@ background-color: #eef4fe;
     margin-left: auto!important;
     padding-top: 0.5%;
     padding-bottom: 0.5%;}
-.content-box-aliados .btn{background-color: #165da9; padding: 40%!important;}
+.content-box-aliados .btn{
+    background: rgba(22,93,169,1);
+    background: -moz-linear-gradient(-45deg, rgba(22,93,169,1) 0%, rgba(22,93,169,1) 49%, rgba(37,103,174,1) 50%, rgba(37,103,174,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(22,93,169,1)), color-stop(49%, rgba(22,93,169,1)), color-stop(50%, rgba(37,103,174,1)), color-stop(100%, rgba(37,103,174,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(22,93,169,1) 0%, rgba(22,93,169,1) 49%, rgba(37,103,174,1) 50%, rgba(37,103,174,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(22,93,169,1) 0%, rgba(22,93,169,1) 49%, rgba(37,103,174,1) 50%, rgba(37,103,174,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(22,93,169,1) 0%, rgba(22,93,169,1) 49%, rgba(37,103,174,1) 50%, rgba(37,103,174,1) 100%);
+    background: linear-gradient(135deg, rgba(22,93,169,1) 0%, rgba(22,93,169,1) 49%, rgba(37,103,174,1) 50%, rgba(37,103,174,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#165da9', endColorstr='#2567ae', GradientType=1 );
+    padding: 40%!important;
+    transition: transform .2s;
+}
+
+.content-box-aliados .btn:hover{
+    transform: scale(1.05);
+}
 
 div.dataTables_wrapper div.dataTables_filter{float:right}
-div.dataTables_wrapper div.dataTables_filter input{ 
-       border: solid 1px!important;
-    border-radius: 10px;}
+div.dataTables_wrapper div.dataTables_filter input{
+    background-color: #eef4fe;
+    border: none;
+    border-radius: 15px;
+    font-size: 14px;
+    padding: 0.4rem;
+}
+div.dataTables_wrapper div.dataTables_filter input:focus{
+    outline: none !important;
+}
+div.dataTables_wrapper div.dataTables_filter {
+    margin-top: -4rem !important;
+}
 .titulo-table h4{text-align: center;
     display: inline;
     font-weight: bold;
@@ -826,6 +852,14 @@ div.dataTables_wrapper div.dataTables_filter input{
     font-size: 1.9rem;
 }
 .titulo-table h2{color:#165da9}
+.titulo-table h1 {
+    color:#165da9;
+    margin-left: 5rem;
+}
+.image-allies {
+    margin-left: 1rem;
+    margin-top: -0.5rem;
+}
 .modal-table .modal-header{
     padding: 1rem 4rem;
     border-bottom: none!important;
@@ -842,6 +876,7 @@ div.dataTables_wrapper div.dataTables_filter input{
     margin-left: auto;
  }
 
+/* Modal styles */
 .modal-content  {
     -webkit-border-radius: 25px !important;
     -moz-border-radius: 25px !important;
@@ -869,6 +904,76 @@ div.dataTables_wrapper div.dataTables_filter input{
     padding-bottom: 2rem;
 }
 
+.modal-header .close {
+    width: 10%;
+    margin-right: -4rem !important;
+    cursor: pointer;
+}
+
+.modal-header .close.office {
+    margin-right: -1rem !important;
+}
+
+.close {
+    opacity: 0.7 !important;
+}
+
+.close:hover {
+    opacity: 1 !important;
+}
+
+/* Line styles */
 .line.appeared {
     top: 5.5rem;
+}
+
+.line.appeared.allies {
+    top: 7.5rem;
+}
+
+/* Datatable styles */
+table.dataTable thead .sorting::after,
+table.dataTable thead .sorting_asc::after {
+    display:none;
+}
+
+table.dataTable thead .sorting_desc::after {
+    display:none;
+}
+
+table.dataTable thead .sorting {
+    background-image: url(../images/sort_both.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+table.dataTable thead .sorting_asc {
+    background-image: url(../images/sort_asc.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+table.dataTable thead .sorting_desc {
+    background-image: url(../images/sort_desc.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.dataTable > thead > tr > th[class*="sort"]:before,
+.dataTable > thead > tr > th[class*="sort"]:after {
+    content: "" !important;
+}
+
+.thead-datatable {
+    background-color: #daeef7;
+    color: #797678;
+}
+
+.tbody-datatable {
+    color: #858689;
+}
+
+.table-datatable {
+    width: 100%;
+    font-size: 12px;
 }

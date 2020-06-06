@@ -90,46 +90,46 @@
                 </a>
             </div>
             <div class="col-md-4 col-lg-4 col-12">
-                <a href="" class="btn custom-border-color-1">
+                <a id="medicos" class="btn custom-border-color-1">
                     <img src="images/icon-medicos.png"/>
                 </a>
             </div>
             <div class="col-md-4 col-lg-4 col-12">
-                <a href="" class="btn custom-border-color-1">
+                <a id="odontologos" class="btn custom-border-color-1">
                     <img src="images/icon-odontologo.png"/>
                 </a>
             </div>
         </div>
         <div class="row content-box-aliados">
             <div class="col-md-4 col-lg-4 col-12 text-center">
-                <a href="" class="btn custom-border-color-1">
+                <a href="#" class="btn custom-border-color-1">
                     <img src="images/icon-imagen.png"/>
                 </a>
             </div>
             <div class="col-md-4 col-lg-4 col-12">
-                <a href="" class="btn custom-border-color-1">
+                <a href="#" class="btn custom-border-color-1">
                     <img src="images/icon-movil.png"/>
                 </a>
             </div>
             <div class="col-md-4 col-lg-4 col-12">
-                <a href="" class="btn custom-border-color-1">
+                <a href="#" class="btn custom-border-color-1">
                     <img src="images/icon-ojo.png"/>
                 </a>
             </div>
         </div>
         <div class="row content-box-aliados">
             <div class="col-md-4 col-lg-4 col-12 text-center">
-                <a href="" class="btn custom-border-color-1">
+                <a href="#" class="btn custom-border-color-1">
                     <img src="images/icon-psicologo.png"/>
                 </a>
             </div>
             <div class="col-md-4 col-lg-4 col-12">
-                <a href="" class="btn custom-border-color-1">
+                <a href="#" class="btn custom-border-color-1">
                     <img src="images/icon-dermatologo.png"/>
                 </a>
             </div>
             <div class="col-md-4 col-lg-4 col-12">
-                <a href="" class="btn custom-border-color-1">
+                <a href="#" class="btn custom-border-color-1">
                     <img src="images/icon-u.png"/>
                 </a>
             </div>
@@ -198,6 +198,7 @@
             </div>
         </div>
     </div>
+
     <footer>
         <div class="row greybar">
             <div class="col-md-4 col-lg-4 col-sm-12 fs d-none d-md-block d-lg-block">
@@ -247,15 +248,13 @@
 </html>
 
 <!-- Modales  -->
-<div class="modal modal0ficina" tabindex="-1" role="dialog" id="Oficinas">
+<div class="modal fade modal0ficina" tabindex="-1" role="dialog" id="Oficinas">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">¡Estamos Más cerca de lo que piensas!</h5>
                 <span class="line appeared"></span>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <img src="images/close.png" alt="Close" class="close" data-dismiss="modal"/>
             </div>
             <div class="modal-body">
                 <label style="margin-right: 12rem;">Busca tu sucursal más cercana</label>
@@ -274,14 +273,12 @@
     </div>
 </div>
 
-<!----Modal 2-->
-<div class="modal OficinasSearch" tabindex="-1" role="dialog" id="Oficinas2">
+<!---Modal 2-->
+<div class="modal fade OficinasSearch" tabindex="-1" role="dialog" id="Oficinas2">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <img src="images/close.png" alt="Close" class="close office" data-dismiss="modal"/>
             </div>
             <div class="modal-body">
                 <div class="container-fluid">
@@ -337,89 +334,279 @@
     </div>
 </div>
 
-<!---Modales-->
-<div class="modal modal-table" tabindex="-1" role="dialog" id="ModalOficinas">
+<!-- Modal clinicas -->
+<div class="modal fade modal-table" tabindex="-1" role="dialog" id="modal-clinicas">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <div class="titulo-table">
-                    <h2>Red de aliados</h2>
-                    <h4>Clínicas</h4>
-                    <img src="images/icon-blue-Clinica.png">
-                    <span class="line appeared"></span>
+                    <h4>Red de aliados</h4>
+                    <div class="row">
+                        <h1>Clínicas</h1>
+                        <span class="image-allies"><img src="images/icon-clinica-primary.png"/></span>
+                    </div>
+                    <span class="line appeared allies"></span>
                 </div>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <img src="images/close.png" alt="Close" class="close" data-dismiss="modal"/>
             </div>
             <div class="modal-body">
-                <table id="TableMedico" class="table table-striped table-bordered" style="width:100%">
-                    <thead>
+                <table class="table-allies table table-striped table-bordered table-datatable">
+                    <thead class="thead-datatable">
                     <tr>
-                        <th>Name</th>
-                        <th>Position</th>
-                        <th>Office</th>
-                        <th>Age</th>
-                        <th>Start date</th>
-                        <th>Salary</th>
+                        <th>ESTADO</th>
+                        <th>LOCALIDAD</th>
+                        <th>PROVEEDOR DE SALUD</th>
+                        <th>DIRECCION</th>
+                        <th>TELÉFONOS</th>
+                        <th>OBSERVACIÓN</th>
                     </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="tbody-datatable">
                     <tr>
-                        <td>Tiger Nixon</td>
-                        <td>System Architect</td>
-                        <td>Edinburgh</td>
-                        <td>61</td>
-                        <td>2011/04/25</td>
-                        <td>$320,800</td>
+                        <td>ANZOATEGUI</td>
+                        <td>LECHERIA</td>
+                        <td>HUMANITAS SALUD PLUS</td>
+                        <td>AV Jorge Rodríguez Centro Comercial Fimicentro, Piso 5, ofic 5</td>
+                        <td>(0281)<br/>2861445</td>
+                        <td>ACTIVO</td>
                     </tr>
                     <tr>
-                        <td>Cedric Kelly</td>
-                        <td>Senior Javascript Developer</td>
-                        <td>Edinburgh</td>
-                        <td>22</td>
-                        <td>2012/03/29</td>
-                        <td>$433,060</td>
+                        <td>ANZOATEGUI</td>
+                        <td>EL TIGRE</td>
+                        <td>CENTRO QUIRURGICO WINSTON CHURCHILL C.A.</td>
+                        <td>Av Winston Churchill local Nro S/N Sector Pueblo Nuevo Sur El Tigre Anzoategui</td>
+                        <td>(0283)<br/>2413379</td>
+                        <td>ACTIVO</td>
                     </tr>
                     <tr>
-                        <td>Airi Satou</td>
-                        <td>Accountant</td>
-                        <td>Tokyo</td>
-                        <td>33</td>
-                        <td>2008/11/28</td>
-                        <td>$162,700</td>
+                        <td>ANZOATEGUI</td>
+                        <td>PUERTO LA CRUZ</td>
+                        <td>CENTRO DE IMAGENOLOGIA Y ATENCION MEDICA ANZOATEGUI C.A.</td>
+                        <td>Av Bolivar con calle Guzman Díaz, Centro Comercial Beg Center, Nivel PB, Locales 5 y 6</td>
+                        <td>(0281)<br/>4224928/<br/>4224930</td>
+                        <td>ACTIVO</td>
                     </tr>
                     <tr>
-                        <td>Brielle Williamson</td>
-                        <td>Integration Specialist</td>
-                        <td>New York</td>
-                        <td>61</td>
-                        <td>2012/12/02</td>
-                        <td>$372,000</td>
+                        <td>ANZOATEGUI</td>
+                        <td>BARCELONA</td>
+                        <td>MEDIC PLUS JGH</td>
+                        <td>Avenida Countrib CLub, calle San Carlos, al lado del Laboratorio Sumilab</td>
+                        <td>(0281)<br/>4228532/33</td>
+                        <td>ACTIVO</td>
                     </tr>
                     <tr>
-                        <td>Herrod Chandler</td>
-                        <td>Sales Assistant</td>
-                        <td>San Francisco</td>
-                        <td>59</td>
-                        <td>2012/08/06</td>
-                        <td>$137,500</td>
+                        <td>ANZOATEGUI</td>
+                        <td>BARCELONA</td>
+                        <td>FAST MEDICAL GLOBE SALUD C.A.</td>
+                        <td>Calle Freites casa Numero 14-18 Sector Buenos Aires Barcelona</td>
+                        <td>(0281)<br/>2764486</td>
+                        <td>ACTIVO</td>
                     </tr>
                     <tr>
-                        <td>Rhona Davidson</td>
-                        <td>Integration Specialist</td>
-                        <td>Tokyo</td>
-                        <td>55</td>
-                        <td>2010/10/14</td>
-                        <td>$327,900</td>
+                        <td>APURE</td>
+                        <td>SAN FERNANDO</td>
+                        <td>ASOCIACION COOPERATIVA SERVIMED 85</td>
+                        <td>Avenida Miranda, Urbanizacion El Cañito Paso Apure</td>
+                        <td>(0247)<br/>3420476</td>
+                        <td>ACTIVO</td>
                     </tr>
                     <tr>
-                        <td>Colleen Hurst</td>
-                        <td>Javascript Developer</td>
-                        <td>San Francisco</td>
-                        <td>39</td>
-                        <td>2009/09/15</td>
-                        <td>$205,500</td>
+                        <td>ARAGUA</td>
+                        <td>CAGUA</td>
+                        <td>APS CAGUA, C.A.</td>
+                        <td>Calle Cajigual Con Sucre, C.C. La Pirámide, Planta Baja, Local A-35, Urb Sucre Estado
+                            Miranda, Blandin Cagua
+                        </td>
+                        <td>(0244)<br/>3957787</td>
+                        <td>ACTIVO</td>
+                    </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal medicos -->
+<div class="modal fade modal-table" tabindex="-1" role="dialog" id="modal-medicos">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="titulo-table">
+                    <h4>Red de aliados</h4>
+                    <div class="row">
+                        <h1>Médicos</h1>
+                        <span class="image-allies"><img src="images/icon-medicos-primary.png"/></span>
+                    </div>
+                    <span class="line appeared allies"></span>
+                </div>
+                <img src="images/close.png" alt="Close" class="close" data-dismiss="modal"/>
+            </div>
+            <div class="modal-body">
+                <table class="table-allies table table-striped table-bordered table-datatable">
+                    <thead class="thead-datatable">
+                    <tr>
+                        <th>ESTADO</th>
+                        <th>LOCALIDAD</th>
+                        <th>PROVEEDOR DE SALUD</th>
+                        <th>DIRECCION</th>
+                        <th>TELÉFONOS</th>
+                        <th>OBSERVACIÓN</th>
+                    </tr>
+                    </thead>
+                    <tbody class="tbody-datatable">
+                    <tr>
+                        <td>ANZOATEGUI</td>
+                        <td>LECHERIA</td>
+                        <td>HUMANITAS SALUD PLUS</td>
+                        <td>AV Jorge Rodríguez Centro Comercial Fimicentro, Piso 5, ofic 5</td>
+                        <td>(0281)<br/>2861445</td>
+                        <td>ACTIVO</td>
+                    </tr>
+                    <tr>
+                        <td>ANZOATEGUI</td>
+                        <td>EL TIGRE</td>
+                        <td>CENTRO QUIRURGICO WINSTON CHURCHILL C.A.</td>
+                        <td>Av Winston Churchill local Nro S/N Sector Pueblo Nuevo Sur El Tigre Anzoategui</td>
+                        <td>(0283)<br/>2413379</td>
+                        <td>ACTIVO</td>
+                    </tr>
+                    <tr>
+                        <td>ANZOATEGUI</td>
+                        <td>PUERTO LA CRUZ</td>
+                        <td>CENTRO DE IMAGENOLOGIA Y ATENCION MEDICA ANZOATEGUI C.A.</td>
+                        <td>Av Bolivar con calle Guzman Díaz, Centro Comercial Beg Center, Nivel PB, Locales 5 y 6</td>
+                        <td>(0281)<br/>4224928/<br/>4224930</td>
+                        <td>ACTIVO</td>
+                    </tr>
+                    <tr>
+                        <td>ANZOATEGUI</td>
+                        <td>BARCELONA</td>
+                        <td>MEDIC PLUS JGH</td>
+                        <td>Avenida Countrib CLub, calle San Carlos, al lado del Laboratorio Sumilab</td>
+                        <td>(0281)<br/>4228532/33</td>
+                        <td>ACTIVO</td>
+                    </tr>
+                    <tr>
+                        <td>ANZOATEGUI</td>
+                        <td>BARCELONA</td>
+                        <td>FAST MEDICAL GLOBE SALUD C.A.</td>
+                        <td>Calle Freites casa Numero 14-18 Sector Buenos Aires Barcelona</td>
+                        <td>(0281)<br/>2764486</td>
+                        <td>ACTIVO</td>
+                    </tr>
+                    <tr>
+                        <td>APURE</td>
+                        <td>SAN FERNANDO</td>
+                        <td>ASOCIACION COOPERATIVA SERVIMED 85</td>
+                        <td>Avenida Miranda, Urbanizacion El Cañito Paso Apure</td>
+                        <td>(0247)<br/>3420476</td>
+                        <td>ACTIVO</td>
+                    </tr>
+                    <tr>
+                        <td>ARAGUA</td>
+                        <td>CAGUA</td>
+                        <td>APS CAGUA, C.A.</td>
+                        <td>Calle Cajigual Con Sucre, C.C. La Pirámide, Planta Baja, Local A-35, Urb Sucre Estado
+                            Miranda, Blandin Cagua
+                        </td>
+                        <td>(0244)<br/>3957787</td>
+                        <td>ACTIVO</td>
+                    </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal dentistas -->
+<div class="modal fade modal-table" tabindex="-1" role="dialog" id="modal-odontologos">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="titulo-table">
+                    <h4>Red de aliados</h4>
+                    <div class="row">
+                        <h1>Odontologos</h1>
+                        <span class="image-allies"><img src="images/icon-odontologo-primary.png"/></span>
+                    </div>
+                    <span class="line appeared allies"></span>
+                </div>
+                <img src="images/close.png" alt="Close" class="close" data-dismiss="modal"/>
+            </div>
+            <div class="modal-body">
+                <table class="table-allies table table-striped table-bordered table-datatable">
+                    <thead class="thead-datatable">
+                    <tr>
+                        <th>ESTADO</th>
+                        <th>LOCALIDAD</th>
+                        <th>PROVEEDOR DE SALUD</th>
+                        <th>DIRECCION</th>
+                        <th>TELÉFONOS</th>
+                        <th>OBSERVACIÓN</th>
+                    </tr>
+                    </thead>
+                    <tbody class="tbody-datatable">
+                    <tr>
+                        <td>ANZOATEGUI</td>
+                        <td>LECHERIA</td>
+                        <td>HUMANITAS SALUD PLUS</td>
+                        <td>AV Jorge Rodríguez Centro Comercial Fimicentro, Piso 5, ofic 5</td>
+                        <td>(0281)<br/>2861445</td>
+                        <td>ACTIVO</td>
+                    </tr>
+                    <tr>
+                        <td>ANZOATEGUI</td>
+                        <td>EL TIGRE</td>
+                        <td>CENTRO QUIRURGICO WINSTON CHURCHILL C.A.</td>
+                        <td>Av Winston Churchill local Nro S/N Sector Pueblo Nuevo Sur El Tigre Anzoategui</td>
+                        <td>(0283)<br/>2413379</td>
+                        <td>ACTIVO</td>
+                    </tr>
+                    <tr>
+                        <td>ANZOATEGUI</td>
+                        <td>PUERTO LA CRUZ</td>
+                        <td>CENTRO DE IMAGENOLOGIA Y ATENCION MEDICA ANZOATEGUI C.A.</td>
+                        <td>Av Bolivar con calle Guzman Díaz, Centro Comercial Beg Center, Nivel PB, Locales 5 y 6</td>
+                        <td>(0281)<br/>4224928/<br/>4224930</td>
+                        <td>ACTIVO</td>
+                    </tr>
+                    <tr>
+                        <td>ANZOATEGUI</td>
+                        <td>BARCELONA</td>
+                        <td>MEDIC PLUS JGH</td>
+                        <td>Avenida Countrib CLub, calle San Carlos, al lado del Laboratorio Sumilab</td>
+                        <td>(0281)<br/>4228532/33</td>
+                        <td>ACTIVO</td>
+                    </tr>
+                    <tr>
+                        <td>ANZOATEGUI</td>
+                        <td>BARCELONA</td>
+                        <td>FAST MEDICAL GLOBE SALUD C.A.</td>
+                        <td>Calle Freites casa Numero 14-18 Sector Buenos Aires Barcelona</td>
+                        <td>(0281)<br/>2764486</td>
+                        <td>ACTIVO</td>
+                    </tr>
+                    <tr>
+                        <td>APURE</td>
+                        <td>SAN FERNANDO</td>
+                        <td>ASOCIACION COOPERATIVA SERVIMED 85</td>
+                        <td>Avenida Miranda, Urbanizacion El Cañito Paso Apure</td>
+                        <td>(0247)<br/>3420476</td>
+                        <td>ACTIVO</td>
+                    </tr>
+                    <tr>
+                        <td>ARAGUA</td>
+                        <td>CAGUA</td>
+                        <td>APS CAGUA, C.A.</td>
+                        <td>Calle Cajigual Con Sucre, C.C. La Pirámide, Planta Baja, Local A-35, Urb Sucre Estado
+                            Miranda, Blandin Cagua
+                        </td>
+                        <td>(0244)<br/>3957787</td>
+                        <td>ACTIVO</td>
                     </tr>
                     </tbody>
 
@@ -431,13 +618,17 @@
 
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/seguros.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="js/seguros.js"></script>
 
 <script>
     $(document).on("click", "#Clinicas", function () {
-        $("#ModalOficinas").modal({backdrop: 'static', keyboard: false});
-    });
-
-
+        $("#modal-clinicas").modal({backdrop: 'static', keyboard: false});
+    })
+        .on('click', '#medicos', function () {
+            $("#modal-medicos").modal({backdrop: 'static', keyboard: false});
+        })
+        .on('click', '#odontologos', function () {
+            $("#modal-odontologos").modal({backdrop: 'static', keyboard: false});
+        });
 </script>
