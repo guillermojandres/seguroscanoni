@@ -62,12 +62,12 @@ $(document).ready(function () {
 	 });
 
 	 $('#MyModal').click(function(){
-		$("#Oficinas").modal({backdrop: 'static', keyboard: false});      	
+		$("#Oficinas").modal({backdrop: true, keyboard: false});
 	   });
 	   
 	   $('#MyModal2').click(function(){
 		 $('#Oficinas').modal('hide');
-			$("#Oficinas2").modal({backdrop: 'static', keyboard: false});  
+			$("#Oficinas2").modal({backdrop: true, keyboard: false});
 	   });
 
 	

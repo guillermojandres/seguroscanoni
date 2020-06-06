@@ -707,8 +707,7 @@ footer{width: 100%; background-color: #424242;}
 	max-width: 250px;
     position: relative;
     display: inline-block;
-    width: 50%;
-
+    width: 60%;
 }
  
 .content-select select{
@@ -910,10 +909,6 @@ div.dataTables_wrapper div.dataTables_filter {
     cursor: pointer;
 }
 
-.modal-header .close.office {
-    margin-right: -1rem !important;
-}
-
 .close {
     opacity: 0.7 !important;
 }
@@ -976,4 +971,8 @@ table.dataTable thead .sorting_desc {
 .table-datatable {
     width: 100%;
     font-size: 12px;
+}
+
+.banner-seguros.glossary {
+    margin-top: -4rem;
 }
