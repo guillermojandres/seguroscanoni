@@ -873,6 +873,10 @@ div.dataTables_wrapper div.dataTables_filter input:focus{
  }
 
 /* Modal styles */
+.find-branch {
+    margin-right: 12rem;
+}
+
 .modal-content  {
     -webkit-border-radius: 25px !important;
     -moz-border-radius: 25px !important;
