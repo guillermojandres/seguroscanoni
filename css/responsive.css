@@ -21,6 +21,32 @@ padding: 2px;
     .find-branch {
         margin-right: 0;
     }
+    .modal-title.office-title {
+        font-size: 1.5rem;
+        margin-left: 0 !important;
+    }
+    .line.appeared.responsive {
+        top: 4.5rem;
+    }
+    .text-office {
+        font-size: 0.7rem;
+    }
+    .iconos-modal {
+        padding-top: 1rem;
+    }
+    .modal-body label.responsive {
+        font-size: 0.9rem;
+    }
+    .border-rounded {
+        border-radius: 0 !important;
+    }
+    .content-select.responsive {
+        width: 100%;
+    }
+    .btn-w.responsive {
+        width: 80%;
+        margin-top: 1rem;
+    }
     .modal-header .close {
         width: 17%;
     }
@@ -216,6 +242,20 @@ padding: 2px;
     .modal-header .close {
         width: 4.2rem;
     }
+    .modal-title {
+        font-size: 1rem;
+    }
+    .modal-title.office-title {
+        font-size: 1.3rem;
+    }
+    .modal-body label.responsive {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 482px) {
+    .iconos-modal img {
+        width: 50px;
+    }
 }
 @media screen and (max-width: 480px) {
 }
@@ -240,12 +280,40 @@ padding: 2px;
         width: 60%;
         margin-top: 1rem;
     }
+    .modal-title {
+        font-size: 0.9rem;
+    }
+    .modal-title.office-title {
+        font-size: 1.1rem;
+    }
+    .OficinasSearch .modal-body i {
+        font-size: 20px!important;
+        padding: 5px;
+        width: 20px;
+        text-align: center;
+    }
+    .text-office {
+        font-size: 0.6rem;
+    }
 }
 @media screen and (max-width: 414px) {
 }
+@media screen and (max-width: 405px) {
+    .modal-body label.responsive {
+        font-size: 0.6rem;
+    }
+    .content-select.responsive {
+        margin-left: -0.8rem;
+    }
+}
+@media screen and (max-width: 382px){
+    .iconos-modal img {
+        width: 42px;
+    }
+}
 @media screen and (max-width: 374px){
     .line.appeared {
-        top: 10.5rem;
+        top: 7.5rem;
     }
     .content-select {
         width: 100%;
@@ -263,6 +331,22 @@ padding: 2px;
     }
 }
 @media screen and (max-width: 360px) {
+}
+@media screen and (max-width: 351px) {
+    .iconos-modal img {
+        width: 38px;
+    }
+    .modal-title {
+        font-size: 0.7rem;
+    }
+    .modal-title.office-title {
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 334px) {
+    .iconos-modal img {
+        width: 34px;
+    }
 }
 @media screen and (max-width: 320px) {
 }
