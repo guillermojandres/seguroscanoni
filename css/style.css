@@ -908,7 +908,7 @@ div.dataTables_wrapper div.dataTables_filter input:focus{
 }
 
 .modal-header .close {
-    width: 10%;
+    width: 4.2rem;
     margin-right: -4rem !important;
     cursor: pointer;
 }
@@ -1023,10 +1023,27 @@ df-messenger {
    }
 
 /* Allies styles */
-.text-allies {
-    color: white;
+.container-allies {
+    max-width: 700px !important;
 }
 
-.content-allies {
-    display: flex;
+.card-allies {
+    color: white;
+    font-family: "WorkSans-Regular";
+    text-align: center !important;
+    background: rgba(22,93,169,1);
+    background: -moz-linear-gradient(-45deg, rgba(22,93,169,1) 0%, rgba(22,93,169,1) 49%, rgba(37,103,174,1) 50%, rgba(37,103,174,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(22,93,169,1)), color-stop(49%, rgba(22,93,169,1)), color-stop(50%, rgba(37,103,174,1)), color-stop(100%, rgba(37,103,174,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(22,93,169,1) 0%, rgba(22,93,169,1) 49%, rgba(37,103,174,1) 50%, rgba(37,103,174,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(22,93,169,1) 0%, rgba(22,93,169,1) 49%, rgba(37,103,174,1) 50%, rgba(37,103,174,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(22,93,169,1) 0%, rgba(22,93,169,1) 49%, rgba(37,103,174,1) 50%, rgba(37,103,174,1) 100%);
+    background: linear-gradient(135deg, rgba(22,93,169,1) 0%, rgba(22,93,169,1) 49%, rgba(37,103,174,1) 50%, rgba(37,103,174,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#165da9', endColorstr='#2567ae', GradientType=1 );
+    transition: transform .2s;
+    padding: 2rem 0 !important;
+}
+
+.card-allies:hover {
+    cursor: pointer;
+    transform: scale(1.15);
 }

@@ -47,9 +47,6 @@ padding: 2px;
         width: 80%;
         margin-top: 1rem;
     }
-    .modal-header .close {
-        width: 17%;
-    }
     div.dataTables_wrapper div.dataTables_filter {
         float: left;
     }
@@ -244,9 +241,6 @@ padding: 2px;
 
 }
 @media screen and (max-width: 575px){
-    .modal-header .close {
-        width: 4.2rem;
-    }
     .modal-title {
         font-size: 1rem;
     }
