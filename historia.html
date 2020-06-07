@@ -126,10 +126,10 @@
     </div>
     <div class="row containt-img-card">
         <div class="col-md-4 col-sm-12 col-lg-4 col-12">
-            <div class="card">
+            <div class="card responsive">
                 <img class="card-img-top" src="images/img-card-1.png" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Misión</h5>
+                    <h3 class="card-title">Misión</h3>
                     <p class="card-text">
                         Desarrollar y comercializar pólizas y fianzas, gestionando eficientemente los recursos
                         necesarios para asegurar servicios de calidad, que permitan satisfacer las necesidades del
@@ -138,10 +138,10 @@
             </div>
         </div>
         <div class="col-md-4 col-sm-12 col-lg-4 col-12">
-            <div class="card">
+            <div class="card responsive">
                 <img class="card-img-top" src="images/img-card-2.png" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Visión</h5>
+                    <h3 class="card-title">Visión</h3>
                     <p class="card-text">Ser una empresa líder en la actividad aseguradora nacional, desarrollando y
                         comercializando pólizas y fianzas que satisfagan las necesidades del mercado, aumentando la
                         rentabilidad.</p>
@@ -149,10 +149,10 @@
             </div>
         </div>
         <div class="col-md-4 col-sm-12 col-lg-4 col-12">
-            <div class="card">
+            <div class="card responsive">
                 <img class="card-img-top" src="images/img-card-3.png" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Valores</h5>
+                    <h3 class="card-title">Valores</h3>
                     <ul class="card-text">
                         <li>Honestidad</li>
                         <li>Respeto</li>
@@ -276,8 +276,8 @@
 </body>
 </html>
 
-<!-- Modales  -->
-<div class="modal modal0ficina" tabindex="-1" role="dialog" id="Oficinas">
+<!-- Modal busqueda  -->
+<div class="modal fade modal0ficina" tabindex="-1" role="dialog" id="Oficinas">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -285,7 +285,7 @@
                 <span class="line appeared"></span>
             </div>
             <div class="modal-body">
-                <label style="margin-right: 12rem;">Busca tu sucursal más cercana</label>
+                <label class="find-branch">Busca tu sucursal más cercana</label>
                 <div class="content-select">
                     <select>
                         <option disabled selected>Elige tu ciudad...</option>
@@ -301,24 +301,25 @@
     </div>
 </div>
 
-<!----Modal 2-->
-<div class="modal OficinasSearch" tabindex="-1" role="dialog" id="Oficinas2">
+<!-- Modal oficina -->
+<div class="modal fade OficinasSearch" tabindex="-1" role="dialog" id="Oficinas2">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header"></div>
             <div class="modal-body">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-6">
                             <h5 class="modal-title">Oficina</h5>
                             <h3 class="modal-title office-title">Puerto Ordaz</h3>
-                            <span class="line appeared"></span>
+                            <span class="line appeared responsive"></span>
                             <i class="fa fa-map-marker"></i>
-                            <p>Av. Guayana, C.C. Cristal, PB, Mezzanina 1 y 2, Alta Vista Sur, Puerto Ordaz, Estado
+                            <p class="text-office">Av. Guayana, C.C. Cristal, PB, Mezzanina 1 y 2, Alta Vista Sur,
+                                Puerto Ordaz, Estado
                                 Bolivas</p>
                             <div class="clearfix"></div>
                             <i class="fa fa-phone"></i>
-                            <p>
+                            <p class="text-office">
                                 <a href="tel:0286 965 21 00" class="phone-number">(0286) 965.21.00</a>
                                 <br/>
                                 <a href="tel:0286 712 21 00" class="phone-number">(0286) 712.21.00</a>
@@ -329,8 +330,8 @@
                                 <a href="https://goo.gl/maps/fAhHWJir3ai7UUSm9"><img src="images/icon-maps.png"
                                                                                      width="80"/></a>
                             </div>
-                            <label>Cambia de sucursal</label>
-                            <div class="content-select">
+                            <label class="responsive">Cambia de sucursal</label>
+                            <div class="content-select responsive">
                                 <select>
                                     <option disabled selected>Elige tu ciudad...</option>
                                     <option>Caracas</option>
@@ -339,9 +340,9 @@
                                 </select>
                                 <i></i>
                             </div>
-                            <button type="button" id="MyModal2" class="btn-w">Buscar</button>
+                            <button type="button" id="MyModal2" class="btn-w responsive">Buscar</button>
                         </div>
-                        <div class="col-md-6 ml-auto">
+                        <div class="col-6 ml-auto">
                             <iframe class="border-rounded"
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.0957735948723!2d-62.73872368572698!3d8.293267302361935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dcbf97cdefc232d%3A0xb9a25d07ad19636d!2sCentro%20Comercial%20Ciudad%20Altavista%20II!5e0!3m2!1ses-419!2ssv!4v1591422253493!5m2!1ses-419!2ssv"
                                     width="300"

@@ -75,6 +75,11 @@ padding: 2px;
         text-align: center;
     }
 }
+@media screen and (max-width: 767px) {
+    .card.responsive {
+        margin-bottom: 1.5rem;
+    }
+}
 @media screen and (max-width: 640px) {
     .flotante{display:none!important;}
     .banner .text-cotiza {
@@ -346,6 +351,11 @@ padding: 2px;
 @media screen and (max-width: 334px) {
     .iconos-modal img {
         width: 34px;
+    }
+}
+@media screen and (max-width: 331px) {
+    .card-body > ul > li {
+        margin-left: 1rem;
     }
 }
 @media screen and (max-width: 320px) {

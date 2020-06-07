@@ -657,8 +657,10 @@ footer{width: 100%; background-color: #424242;}
         background-color: #165da9;
         color:#FFF;
     }
-.nuestra-historia .card{border-radius: 10px 10px 0px 0px!important;}
-.nuestra-historia .card-img-top{border-radius: 10px 10px 0px 0px!important;}
+.nuestra-historia .card{
+    border-radius: 25px!important;
+}
+.nuestra-historia .card-img-top{border-radius: 25px 25px 0 0 !important;}
 .nuestra-historia .card-title{ text-align: center; color: #165da9;}
 .col-historia h1{    text-align: center;color: #165da9;font-size: 1.8rem;}
 .btn-read-more{
@@ -673,6 +675,7 @@ footer{width: 100%; background-color: #424242;}
     border-radius: 15px 15px 15px 15px;
     text-decoration: none !important;
     display: inline-block;
+    cursor: pointer;
 }
 .nuestra-historia p{text-align: justify!important;}
 .esvisible{display:flex;}
@@ -976,4 +979,33 @@ table.dataTable thead .sorting_desc {
 
 .banner-seguros.glossary {
     margin-top: -4rem;
+}
+
+/* Card styles */
+.card-body > ul > li {
+    font-family: "WorkSans-Regular", sans-serif;
+    margin-left: 2rem;
+}
+
+.card-body > .card-text {
+    text-align: left !important;
+}
+
+.card-body > ul {
+    list-style: none;
+}
+
+.card-body > ul > li::before{
+    content: "\2022";
+    color: #ba5389;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.containt-img-card .card {
+    -webkit-box-shadow: 0px 5px 5px 1px rgba(204,204,204,1);
+    -moz-box-shadow: 0px 5px 5px 1px rgba(204,204,204,1);
+    box-shadow: 0px 5px 5px 1px rgba(204,204,204,1);
 }
