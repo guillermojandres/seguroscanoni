@@ -1025,6 +1025,9 @@ df-messenger {
 /* Allies styles */
 .container-allies {
     max-width: 700px !important;
+    padding: 5%;
+    margin-right: auto!important;
+    margin-left: auto!important;
 }
 
 .card-allies {

@@ -72,9 +72,9 @@ padding: 2px;
         text-align: center;
     }
 }
-@media screen and (max-width: 767px) {
-    .card.responsive {
-        margin-bottom: 1.5rem;
+@media screen and (max-width: 735px) {
+    .card.card-allies {
+        margin: 0 1rem 0 1rem;
     }
 }
 @media screen and (max-width: 640px) {
@@ -269,6 +269,9 @@ padding: 2px;
     }
 }
 @media screen and (max-width: 444px){
+    .line.appeared.allies.details {
+        top: 7.5rem;
+    }
     .line.appeared.allies {
         top: 10.5rem;
     }
