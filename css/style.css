@@ -1021,3 +1021,12 @@ df-messenger {
     --df-messenger-send-icon: #878fac;
     --df-messenger-minimized-chat-close-icon-color: white;
    }
+
+/* Allies styles */
+.text-allies {
+    color: white;
+}
+
+.content-allies {
+    display: flex;
+}
