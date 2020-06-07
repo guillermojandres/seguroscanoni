@@ -69,6 +69,22 @@ $(document).ready(function () {
         $('#Oficinas').modal('hide');
         $("#Oficinas2").modal({backdrop: true, keyboard: false});
     });
+	 $('#MyModal').click(function(){
+		$("#Oficinas").modal({backdrop: true, keyboard: false});
+	   });
+
+	   $('#MyModal2').click(function(){
+		 $('#Oficinas').modal('hide');
+		 $("#Oficinas2").modal({backdrop: true, keyboard: false});
+	   });
+
+	   $('.card').on('show.bs.collapse', function () {
+		$(this).addClass('active');
+       });
+
+      $('.card').on('hide.bs.collapse', function () {
+		$(this).removeClass('active');
+	 });
 });
 
 function openNav() {
