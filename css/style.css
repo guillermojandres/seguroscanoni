@@ -612,7 +612,7 @@ footer{width: 100%; background-color: #424242;}
 }
 .glosary .card-header{ background-color: transparent!important;}
 .glosary .card-header {padding: 1.2rem 1.25rem!important;border:none!important;}
-.glosary .show{ background-color: #165da9!important; color: #FFF; transition: 0.4s;}
+.glosary .active{ background-color: #165da9!important; color: #FFF; transition: 0.4s;}
 .glosary .accordion .card-body{text-align: justify;}
  
  .btn.focus, .btn:focus {box-shadow: none!important;}
@@ -674,7 +674,7 @@ footer{width: 100%; background-color: #424242;}
     text-decoration: none !important;
     display: inline-block;
 }
-.nuestra-historia p{text-align: justify!important;}
+/* .nuestra-historia p{text-align: justify!important;} */
 .esvisible{display:flex;}
 .es0culto{display: none;}
 .btn-cotiza:hover{color: #FFF;}
@@ -977,3 +977,15 @@ table.dataTable thead .sorting_desc {
 .banner-seguros.glossary {
     margin-top: -4rem;
 }
+
+.col-historia p{text-align: justify!important;}
+.dinamic-text p{text-align: justify!important;}
+.containt-img-card p{text-align: justify!important;}
+df-messenger {
+    --df-messenger-bot-message: transparent;
+    --df-messenger-button-titlebar-color:#165da9;;
+    --df-messenger-chat-background-color: #fafafa;
+    --df-messenger-font-color: white;
+    --df-messenger-send-icon: #878fac;
+    --df-messenger-minimized-chat-close-icon-color: white;
+   }
