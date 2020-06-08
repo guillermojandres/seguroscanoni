@@ -978,7 +978,7 @@ table.dataTable thead .sorting_desc {
 }
 
 .banner-seguros.glossary {
-    margin-top: -4rem;
+    margin-top: 1rem;
 }
 
 /* Card styles */
@@ -1014,12 +1014,16 @@ table.dataTable thead .sorting_desc {
 .dinamic-text p{text-align: justify!important;}
 .containt-img-card p{text-align: justify!important;}
 df-messenger {
-    --df-messenger-bot-message: transparent;
-    --df-messenger-button-titlebar-color:#165da9;;
+    --df-messenger-bot-message: white;
+    --df-messenger-button-titlebar-color: #165da9;
+    --df-messenger-button-titlebar-font-color: white;
     --df-messenger-chat-background-color: #fafafa;
-    --df-messenger-font-color: white;
-    --df-messenger-send-icon: #878fac;
-    --df-messenger-minimized-chat-close-icon-color: white;
+    --df-messenger-font-color: #292929;
+    --df-messenger-input-box-color: white;
+    --df-messenger-input-font-color: #292929;
+    --df-messenger-input-placeholder-font-color: #757575;
+    --df-messenger-minimized-chat-close-icon-color: #165da9;
+    --df-messenger-send-icon: #165da9;
    }
 
 /* Allies styles */
@@ -1049,4 +1053,9 @@ df-messenger {
 .card-allies:hover {
     cursor: pointer;
     transform: scale(1.15);
+}
+
+/* Mobile menu */
+img.mobile-menu {
+    width: 1rem !important;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <title>Seguros Caroni</title>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
@@ -11,7 +11,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 </head>
 <body>
+<!--Chatbot-->
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger intent="WELCOME" chat-title="Chat - Seguros Caroní" agent-id="f41c53a9-ccf7-4ebd-b167-1a949ce663a6"
+              chat-icon="images/boton_chat.png" language-code="es"></df-messenger>
 <div class="container-fluid no-gutters px-0 nuestra-historia">
+    <!--Header-->
     <header class="py-0">
         <div class="row topcolors">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 py-2"></div>
@@ -23,7 +28,7 @@
             <div class="col-md-5 col-lg-5 col-2">
                 <nav class="navbar navbar-expand-sm">
                     <button class="navbar-toggler" type="button">
-                        <span class="fa fa-bars"></span>
+                        <img src="images/mobile-menu.svg" class="mobile-menu" alt="Menu bars">
                     </button>
                     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                         <div class="row topcolors2">
@@ -68,6 +73,7 @@
             </div>
         </div>
     </header>
+    <!--Banner-->
     <div class="row content-historia m-0">
         <div class="col-md-5 col-lg-5 col-12 mt-5 col-historia">
             <h1>Nuestra Historia</h1>
@@ -119,10 +125,9 @@
             </div>
         </div>
     </div>
+    <!--Mission, vision, values-->
     <div class="row history-blue">
-        <div class="col-md-12 col-lg-12 col-12">
-
-        </div>
+        <div class="col-md-12 col-lg-12 col-12"></div>
     </div>
     <div class="row containt-img-card">
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
@@ -167,6 +172,7 @@
             </div>
         </div>
     </div>
+    <!--Links-->
     <div class="container-link">
         <div class="row text-left">
             <div class="col-md-3 col-lg-3 col-sm-12">
@@ -229,6 +235,7 @@
             </div>
         </div>
     </div>
+    <!--Footer-->
     <footer>
         <div class="row greybar">
             <div class="col-md-4 col-lg-4 col-sm-12 fs d-none d-md-block d-lg-block">
@@ -270,12 +277,10 @@
         </div>
     </footer>
 </div>
-
 <div class="mobile-overwall"></div>
 </body>
 </html>
-
-<!-- Modal busqueda  -->
+<!--Modal search-->
 <div class="modal fade modal0ficina" tabindex="-1" role="dialog" id="Oficinas">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -299,8 +304,7 @@
         </div>
     </div>
 </div>
-
-<!-- Modal oficina -->
+<!--Modal office-->
 <div class="modal fade OficinasSearch" tabindex="-1" role="dialog" id="Oficinas2">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -359,8 +363,8 @@
         </div>
     </div>
 </div>
-
+<!--Scripts-->
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/seguros.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="js/seguros.js"></script>

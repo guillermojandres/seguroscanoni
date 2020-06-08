@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <title>Seguros Caroni</title>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
@@ -12,7 +12,12 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
 </head>
 <body>
+<!--Chatbot-->
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger intent="WELCOME" chat-title="Chat - Seguros Caroní" agent-id="f41c53a9-ccf7-4ebd-b167-1a949ce663a6"
+              chat-icon="images/boton_chat.png" language-code="es"></df-messenger>
 <div class="container-fluid no-gutters px-0 aliados">
+    <!--Header-->
     <header class="py-0">
         <div class="row topcolors">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 py-2"></div>
@@ -24,7 +29,7 @@
             <div class="col-md-5 col-lg-5 col-2">
                 <nav class="navbar navbar-expand-sm">
                     <button class="navbar-toggler" type="button">
-                        <span class="fa fa-bars"></span>
+                        <img src="images/mobile-menu.svg" class="mobile-menu" alt="Menu bars">
                     </button>
                     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                         <div class="row topcolors2">
@@ -70,6 +75,7 @@
         </div>
     </header>
     <div class="clearfix"></div>
+    <!--Banner-->
     <div class="row">
         <div class="col-sm-12 col-lg-12 col-12 banner-seguros">
             <div class="card seguros ">
@@ -82,7 +88,7 @@
             <h3>Red de Aliados</h3>
         </div>
     </div>
-
+    <!--Allies-->
     <div class="container container-allies">
         <div class="row my-4">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
@@ -161,7 +167,7 @@
             </div>
         </div>
     </div>
-
+    <!--Links-->
     <div class="container-link">
         <div class="row text-left">
             <div class="col-md-3 col-lg-3 col-sm-12">
@@ -224,7 +230,7 @@
             </div>
         </div>
     </div>
-
+    <!--Footer-->
     <footer>
         <div class="row greybar">
             <div class="col-md-4 col-lg-4 col-sm-12 fs d-none d-md-block d-lg-block">
@@ -266,12 +272,10 @@
         </div>
     </footer>
 </div>
-
 <div class="mobile-overwall"></div>
 </body>
 </html>
-
-<!-- Modal busqueda  -->
+<!--Modal search-->
 <div class="modal fade modal0ficina" tabindex="-1" role="dialog" id="Oficinas">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -295,8 +299,7 @@
         </div>
     </div>
 </div>
-
-<!-- Modal oficina -->
+<!--Modal office-->
 <div class="modal fade OficinasSearch" tabindex="-1" role="dialog" id="Oficinas2">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -355,8 +358,7 @@
         </div>
     </div>
 </div>
-
-<!-- Modal clinicas -->
+<!--Modal clinics-->
 <div class="modal fade modal-table" tabindex="-1" role="dialog" id="modal-clinicas">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -452,8 +454,7 @@
         </div>
     </div>
 </div>
-
-<!-- Modal medicos -->
+<!--Modal medical-->
 <div class="modal fade modal-table" tabindex="-1" role="dialog" id="modal-medicos">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -549,8 +550,7 @@
         </div>
     </div>
 </div>
-
-<!-- Modal dentistas -->
+<!--Modal dentists-->
 <div class="modal fade modal-table" tabindex="-1" role="dialog" id="modal-odontologos">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -646,14 +646,13 @@
         </div>
     </div>
 </div>
-
+<!--Scripts-->
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript"
         src="https://cdn.datatables.net/responsive/2.2.5/js/dataTables.responsive.min.js"></script>
 <script type="text/javascript" src="js/seguros.js"></script>
-
 <script>
     $(document).on("click", "#clinicas", function () {
         $("#modal-clinicas").modal({backdrop: 'static', keyboard: false});
