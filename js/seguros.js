@@ -31,7 +31,6 @@ $(document).ready(function () {
         }
     });
 
-
     $(window).scroll(function () {
         if ($(this).scrollTop() > 0) {
             $("header").addClass("header2");
@@ -49,12 +48,10 @@ $(document).ready(function () {
     });
 
     $(".btn-link").click(function () {
-
         $("#accordionExample").toggleClass("main");
     });
 
     $("#btn-leer").click(function () {
-
         $("#more-text").addClass('esvisible');
         $("#more-text").removeClass('es0culto');
         $('#btn-leer').css('display', 'none');
@@ -66,35 +63,27 @@ $(document).ready(function () {
     });
 
     $('#MyModal2').click(function () {
+        const office = $('#select-office option').filter(':selected').text();
+        if (office == 'Puerto Ordaz') $("#ordaz").modal({backdrop: true, keyboard: false})
+        else if (office == 'Puerto La Cruz') $("#cruz").modal({backdrop: true, keyboard: false})
         $('#Oficinas').modal('hide');
-        $("#Oficinas2").modal({backdrop: true, keyboard: false});
     });
-	 $('#MyModal').click(function(){
-		$("#Oficinas").modal({backdrop: true, keyboard: false});
-	   });
 
-	   $('#MyModal2').click(function(){
-		 $('#Oficinas').modal('hide');
-		 $("#Oficinas2").modal({backdrop: true, keyboard: false});
-	   });
+    $('.card').on('show.bs.collapse', function () {
+        $(this).addClass('active');
+    });
 
-	   $('.card').on('show.bs.collapse', function () {
-		$(this).addClass('active');
-       });
-
-      $('.card').on('hide.bs.collapse', function () {
-		$(this).removeClass('active');
-	 });
+    $('.card').on('hide.bs.collapse', function () {
+        $(this).removeClass('active');
+    });
 });
 
 function openNav() {
-
     var height = $(window).height();
     $(".navbar-collapse").css({'display': 'inline'});
     $(".navbar-collapse").css({'width': '190px'});
     $('.navbar-collapse').height(height);
     $('.mobile-overwall').css({'visibility': 'visible'});
-
 }
 
 function closeNav() {

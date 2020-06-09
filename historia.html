@@ -291,11 +291,10 @@
             <div class="modal-body">
                 <label class="find-branch">Busca tu sucursal más cercana</label>
                 <div class="content-select">
-                    <select>
+                    <select id="select-office">
                         <option disabled selected>Elige tu ciudad...</option>
-                        <option>Caracas</option>
-                        <option>Maturín</option>
-                        <option>Porlamar</option>
+                        <option>Puerto Ordaz</option>
+                        <option>Puerto La Cruz</option>
                     </select>
                     <i></i>
                 </div>
@@ -305,7 +304,7 @@
     </div>
 </div>
 <!--Modal office-->
-<div class="modal fade OficinasSearch" tabindex="-1" role="dialog" id="Oficinas2">
+<div class="modal fade OficinasSearch" tabindex="-1" role="dialog" id="ordaz">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header"></div>
@@ -318,8 +317,7 @@
                             <span class="line appeared responsive"></span>
                             <i class="fa fa-map-marker"></i>
                             <p class="text-office">Av. Guayana, C.C. Cristal, PB, Mezzanina 1 y 2, Alta Vista Sur,
-                                Puerto Ordaz, Estado
-                                Bolivas</p>
+                                Puerto Ordaz, Estado Bolivas</p>
                             <div class="clearfix"></div>
                             <i class="fa fa-phone"></i>
                             <p class="text-office">
@@ -328,18 +326,17 @@
                                 <a href="tel:0286 712 21 00" class="phone-number">(0286) 712.21.00</a>
                             </p>
                             <div class="iconos-modal">
-                                <a href="https://www.waze.com/ul?place=ChIJLSP83nz5y40RbWMZrQddork&ll=8.29326200%2C-62.73653500&navigate=yes"><img
+                                <a href="https://www.waze.com/ul?ll=8.29467,-62.7307&navigate=yes"><img
                                         src="images/icon-waze.png" width="70"/></a>
-                                <a href="https://goo.gl/maps/fAhHWJir3ai7UUSm9"><img src="images/icon-maps.png"
-                                                                                     width="80"/></a>
+                                <a href="http://www.google.com/maps/place/8.29467,-62.7307"><img
+                                        src="images/icon-maps.png" width="80"/></a>
                             </div>
                             <label class="responsive">Cambia de sucursal</label>
                             <div class="content-select responsive">
                                 <select>
                                     <option disabled selected>Elige tu ciudad...</option>
-                                    <option>Caracas</option>
-                                    <option>Maturín</option>
-                                    <option>Porlamar</option>
+                                    <option>Puerto Ordaz</option>
+                                    <option>Puerto La Cruz</option>
                                 </select>
                                 <i></i>
                             </div>
@@ -347,7 +344,63 @@
                         </div>
                         <div class="col-6 ml-auto">
                             <iframe class="border-rounded"
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.0957735948723!2d-62.73872368572698!3d8.293267302361935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dcbf97cdefc232d%3A0xb9a25d07ad19636d!2sCentro%20Comercial%20Ciudad%20Altavista%20II!5e0!3m2!1ses-419!2ssv!4v1591422253493!5m2!1ses-419!2ssv"
+                                    src="https://maps.google.com/maps?q=8.29467,-62.7307&hl=es&z=14&amp;output=embed"
+                                    width="300"
+                                    height="445"
+                                    frameborder="0"
+                                    style="border: 0;"
+                                    allowfullscreen=""
+                                    aria-hidden="false"
+                                    tabindex="0"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Modal office-->
+<div class="modal fade OficinasSearch" tabindex="-1" role="dialog" id="cruz">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header"></div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-6">
+                            <h5 class="modal-title">Oficina</h5>
+                            <h3 class="modal-title office-title">Puerto La Cruz</h3>
+                            <span class="line appeared responsive"></span>
+                            <i class="fa fa-map-marker"></i>
+                            <p class="text-office">Av. Nueva Esparta, C. C. Nueva Esparta, Edificio XYZ</p>
+                            <div class="clearfix"></div>
+                            <i class="fa fa-phone"></i>
+                            <p class="text-office">
+                                <a href="tel:0286 965 21 00" class="phone-number">(0286) 965.21.00</a>
+                                <br/>
+                                <a href="tel:0286 712 21 00" class="phone-number">(0286) 712.21.00</a>
+                            </p>
+                            <div class="iconos-modal">
+                                <a href="https://www.waze.com/ul?ll=10.1859,-64.659&navigate=yes"><img
+                                        src="images/icon-waze.png" width="70"/></a>
+                                <a href="http://www.google.com/maps/place/10.1859,-64.659"><img
+                                        src="images/icon-maps.png" width="80"/></a>
+                            </div>
+                            <label class="responsive">Cambia de sucursal</label>
+                            <div class="content-select responsive">
+                                <select>
+                                    <option disabled selected>Elige tu ciudad...</option>
+                                    <option>Puerto Ordaz</option>
+                                    <option>Puerto La Cruz</option>
+                                </select>
+                                <i></i>
+                            </div>
+                            <button type="button" id="MyModal2" class="btn-w responsive">Buscar</button>
+                        </div>
+                        <div class="col-6 ml-auto">
+                            <iframe class="border-rounded"
+                                    src="https://maps.google.com/maps?q=10.1859,-64.659&hl=es&z=14&amp;output=embed"
                                     width="300"
                                     height="445"
                                     frameborder="0"
