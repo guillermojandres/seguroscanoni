@@ -212,10 +212,6 @@ header .navbar {
     background-attachment: fixed;
 }
 
-
-
-
-
 .myblog h3 {
     position: relative;
     color: #fff;
@@ -403,9 +399,9 @@ header .navbar {
 .container-link li:before {
     content: "";
     display: inline-block;
-    width: 16px;
-    height: 16px;
-    background: url(../images/list.png) no-repeat 50% #009fe3;
+    width: 25px;
+    height: 25px;
+    background: url(../images/list.png) no-repeat 50% ;
     border-radius: 50%;
     margin-bottom: -2px;
     margin-right: 6px;
@@ -1145,6 +1141,7 @@ nav .nav-tabs{border-bottom:none!important;    padding-top: 0;}
 .card-home-box .card-body{
     padding-top: 3rem;
     padding-bottom: 3rem;
+    font-weight: bold;
 }
 .card-home-box:hover {
     cursor: pointer;
@@ -1162,3 +1159,7 @@ nav .nav-tabs{border-bottom:none!important;    padding-top: 0;}
     background: linear-gradient(45deg, rgba(152,100,165,1) 34%, rgba(22,93,169,1) 60%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9864a5",endColorstr="#165da9",GradientType=1);
 }
+
+.card-poliza-box .card-body p{font-weight: bold;}
+.poliza .tab-content p{text-align: justify!important;}
+.tabs-poliza .tab-pane{padding-bottom: 6%;}
