@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Seguros Caroni</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+<!--Chatbot-->
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger intent="WELCOME" chat-title="Chat - Seguros Caroní" agent-id="f41c53a9-ccf7-4ebd-b167-1a949ce663a6"
+              chat-icon="images/boton_chat.png" language-code="es"></df-messenger>
+<div class="container-fluid no-gutters px-0 poliza">
+    <!--Header-->
+    <header class="py-0">
+        <div class="row topcolors">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 py-2"></div>
+        </div>
+        <div class="row navigation">
+            <div class="col-md-4 col-lg-4 col-8 text-right">
+                <a href="index.html"><img src="images/logo-principal.png"></a>
+            </div>
+            <div class="col-md-5 col-lg-5 col-2">
+                <nav class="navbar navbar-expand-sm">
+                    <button class="navbar-toggler" type="button">
+                        <img src="images/mobile-menu.svg" class="mobile-menu" alt="Menu bars">
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <div class="row topcolors2">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 py-2">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-sm-12 text-center py-4 logopeq">
+                            <img src="images/logopeq.png">
+                        </div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item d-block d-md-none d-lg-none btn-pago-movil ">
+                                <a class="nav-link" href="#">Pago en línea</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="historia.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="MyModal">Oficinas</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">Caroní en línea</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Pago en línea</a>
+                                    <a class="dropdown-item" href="#">Chat en línea</a>
+                                    <a class="dropdown-item" href="#">Cotiza en línea</a>
+                                    <a class="dropdown-item" href="#extranet">Extranet</a>
+                                    <a class="dropdown-item" href="aliados.html">Red de aliados</a>
+                                    <a class="dropdown-item" href="poliza.html">Seguros de personas</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="glosario.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-md-3 col-lg-3 col-12 d-none d-md-block d-lg-block">
+                <div class="pagar">Pago en línea</div>
+            </div>
+        </div>
+    </header>
+    <!--Banner-->
+    <div class="row mt-5 pt-3">
+        <div class="col-sm-12 col-lg-12 col-12 banner-seguros glossary">
+            <div class="card poliza-card">
+                <img class="card-img " src="images/banner-poliza.png" alt="Card image">
+                <div class="card-img-overlay">
+                    <h3 class="card-text">Protege</h3>
+                    <h3 class="card-text text-r-1">a quienes</h3>
+                    <h3 class="card-text text-r-2">más amas </h3>
+                </div>
+                </div>
+            </div>
+  </div>
+   <div class="row title-poliza">
+       <div class="col-sm-12 col-lg-12 col-md-12">
+           <h2>Seguros de personas</h2>
+       </div>
+   </div>
+<!--Boxes 1 -->
+   <nav>
+    <div class="nav nav-tabs row container-poliza row-cols-1 row-cols-sm-2 row-cols-md-4" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link" id="nav-tabs-1" data-toggle="tab" href="#nav-tabs1" role="tab" aria-controls="nav-tabs1" aria-selected="true">
+            <div class="col mb-4">
+                <div class="card card-allies h-100">
+                    <div class="card-body">
+                        <img src="images/icon-poliza-1.png" />
+                        <p>Póliza</br>Seguros<br>Caroní</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a class="nav-item nav-link" id="nav-tabs-2" data-toggle="tab" href="#nav-tabs2" role="tab" aria-controls="nav-tabs2" aria-selected="false">
+            <div class="col mb-4">
+                <div class="card card-allies h-100" >
+                    <div class="card-body">
+                        <img src="images/icon-poliza-2.png" />
+                        <p>Póliza <br>Accidentes<br>Personales</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a class="nav-item nav-link" id="nav-tabs-3" data-toggle="tab" href="#nav-tabs3" role="tab" aria-controls="nav-tabs3" aria-selected="false">
+            <div class="col mb-4">
+                <div class="card card-allies h-100" >
+                    <div class="card-body">
+                        <img src="images/icon-poliza-3.png" />
+                        <p>Póliza<br>Accidentes<br>Escolares</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a class="nav-item nav-link" id="nav-tabs-4" data-toggle="tab" href="#nav-tabs4" role="tab" aria-controls="nav-tabs3" aria-selected="false">
+            <div class="col mb-4">
+                <div class="card card-allies h-100">
+                    <div class="card-body">
+                        <img src="images/icon-poliza-4.png" />
+                        <p>Póliza servicios<br>Funerarios e<br>inhumanación</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</nav>
+<div class="tab-content row container-poliza tabs-poliza" id="nav-tabContent">
+    <div class="tab-pane fade col-12" id="nav-tabs1" role="tabpanel" aria-labelledby="nav-tabs-1">
+        <p>
+            Ofrece protección para el asegurado titular y su grupo familiar, indemnizando los gastos razonables cubiertos, en que incurra el asegurado por atenciones médicas, hospitalizaciones o intervenciones quirúrgicas, como consecuencia
+            directa de enfermedades, accidentes o maternidad, excepto las excluidas, de acuerdo a los límites y condiciones contratadas.
+        </p>
+        <h3>Coberturas</h3>
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <span class="icon"></span>
+                        </button>
+                        <p>Básica</p>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <h6>-Hospitalización y cirugía</h6>
+                        <p>La cobertura aplica por asegurado, enfermedad o accidente durante el año póliza</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <span class="icon"></span>
+                        </button>
+                        <p>Opcionales</p>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <h6>Maternidad</h6>
+                        <p>Dirigida a mujer ASEGURADO TITULAR o Cónyuge de EL ASEGURADO TITULAR que esté amparada por la cobertura básica, cuya edad no exceda de cincuenta (50) años.</p>
+                        <h6>-Atención primaria de Salud (APS).</h6>
+                        <p>
+                            Asistencia médica programada, conconsultas ilimitadas a nivelnacional (siempre y cuando exista una patología); y exámenes de laboratorio, aplica por persona ,asegurado y año póliza, hasta el límite indicado
+                            comosuma asegurada. No ampara exámenes con fines diagnósticos ni controles.
+                        </p>
+                        <h6>-Servicio odontológico</h6>
+                        <p>Servicio integrado a nivel nacional, otorgado con calidad técnica, científica y humana.Permite al asegurado su asistencia bajo un sistemade consulta programada que se obtiene a través de:</p>
+                        <ol>
+                            <li>Llamada telefónica al call center del proveedor.</li>
+                            <li>Solicitud de cita por la página web de proveedor.</li>
+                        </ol>
+                        <h6>-Servicio oftalmológico.</h6>
+                        <p>Consulta especializada en consultorios oftalmológicos de la red, dispuesta para la prestación del servicio.</p>
+                        <h6>-Servicio dermatológico</h6>
+                        <p>Servicio de altísima calidad, enconsultorios y clínicas dermatológicas, con profesionales de excelente trayectoria y presencia a nivel nacional.</p>
+                        <h6>-Servicio de auxilio psicológico y/o legal.</h6>
+                        <p>Asesoría psicológica y/o legal a EL ASEGURADO cuando así lo requiera, mediante el uso de una red dispuesta para agendar el día de atención</p>
+                        <h6>-Servicio funerario</h6>
+                        <p>Brinda asistencia en todos los trámites, gestiones y servicios necesarios para auxiliar a El Asegurado, en caso de fallecimiento del titular o de uno de sus dependientes.</p>
+                    </div>
+                </div>
+            </div>
+            <h3>Esquema de presentación de los servicios</h3>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <span class="icon"></span>&nbsp;&nbsp;Asistencia para Emergencias (Claves o autorizaciones de atención)
+                        </button>
+                       
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Servicio otorgado por una clínica de la red, para solventar la dolencia ante una emergencia médica (enfermedad o accidente) de El asegurado.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="Four">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <span class="icon"></span>
+                        </button>
+                        <p>Carta Aval</p>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Aval de atención que debe ser presentado en la clínica, al momento de requerir asistenci amédica para intervenciones quirúrgica selectivas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="Five">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <span class="icon"></span>
+                        </button>
+                        <p>Reembolso de gastos</p>
+                    </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>
+                            Reintegro de gastos cubiertos (consulta, medicinas, exámenes y estudios) a El Asegurado ante una necesidad de atención médica, cuya patología se encuentre cubierta por la póliza. Para el reintegro, es necesario
+                            entregar los documentos que soportan la reclamación, adicionando la planilla informe de siniestro (debidamente llena y firmada en todas sus partes).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade col-12" id="nav-tabs2" role="tabpanel" aria-labelledby="nav-tabs-2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eius non culpa sit rerum. Corporis beatae error ad nihil est! Atque nisi illum laboriosam animi temporibus cupiditate autem excepturi modi.</p>
+    </div>
+    <div class="tab-pane fade col-12" id="nav-tabs3" role="tabpanel" aria-labelledby="nav-tabs-3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, fuga libero id esse fugit culpa molestias atque deleniti praesentium commodi, officiis facilis necessitatibus sit provident nisi magnam quis vero. Inventore!</p>
+    </div>
+    <div class="tab-pane fade col-12" id="nav-tabs4" role="tabpanel" aria-labelledby="nav-tabs-4">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat facere nobis amet qui veritatis, adipisci sint rerum in exercitationem corporis blanditiis ad vel laudantium voluptate cum quisquam non placeat. Aperiam?</p>
+    </div>
+</div>
+
+<!--Boxes 2-->
+<nav>
+    <div class="nav nav-tabs row container-poliza row-cols-1 row-cols-sm-2 row-cols-md-4" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link" id="nav-tabs-5" data-toggle="tab" href="#nav-tabs5" role="tab" aria-controls="nav-tabs5" aria-selected="true">
+            <div class="col mb-4">
+                <div class="card card-allies h-100">
+                    <div class="card-body">
+                        <img src="images/icon-poliza-5.png" />
+                        <p>Póliza</br>Vida<br>Caroní</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a class="nav-item nav-link" id="nav-tabs-6" data-toggle="tab" href="#nav-tabs6" role="tab" aria-controls="nav-tabs6" aria-selected="false">
+            <div class="col mb-4">
+                <div class="card card-allies h-100" >
+                    <div class="card-body">
+                        <img src="images/icon-poliza-6.png" />
+                        <p>Seguro <br>Solidario<br>de salud</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a class="nav-item nav-link" id="nav-tabs-7" data-toggle="tab" href="#nav-tabs7" role="tab" aria-controls="nav-tabs7" aria-selected="false">
+            <div class="col mb-4">
+                <div class="card card-allies h-100" >
+                    <div class="card-body">
+                        <img src="images/icon-poliza-7.png" />
+                        <p>Seguro solidario<br>de Accidentes<br>Personales</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a class="nav-item nav-link" id="nav-tabs-8" data-toggle="tab" href="#nav-tabs8" role="tab" aria-controls="nav-tabs8" aria-selected="false">
+            <div class="col mb-4">
+                <div class="card card-allies h-100">
+                    <div class="card-body">
+                        <img src="images/icon-poliza-8.png" />
+                        <p>Seguro solidario<br>de Accidentes<br>Personales</p>   
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</nav>
+<div class="tab-content row container-poliza tabs-poliza" id="nav-tabContent">
+    <div class="tab-pane fade col-12" id="nav-tabs5" role="tabpanel" aria-labelledby="nav-tabs-5">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus quo pariatur, libero id tempora officiis sequi obcaecati perferendis quasi nesciunt qui, maxime eveniet doloremque rem recusandae. Praesentium eaque veritatis asperiores?</p>
+    </div>
+    <div class="tab-pane fade" id="nav-tabs6" role="tabpanel" aria-labelledby="nav-tabs-6">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti nulla soluta officiis molestiae omnis unde laudantium eum, quo, a hic voluptatum accusamus! Mollitia eum voluptatibus rem aliquam? Distinctio, dolores eaque?</p>
+    </div>
+    <div class="tab-pane fade" id="nav-tabs7" role="tabpanel" aria-labelledby="nav-tabs-7">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque distinctio perferendis, saepe ipsam amet quod quibusdam aliquid odio consectetur alias. Adipisci ipsa error exercitationem iure architecto animi aspernatur rerum minima!</p>
+    </div>
+    <div class="tab-pane fade" id="nav-tabs8" role="tabpanel" aria-labelledby="nav-tabs-8">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis quam quisquam repellat incidunt repellendus, eveniet corrupti! Excepturi est aperiam dicta cum soluta vel, magnam expedita, accusamus reprehenderit, ullam voluptatum iste.</p>
+    </div>
+</div>
+    <!--Blog and footer-->
+    <div class="row myblog">
+        <div class="col-md-4 col-lg-4 col-sm-4 px-0 mx-0 ">
+            <div class="card  blog1 text-white">
+                <img class="card-img " src="images/blog-1.png" alt="Card image">
+                <div class="card-img-overlay">
+                    <a href="#" class="date card-text "> 15 abril | admin </a>
+                    <h3 class="card-text">Inerosajustofacilisisrutrum. Aeneanidullamcorperlibero. Vestibulum
+                        imperdiet</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-lg-4 col-sm-4  px-0 mx-0 ">
+            <div class="card  blog2 text-white">
+                <img class="card-img " src="images/blog-2.png" alt="Card image">
+                <div class="card-img-overlay">
+                    <a href="#" class="date card-text "> 15 abril | admin </a>
+                    <h3 class="card-text">Inerosajustofacilisisrutrum. Aeneanidullamcorperlibero. Vestibulum
+                        imperdiet</h3>
+                    <a href="#" class="btn-blog card-text">Leer Más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-lg-4  px-0 mx-0col-sm-4 d-none d-md-block d-lg-block">
+            <div class="card  blog3 text-white">
+                <img class="card-img " src="images/blog-3.png" alt="Card image">
+                <div class="card-img-overlay">
+                    <a href="#" class="date card-text "> 15 abril | admin </a>
+                    <h3 class="card-text">Inerosajustofacilisisrutrum. Aeneanidullamcorperlibero. Vestibulum
+                        imperdiet</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container-link">
+            <div class="row text-left">
+                <div class="col-md-3 col-lg-3 col-sm-12">
+                    <h4>Nosotros</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <small class="custom-text"><i class="fa fa-envelope"></i> youremail@domainname.com</small>
+                    <small class="custom-text"><i class="fa fa-phone"></i> +2- 012- 24627169</small>
+                    <small class="custom-text"><i class="fa fa-map-marker"></i> Caracas Venezuela</small>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-12 d-none d-md-block d-lg-block">
+                    <h4>Servicios en linea</h4>
+                    <ul>
+                        <li>Energy Efficiency</li>
+                        <li>What document can you see</li>
+                        <li>Friendly Societies</li>
+                        <li>How dp you get a certificate</li>
+                        <li>Getting evidence of a USA</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-1 d-none d-md-block d-lg-block pl-lg-2">
+                    <h4>Oficinas</h4>
+                    <div class="list-group">
+                        <div class="list-group-item">
+                            <a href="#"><img src="images/oficina-1.png" class="thumbnail"/></a>
+                            <div class="newstext text-left">
+                                <a href=""><p class="title">Caracas</p></a>
+                                <a href=""><p class="title">Altamira, Chacao</p></a>
+                                <span class="clearfix"></span>
+                            </div>
+                        </div>
+                        <div class="list-group-item">
+                            <a href="#"><img src="images/oficina-1.png" class="thumbnail"/></a>
+                            <div class="newstext text-left">
+                                <a href=""><p class="title">Caracas</p></a>
+                                <a href=""><p class="title">La lagunita, El Hatillo</p></a>
+                                <span class="clearfix"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="oficinas" href="#">todas las oficinas ></a>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-12">
+                    <h4>Información Caroní</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur </p>
+                    <table class="horarios">
+                        <tr>
+                            <td>MON - FRI:</td>
+                            <td>9AM - 9PM</td>
+                        </tr>
+                        <tr>
+                            <td>SATURDAY:</td>
+                            <td>9AM - 5PM</td>
+                        </tr>
+                        <tr>
+                            <td>SUNDAY:</td>
+                            <td>9AM - 5PM</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="row greybar">
+                <div class="col-md-4 col-lg-4 col-sm-12 fs d-none d-md-block d-lg-block">
+                    <p>Síguenos</p>
+                    <p> en nuestras redes sociales</p>
+                    <div class="socialmedia-container text-left">
+                        <a href="" title="Instagram" target="_blank"><i class="fa fa-instagram fa-lg"
+                                                                        aria-hidden="true"></i></a>
+                        <a href="" title="Facebook" target="_blank"><i class="fa fa-facebook fa-lg"
+                                                                       aria-hidden="true"></i></a>
+                        <a href="" title="WhatsApp" target="_blank"><i class="fa fa-whatsapp fa-lg"
+                                                                       aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-12 text-center">
+                    <p>Atención a los clientes</p>
+                    <h2>0500SCARONI</h2>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-12">
+                    <div class="btn-contacto">
+                        <img src="images/img-bottom.PNG" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-12 fs d-block d-md-none d-lg-none">
+                    <p>Síguenos</p>
+                    <p> en nuestras redes sociales</p>
+                    <div class="socialmedia-container text-left">
+                        <a href="" title="Instagram" target="_blank"><i class="fa fa-instagram fa-lg"
+                                                                        aria-hidden="true"></i></a>
+                        <a href="" title="Facebook" target="_blank"><i class="fa fa-facebook fa-lg"
+                                                                       aria-hidden="true"></i></a>
+                        <a href="" title="WhatsApp" target="_blank"><i class="fa fa-whatsapp fa-lg"
+                                                                       aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center cintillo ">
+                <div class="col-md-12 col-lg-12 col-sm-12">
+                    <p class="py-0 my-0">Empresa de Seguros Inscrita en la Superintendencia de la Actividad Aseguradora
+                        bajo el No 110.</p>
+                    <p class="py-0 my-0">Rif. J-xxxxxxxxxxxx</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="mobile-overwall"></div>
+</body>
+</html>
+
+<!--Scripts-->
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="js/seguros.js"></script>

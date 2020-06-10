@@ -53,6 +53,8 @@ padding: 2px;
     .titulo-table h1 {
         margin-left: 2rem;
     }
+    .container-poliza {
+        width: 90%;}
 }
 @media screen and (max-width: 800px) {
 
@@ -60,6 +62,16 @@ padding: 2px;
     .header2 img{width: 60%;}
     header img{width: 70%;}
     .pagar{border-radius: 0px 0px 15px 15px;    padding: 5%;}
+    .card-img-overlay {
+        top: 20%!important;
+    }
+.container-poliza .card-body p{font-size: 12px!important;}
+.poliza-card .card-img-overlay {
+    position: absolute;
+    top: 0%!important;
+    left: 40%!important;
+    width: 60%!important;
+}
 }
 @media screen and (max-width: 768px) {
     #automovil {
@@ -95,6 +107,21 @@ padding: 2px;
     }
 }
 @media screen and (max-width: 600px) {
+    .poliza-card h3.text-r-1 {
+        margin-left: 2rem;
+    }
+    .poliza-card h3.text-r-2 {
+        margin-left: 5rem;
+    }
+    .poliza-card .card-img-overlay {
+        position: absolute;
+        top: 0%!important;
+        left: 40%!important;
+        width: 100%!important;
+    }
+    .poliza .card-img-overlay h3 {
+        font-size: 1rem;
+    }
 
     .banner-seguros{margin-top:70px;}
     .mobile-overwall{
@@ -238,7 +265,12 @@ padding: 2px;
 .box{    margin-top: -42px;}
 .esvisible{display:block;}
 .col-historia{  padding-right: 15%!important;}
-
+.card-img-overlay {
+    top: 0%!important;
+}
+.myblog h3 {
+    font-size: 0.8rem;
+}
 }
 @media screen and (max-width: 575px){
     .modal-title {
@@ -333,6 +365,9 @@ padding: 2px;
     }
 }
 @media screen and (max-width: 360px) {
+    .card-img-overlay {
+        top: 50%!important;
+    }
 }
 @media screen and (max-width: 351px) {
     .iconos-modal img {

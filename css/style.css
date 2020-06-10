@@ -1059,3 +1059,68 @@ df-messenger {
 img.mobile-menu {
     width: 1rem !important;
 }
+.poliza-card .card-img-overlay {
+    position: absolute;
+    top: 30%!important;
+    left: 50%!important;
+    width: 40%!important;
+}
+
+.poliza-card h3{
+    color: #FFF;
+    font-size: 2.9rem;
+}
+.poliza-card h3.text-r-1{margin-left: 5rem;}
+.poliza-card h3.text-r-2{margin-left: 10rem;}
+.title-poliza{
+    color: #165da9;
+    padding: 5%;
+    width: 80%;
+    margin-right: auto!important;
+    margin-left: auto!important;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.container-poliza{
+  
+    width: 73%;
+    margin-right: auto!important;
+    margin-left: auto!important;
+    padding-top: 2%;
+    padding-bottom: 0%;
+}
+.container-poliza .nav-tabs .nav-link{
+    border: none!important;
+}
+.container-poliza .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+ border-color:transparent!important;
+}
+.container-poliza .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{border-color: transparent!important;}
+.container-poliza .nav-tabs .nav-item{border-bottom: none!important;}
+nav .nav-tabs{border-bottom:none!important;    padding-top: 0;}
+.container-poliza .card{border-radius: 20px!important;    border: none; margin-bottom: 1%;padding-bottom: 0!important;}
+.container-poliza .nav-link{padding: 0;}
+.container-poliza button.btn-link{    color: #FFF!important; text-decoration: none;
+    padding-bottom: 0;}
+.container-poliza .card-header{  padding: 0;background: #165da9;     border-radius: 20px!important;}
+.poliza .card-header p {
+    display: inline-block;
+    font-size: 15px;
+    color:#FFF;
+    margin-bottom: 0;
+}
+.poliza .collapsed span.icon{background: url(../images/mas-poliza.png) no-repeat center center!important;
+}
+.poliza .btn-link span.icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url(../images/menos-poliza.png) no-repeat center center;
+    border-radius: 10px;
+}
+.poliza h3,h6{color: #165da9;}
+.tabs-poliza .card-body{margin-left: 5rem;}
+.tabs-poliza ol{margin-left: 2rem;}
+.myblog h3{color: #FFF!important;}
+.poliza .card-img-overlay h3{color: #fff;}
+.tabs-poliza .card-body { margin-left: 0;}
