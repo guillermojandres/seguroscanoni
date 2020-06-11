@@ -1252,3 +1252,7 @@ a.content-link:hover {
     color: lightgray !important;
     text-decoration: none !important;
 }
+
+.banner-contact {
+    margin-top: 8rem;
+}
