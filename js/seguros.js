@@ -77,6 +77,15 @@ $(document).ready(function () {
         $(this).removeClass('active');
     });
 
+    $('#tabsOne').click(function(){
+        $('#Tabs1').show();
+        $('#Tabs2').hide();
+    });
+    $('#tabsTwo').click(function(){
+       $('#Tabs1').hide();
+       $('#Tabs2').show();
+    });
+
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
