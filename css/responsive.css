@@ -83,6 +83,13 @@ padding: 2px;
     .text-welcome {
         text-align: center;
     }
+    .glossary-title {
+        margin-left: 0;
+        font-size: 1.5rem;
+    }
+    .search-glossary {
+        margin-right: 0;
+    }
 }
 @media screen and (max-width: 735px) {
     .card.card-allies {
@@ -288,6 +295,12 @@ padding: 2px;
     }
     .modal-body label.responsive {
         font-size: 0.8rem;
+    }
+    .glossary-title {
+        text-align: center !important;
+    }
+    .glossary-search-div {
+        text-align: center !important;
     }
 }
 @media screen and (max-width: 482px) {

@@ -56,6 +56,7 @@ li {
     position: relative;
     display: block;
     text-align: center;
+    font-size: 0.9rem !important;
 }
 
 .navigation{background: #fefefe;}
@@ -600,16 +601,16 @@ footer{width: 100%; background-color: #424242;}
 .collapsed span.icon{
     background: url(../images/mas.png) no-repeat center center;
 }
-.glosary .card-header p{display: inline-block;font-size: 25px;}
+.glosary .card-header p{display: inline-block;font-size: 18px;}
 .glosary .card{
     border-top: none;
     border-right: none;
     border-left: none;
     border-bottom: solid 2px!important;
     border-color: #165da9!important;
+    border-right: 0 !important;
 }
-.glosary .card-header{ background-color: transparent!important;}
-.glosary .card-header {padding: 1.2rem 1.25rem!important;border:none!important;}
+.glosary .card-header{ border:none!important;background-color: transparent!important;}
 .glosary .active{ background-color: #165da9!important; color: #FFF; transition: 0.4s;}
 .glosary .accordion .card-body{text-align: justify;}
  
@@ -1169,6 +1170,48 @@ nav .nav-tabs{border-bottom:none!important;    padding-top: 0;}
 .poliza .tab-content p{text-align: justify!important;}
 .tabs-poliza .tab-pane{padding-bottom: 6%;}
 
+.glossary-search-div {
+    text-align: right;
+}
+
+.wrapper-search input[type="text"] {
+    position: relative;
+}
+
+.wrapper-search:before {
+    font-family: 'FontAwesome';
+    color: black;
+    position: relative;
+    left: 200px;
+    content: "\f002";
+    z-index: 2;
+}
+
+.card.seguros {
+    border: none;
+}
+
+.glossary-title {
+    color: #165da9;
+    margin-top: 1rem;
+    margin-left: 6rem;
+}
+
+.search-glossary {
+    margin-top: 1rem;
+    margin-right: 6rem;
+    background-color: #eef4fe;
+    border: none;
+    padding: 0.3rem 0.4rem;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.search-glossary:focus {
+    outline: none;
+}
+
+/* Footer link glossary styles */
 a.glossary-link {
     color: white;
     text-decoration: none;

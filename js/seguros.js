@@ -94,6 +94,20 @@ $(document).ready(function () {
             });
         });
     });
+
+    let searchTerm, cardContainerId;
+    $.expr[':'].containsCaseInsensitive = function (n, i, m) {
+        return jQuery(n).text().toUpperCase().indexOf(m[3].toUpperCase()) >= 0;
+    };
+
+    $('#search-glossary').on('change keyup paste click', function () {
+        searchTerm = $(this).val();
+        $('#accordionSeguros > .card').each(function () {
+            cardContainerId = '#' + $(this).attr('id');
+            $(cardContainerId + ':not(:containsCaseInsensitive(' + searchTerm + '))').hide();
+            $(cardContainerId + ':containsCaseInsensitive(' + searchTerm + ')').show();
+        });
+    });
 });
 
 function openNav() {
@@ -102,10 +116,12 @@ function openNav() {
     $(".navbar-collapse").css({'width': '190px'});
     $('.navbar-collapse').height(height);
     $('.mobile-overwall').css({'visibility': 'visible'});
+    $('.search-glossary').css({'z-index': '-1'});
 }
 
 function closeNav() {
     $(".navbar-collapse").css({'width': '0px', 'transition': '0.5s'});
     $('.navbar-collapse').height(0);
     $(".mobile-overwall").css({'visibility': 'hidden'});
+    $('.search-glossary').css({'z-index': '1'});
 }
