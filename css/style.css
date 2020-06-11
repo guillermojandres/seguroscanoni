@@ -57,6 +57,12 @@ li {
     display: block;
     text-align: center;
     font-size: 0.9rem !important;
+    padding-left: 0 !important;
+    padding-right: 0.8rem !important;
+}
+
+ul.navbar-nav {
+    margin-left: -3rem !important;
 }
 
 .navigation{background: #fefefe;}
@@ -395,7 +401,6 @@ header .navbar {
     text-align: justify;
     color: #fff;
     font-size: 12px;
-    line-height: 2;
 }
 .container-link li:before {
     content: "";
@@ -417,6 +422,10 @@ header .navbar {
 }
 .container-link .row div {
     padding: 2%;
+}
+.line-link {
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
 }
 .small,
 small {
@@ -977,7 +986,7 @@ table.dataTable thead .sorting_desc {
 }
 
 .banner-seguros.glossary {
-    margin-top: 1rem;
+    margin-top: 8rem;
 }
 
 /* Card styles */
@@ -1191,6 +1200,10 @@ nav .nav-tabs{border-bottom:none!important;    padding-top: 0;}
     border: none;
 }
 
+.dropdown-menu {
+    left: -50px !important;
+}
+
 .glossary-title {
     color: #165da9;
     margin-top: 1rem;
@@ -1211,12 +1224,31 @@ nav .nav-tabs{border-bottom:none!important;    padding-top: 0;}
     outline: none;
 }
 
-/* Footer link glossary styles */
-a.glossary-link {
+/* Container link styles */
+a.content-link {
     color: white;
+    text-decoration: none;
+    font-size: 90%;
+}
+
+a.content-link:hover {
+    color: lightgray !important;
     text-decoration: none;
 }
 
-a.glossary-link:hover {
+/* Footer styles */
+.phone-footer {
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.phone-footer:hover {
     color: lightgray !important;
+    text-decoration: none;
+}
+
+.socialmedia-container > a:hover {
+    color: lightgray !important;
+    text-decoration: none !important;
 }
