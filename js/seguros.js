@@ -5,6 +5,7 @@ const modalLine = $('#modal-line');
 const modalImage = $('#modal-image');
 const dataTableExternal = $('#data-external');
 const dataTableInternal = $('#data-internal');
+let external;
 
 $(document).ready(function () {
     $(window).scroll(function () {
@@ -121,64 +122,72 @@ function closeNav() {
 function openModal(ally = null) {
     switch (ally) {
         case 'clinics':
+            external = true;
             modalTitle.text('Clínicas').addClass('col-md-4');
             modalImage.addClass('clinics');
             modalIcon.attr('src', 'images/icon-clinica-primary.png');
             dataTableExternal.show();
-            fillData(clinics);
+            fillData(clinics, external);
             break;
         case 'primaryCare':
+            external = true;
             modalTitle.text('Atención primaria').addClass('col-md-4');
             modalLine.addClass('primary');
             modalImage.addClass('primary');
             modalIcon.attr('src', 'images/icon-movil-primary.png');
             dataTableExternal.show();
-            fillData(primaryCare);
+            fillData(primaryCare, external);
             break;
         case 'medicalEquipments':
+            external = true;
             modalTitle.text('Proveedor materiales y equipos').addClass('col-md-4');
             modalLine.addClass('equipment');
             modalImage.addClass('equipment');
             modalIcon.attr('src', 'images/icon-imagen-primary.png');
             dataTableExternal.show();
-            fillData(medicalEquipments);
+            fillData(medicalEquipments, external);
             break;
         case 'dentists':
+            external = false;
             modalTitle.text('Odontólogos');
             modalIcon.attr('src', 'images/icon-odontologo-primary.png');
             dataTableInternal.show();
-            fillData(dentists, false);
+            fillData(dentists, external);
             break;
         case 'ophthalmologists':
+            external = false;
             modalTitle.text('Oftalmologos');
             modalIcon.attr('src', 'images/icon-ojo-primary.png');
             dataTableInternal.show();
-            fillData(ophthalmologists, false);
+            fillData(ophthalmologists, external);
             break;
         case 'dermatologists':
+            external = false;
             modalTitle.text('Dermatólogos');
             modalIcon.attr('src', 'images/icon-dermatologo-primary.png');
             dataTableInternal.show();
-            fillData(dermatologists, false);
+            fillData(dermatologists, external);
             break;
         case 'psychologicalAssistant':
+            external = false;
             modalTitle.text('Auxiliar Psicológico');
             modalIcon.attr('src', 'images/icon-psicologo-primary.png');
             dataTableInternal.show();
-            fillData(psychologicalAssistant, false);
+            fillData(psychologicalAssistant, external);
             break;
         case 'funeralServices':
+            external = false;
             modalTitle.text('Servicios funerarios');
             modalIcon.attr('src', 'images/icon-u-primary.png');
             dataTableInternal.show();
-            fillData(funeralServices, false);
+            fillData(funeralServices, external);
             break;
     }
 
     if (ally !== null) modalAllies.modal({backdrop: 'static', keyboard: false});
 }
 
-function fillData(data, external = true) {
+function fillData(data, external) {
     let table = external ? $('#data-external table') : $('#data-internal table');
     let bodyTable = external ? $('#data-external table tbody') : $('#data-internal table tbody')
     let content = null;
@@ -216,4 +225,28 @@ function fillData(data, external = true) {
         info: false,
         language: { url: `/js/es.json` }
     });
+}
+
+function generatePdf() {
+    let filename = modalTitle.text().toLowerCase().replace(/ /g, '-');
+    const doc = new jsPDF();
+
+    doc.autoTable({
+        didDrawPage: function (data) {
+            doc.setFontSize(20)
+            doc.setTextColor(40)
+            doc.setFontStyle('normal')
+            doc.addImage(imageReport, 'PNG', data.settings.margin.left, 15, 10, 10)
+            doc.text(modalTitle.text(), data.settings.margin.left + 15, 22)
+            const str = 'Página ' + doc.internal.getNumberOfPages() + ' - Seguros Caroní'
+            doc.setFontSize(10)
+            const pageSize = doc.internal.pageSize
+            const pageHeight = pageSize.height ? pageSize.height : pageSize.getHeight()
+            doc.text(str, data.settings.margin.left, pageHeight - 10)
+        },
+        margin: { top: 30 },
+        html: external ? '#external-table' : '#internal-table'
+    });
+
+    doc.save(`${filename}.pdf`);
 }

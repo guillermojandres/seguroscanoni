@@ -461,12 +461,12 @@
                 </div>
                 <div>
                     <img src="images/close.png" alt="Close" class="close" data-dismiss="modal"/>
-                    <img src="images/print.png" alt="Print" class="close" />
+                    <img src="images/print.png" alt="Print" class="close" onclick="generatePdf()" />
                 </div>
             </div>
             <div class="modal-body">
                 <div class="table-responsive" id="data-external" style="display: none;">
-                    <table class="table-allies table table-striped table-bordered table-datatable responsive">
+                    <table id="external-table" class="table-allies table table-striped table-bordered table-datatable responsive">
                         <thead class="thead-datatable">
                         <tr>
                             <th>Estado</th>
@@ -481,7 +481,7 @@
                     </table>
                 </div>
                 <div class="table-responsive" id="data-internal" style="display: none;">
-                    <table class="table-allies table table-striped table-bordered table-datatable responsive">
+                    <table id="internal-table" class="table-allies table table-striped table-bordered table-datatable responsive">
                         <thead class="thead-datatable">
                         <tr>
                             <th>Nombre</th>
@@ -504,5 +504,7 @@
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript"
         src="https://cdn.datatables.net/responsive/2.2.5/js/dataTables.responsive.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/jspdf@1.5.3/dist/jspdf.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/jspdf-autotable@3.5.3/dist/jspdf.plugin.autotable.js"></script>
 <script type="text/javascript" src="js/data.js"></script>
 <script type="text/javascript" src="js/seguros.js"></script>
