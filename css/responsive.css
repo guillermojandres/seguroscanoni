@@ -110,6 +110,26 @@
     .card-contact-left {
         margin-top: -3rem;
     }
+
+    .poliza .card-header p {
+        font-size: 13px;
+    }
+
+    .poliza h3 {
+        font-size: 20px !important;
+    }
+
+    .poliza h4 {
+        font-size: 14px !important;
+    }
+
+    .poliza .tab-content p {
+        font-size: 12px;
+    }
+
+    .container-poliza ol li, .container-poliza ul li {
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -191,6 +211,12 @@
 @media screen and (max-width: 735px) {
     .card.card-allies {
         margin: 0 1rem 0 1rem;
+    }
+}
+
+@media screen and (max-width: 643px) {
+    .poliza .card-header p {
+        padding: 1rem;
     }
 }
 
