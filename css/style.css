@@ -1413,7 +1413,7 @@ nav .nav-tabs {
     border-radius: 10px;
 }
 
-.poliza h3, h6 {
+.poliza h3, h4, h6 {
     color: #165da9;
 }
 
@@ -1662,11 +1662,18 @@ a.content-link:hover {
 }
 
 /* Products styles */
-.container-poliza .card a {
+.container-poliza .card a,
+.container-poliza ol a {
     color: #1a61ac !important;
 }
 
-.container-poliza .card a:hover {
+.container-poliza .card a:hover,
+.container-poliza ol a:hover{
     color: #165da9 !important;
     text-decoration: none;
+}
+
+.container-poliza ol li,
+.container-poliza ul li {
+    font-family: "WorkSans-Regular";
 }
