@@ -1,5 +1,11 @@
 $(document).ready(function () {
+    $('#people').click(function () { location.href = 'personas.html'; });
+
     $('#sureties').click(function () { location.href = 'fianzas.html'; });
+
+    $('#car').click(function () { location.href = 'automovil.html'; });
+
+    $('#patrimonial').click(function () { location.href = 'patrimoniales.html'; });
 
     $('.table-allies').DataTable({
         "paging": false,
