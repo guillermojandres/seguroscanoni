@@ -13,7 +13,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -32,7 +32,7 @@
 <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 <df-messenger intent="WELCOME" chat-title="Chat - Seguros Caroní" agent-id="f41c53a9-ccf7-4ebd-b167-1a949ce663a6"
               chat-icon="images/boton_chat.png" language-code="es"></df-messenger>
-<div class="container-fluid no-gutters px-0 home">
+<div class="container-fluid no-gutters px-0 poliza">
     <!--Header-->
     <header class="py-0">
         <div class="row topcolors">
@@ -72,7 +72,7 @@
                                     <a class="dropdown-item" href="#">Pago en línea</a>
                                     <a class="dropdown-item" href="#">Chat en línea</a>
                                     <a class="dropdown-item" href="#">Cotiza en línea</a>
-                                    <a class="dropdown-item" href="#extranet">Extranet</a>
+                                    <a class="dropdown-item" href="index.html#extranet">Extranet</a>
                                 </div>
                             </li>
                             <li class="nav-item">
@@ -91,73 +91,178 @@
         </div>
     </header>
     <!--Banner-->
-    <section>
-        <div class="row">
-            <div class="col-md-12 col-sm-12 col-lg-12 ">
-                <div class="banner">
-                    <div class="image">
-                        <img src="images/banner.png" class="img-fluid"/>
-                    </div>
-                    <div class="text-cotiza">
-                        <h1 class="text-1">Cotiza el seguro</h1>
-                        <h1 class="text-2">de tu automóvil</h1>
-                        <h1 class="text-3">Práctico y seguro</h1>
-                        <a href="#" class="btn-cotiza">Cotizar</a>
+    <div class="row mt-5 pt-3">
+        <div class="col-sm-12 col-lg-12 col-12 banner-seguros glossary">
+            <div class="card poliza-card">
+                <img class="card-img " src="images/banner-poliza.png" alt="Card image">
+                <div class="card-img-overlay">
+                    <h3 class="card-text">Protege</h3>
+                    <h3 class="card-text text-r-1">a quienes</h3>
+                    <h3 class="card-text text-r-2">más amas </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row title-poliza">
+        <div class="col-sm-12 col-lg-12 col-md-12">
+            <h2>Fianzas</h2>
+        </div>
+    </div>
+    <!--Content-->
+    <div class="container-poliza mb-5" id="accordion">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                        <span class="icon"></span>
+                    </button>
+                    <p>FIANZA LICITACION (GARANTIA DE MANTENIMIENTO DE OFERTA)</p>
+                </h5>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    <p>Garantiza que el contrato será firmado por el oferente, en los términos plazos y condiciones que
+                        ofertó en caso de que resultase favorecido con la adjudicación en el Proceso de Concurso hecho a
+                        tal efecto.</p>
+                    <p>Puedes descargar el formulario de Solicitud de Contrato de Fianza haciendo clic en el siguiente
+                        enlace:</p>
+                    <div class="text-center">
+                        <a target="_blank"
+                           href="https://www.seguroscaroni.com/caroni/formularios/FO-FIA-01_Solicitud_d_Contrato_de_Fianza_PLANTILLA_rev_2.doc"><b>Solicitud
+                            de Contrato de Fianza</b></a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!--Boxes-->
-    <div class="container-boxes" id="boxes">
-        <div class="row content-box row-cols-2 row-cols-sm-2 row-cols-md-4">
-            <div class="col mb-4">
-                <div class="card card-home-box h-100" id="clinicas">
-                    <div class="card-body">
-                        <p>Personas</p>
-                    </div>
-                </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                            aria-expanded="false" aria-controls="collapseTwo">
+                        <span class="icon"></span>
+                    </button>
+                    <p>FIANZA DE ANTICIPO</p>
+                </h5>
             </div>
-            <div class="col mb-4">
-                <div class="card card-home-box h-100" id="sureties">
-                    <div class="card-body">
-                        <p>Fianzas</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col mb-4">
-                <div class="card card-home-box h-100" id="odontologos">
-                    <div class="card-body">
-                        <p>Automóvil</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col mb-4">
-                <div class="card card-home-box h-100">
-                    <div class="card-body">
-                        <p>Patrimoniales</p>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                    <p>Garantiza al Acreedor, en caso de incumplimiento por parte del Afianzado, el reintegro del
+                        anticipo (no amortizado) que le fue otorgado al Afianzado en virtud del cumplimiento de las
+                        obligaciones establecidas en el contrato.</p>
+                    <p>Puedes descargar el formulario de Solicitud de Contrato de Fianza haciendo clic en el siguiente
+                        enlace:</p>
+                    <div class="text-center">
+                        <a target="_blank"
+                           href="https://www.seguroscaroni.com/caroni/formularios/FO-FIA-01_Solicitud_d_Contrato_de_Fianza_PLANTILLA_rev_2.doc"><b>Solicitud
+                            de Contrato de Fianza</b></a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row extranet" id="extranet">
-            <div class="col-md-6 col-sm-12 col-g-6 offset-md-6 offset-lg-6 mt-5">
-                <h3>Extranet</h3>
-                <h1>Caroní</h1>
-                <div class="user-type">
-                    <h3 class="text-welcome">
-                        Texto bienvenida a la extranet
-                    </h3>
-                    <form>
-                        <label>Tipo de Usuario</label>
-                        <select name="select" class="form-control">
-                            <option disabled selected>Ingresar como</option>
-                            <option value="value1">Intermediario</option>
-                            <option value="value2">Asegurado</option>
-                            <option value="value3">Proveedores</option>
-                        </select>
-                        <a href="#" id="#" class="btn-w">Entrar</a>
-                    </form>
+        <div class="card">
+            <div class="card-header" id="headingTree">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTree"
+                            aria-expanded="false" aria-controls="collapseTree">
+                        <span class="icon"></span>
+                    </button>
+                    <p>FIANZA DE FIEL CUMPLIMIENTO</p>
+                </h5>
+            </div>
+            <div id="collapseTree" class="collapse" aria-labelledby="headingTree" data-parent="#accordion">
+                <div class="card-body">
+                    <p>Garantiza el fiel, cabal y oportuno cumplimiento por parte del Afianzado, de todas y cada una de
+                        las obligaciones que resulten a su cargo y a favor del acreedor, derivadas del contrato suscrito
+                        entre ambos para la realización de una obra, un suministro o la prestación de un servicio.</p>
+                    <p> Fianza de Fiel Cumplimiento</p>
+                    <p> Fianza de Fiel Cumplimiento para la Industria Petrolera</p>
+                    <p> Fianza de Fiel Cumplimiento para Intermediarios de Seguro</p>
+                    <p>Puedes descargar el formulario de Solicitud de Contrato de Fianza haciendo clic en el siguiente
+                        enlace:</p>
+                    <div class="text-center">
+                        <a target="_blank"
+                           href="https://www.seguroscaroni.com/caroni/formularios/FO-FIA-01_Solicitud_d_Contrato_de_Fianza_PLANTILLA_rev_2.doc"><b>Solicitud
+                            de Contrato de Fianza</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                            aria-expanded="false" aria-controls="collapseFour">
+                        <span class="icon"></span>
+                    </button>
+                    <p>FIANZA DE OBLIGACIÓN LABORAL</p>
+                </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                <div class="card-body">
+                    <p>Garantiza al Acreedor el cumplimiento de las obligaciones laborales incluyendo las costas
+                        judiciales que éste se vea legalmente obligado a satisfacer, derivadas del contrato suscrito
+                        entre el Afianzado y el Acreedor, como consecuencia de la responsabilidad solidaria establecida
+                        en la Ley Orgánica del Trabajo, las Trabajadoras y los Trabajadores y Ley de Contrataciones
+                        Públicas.</p>
+                    <p>Puedes descargar el formulario de Solicitud de Contrato de Fianza haciendo clic en el siguiente
+                        enlace:</p>
+                    <div class="text-center">
+                        <a target="_blank"
+                           href="https://www.seguroscaroni.com/caroni/formularios/FO-FIA-01_Solicitud_d_Contrato_de_Fianza_PLANTILLA_rev_2.doc"><b>Solicitud
+                            de Contrato de Fianza</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFive">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
+                            aria-expanded="false" aria-controls="collapseFive">
+                        <span class="icon"></span>
+                    </button>
+                    <p>FIANZA DE BUENA CALIDAD</p>
+                </h5>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                <div class="card-body">
+                    <p>Garantiza al Acreedor, que durante un lapso determinado (generalmente 1 año a partir del Acta de
+                        Recepción Provisional), la obra no se deteriorará con su puesta en operación, tomando en cuenta
+                        que los materiales utilizados son de la misma calidad y condiciones ofrecidos por el contratista
+                        y establecidos en el contrato.</p>
+                    <p>Puedes descargar el formulario de Solicitud de Contrato de Fianza haciendo clic en el siguiente
+                        enlace:</p>
+                    <div class="text-center">
+                        <a target="_blank"
+                           href="https://www.seguroscaroni.com/caroni/formularios/FO-FIA-01_Solicitud_d_Contrato_de_Fianza_PLANTILLA_rev_2.doc"><b>Solicitud
+                            de Contrato de Fianza</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingSix">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix"
+                            aria-expanded="false" aria-controls="collapseSix">
+                        <span class="icon"></span>
+                    </button>
+                    <p>FIANZA ADUANAL</p>
+                </h5>
+            </div>
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                <div class="card-body">
+                    <p>Garantiza a la República (por órgano de cualquier aduana del país), el pago de los impuestos,
+                        tasas de servicios y multas que pudieran ser generados por cualquier actividad aduanal,
+                        derivadas de la Ley Orgánica de Aduanas y su reglamento.</p>
+                    <p>Puedes descargar el formulario de Solicitud de Contrato de Fianza haciendo clic en el siguiente
+                        enlace:</p>
+                    <div class="text-center">
+                        <a target="_blank"
+                           href="https://www.seguroscaroni.com/caroni/formularios/FO-FIA-01_Solicitud_d_Contrato_de_Fianza_PLANTILLA_rev_2.doc"><b>Solicitud
+                            de Contrato de Fianza</b></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -283,7 +388,7 @@
                            target="_blank"><i
                                 class="fa fa-twitter fa-lg"
                                 aria-hidden="true"></i></a>
-                        <a class="pl-2" href="https://api.whatsapp.com/send?phone=0412SCARONI" title="WhatsApp"
+                        <a class="pl-2" href="https://api.whatsapp.com/send?phone=0412-7227664" title="WhatsApp"
                            target="_blank"><i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i></a>
                     </div>
                 </div>
@@ -312,7 +417,7 @@
                            target="_blank"><i
                                 class="fa fa-twitter fa-lg"
                                 aria-hidden="true"></i></a>
-                        <a class="pl-2" href="https://api.whatsapp.com/send?phone=0412SCARONI" title="WhatsApp"
+                        <a class="pl-2" href="https://api.whatsapp.com/send?phone=0412-7227664" title="WhatsApp"
                            target="_blank"><i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i></a>
                     </div>
                 </div>

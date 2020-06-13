@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $('#sureties').click(function () { location.href = 'fianzas.html'; });
 
     $('.table-allies').DataTable({
         "paging": false,

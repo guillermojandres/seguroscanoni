@@ -1660,3 +1660,13 @@ a.content-link:hover {
     background-color: #edf4fe;
     box-shadow: none;
 }
+
+/* Products styles */
+.container-poliza .card a {
+    color: #1a61ac !important;
+}
+
+.container-poliza .card a:hover {
+    color: #165da9 !important;
+    text-decoration: none;
+}
