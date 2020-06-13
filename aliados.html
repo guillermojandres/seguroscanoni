@@ -450,23 +450,50 @@
 <div class="modal fade modal-table" tabindex="-1" role="dialog" id="modal-allies">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-            <div class="modal-header modal-allies-header">
-                <div class="titulo-table">
+            <div class="modal-header modal-allies-header titulo-table row">
+                <div id="modal-allies-left" class="col-10">
                     <h4>Red de Aliados</h4>
-                    <div class="row">
-                        <h1 id="modal-title"></h1>
-                        <span class="image-allies" id="modal-image"><img id="modal-icon" src="" alt="Icon"/></span>
-                    </div>
-                    <span id="modal-line" class="line appeared allies details"></span>
+                    <h1 id="modal-title"></h1>
+                    <span class="image-allies" id="modal-image"><img id="modal-icon" src="" alt="Icon"/></span>
                 </div>
-                <div>
+                <div class="col-md-6" id="hidden-filter" style="display: none;">
+                    <div class="form-row">
+                        <div class="col-sm-4">
+                            <select class="form-control">
+                                <option disabled selected>Elige tu Estado...</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-4">
+                            <select class="form-control">
+                                <option disabled selected>Elige tu Ciudad...</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-4">
+                            <select class="form-control">
+                                <option disabled selected>Elige tu Municipio...</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-4 offset-sm-8 mt-2" id="select-providers" style="display: none">
+                            <select class="form-control">
+                                <option disabled selected>Tipo de proveedor...</option>
+                                <option>Centro clínicos de APS</option>
+                                <option>Laboratios</option>
+                                <option>Farmacias</option>
+                                <option>Servicio diagnostico de imagen</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
                     <img src="images/close.png" alt="Close" class="close" data-dismiss="modal"/>
-                    <img src="images/print.png" alt="Print" class="close" onclick="generatePdf()" />
+                    <img src="images/print.png" alt="Print" class="close" onclick="generatePdf()"/>
                 </div>
             </div>
+            <span id="modal-line" class="line appeared allies details"></span>
             <div class="modal-body">
                 <div class="table-responsive" id="data-external" style="display: none;">
-                    <table id="external-table" class="table-allies table table-striped table-bordered table-datatable responsive">
+                    <table id="external-table"
+                           class="table-allies table table-striped table-bordered table-datatable responsive">
                         <thead class="thead-datatable">
                         <tr>
                             <th>Estado</th>
@@ -481,7 +508,8 @@
                     </table>
                 </div>
                 <div class="table-responsive" id="data-internal" style="display: none;">
-                    <table id="internal-table" class="table-allies table table-striped table-bordered table-datatable responsive">
+                    <table id="internal-table"
+                           class="table-allies table table-striped table-bordered table-datatable responsive">
                         <thead class="thead-datatable">
                         <tr>
                             <th>Nombre</th>
