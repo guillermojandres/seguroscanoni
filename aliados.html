@@ -13,7 +13,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -108,9 +108,9 @@
     <!--Allies-->
     <div class="container container-allies">
         <div class="row my-4">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
                 <div class="col mb-4">
-                    <div class="card card-allies h-100" id="clinicas">
+                    <div class="card card-allies h-100" onclick="openModal('clinics')">
                         <div class="card-body">
                             <img src="images/icon-clinica.png"/>
                             <p>Clínicas</p>
@@ -118,31 +118,7 @@
                     </div>
                 </div>
                 <div class="col mb-4">
-                    <div class="card card-allies h-100" id="medicos">
-                        <div class="card-body">
-                            <img src="images/icon-medicos.png"/>
-                            <p>Médicos</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-4">
-                    <div class="card card-allies h-100" id="odontologos">
-                        <div class="card-body">
-                            <img src="images/icon-odontologo.png"/>
-                            <p>Odontólogos</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-4">
-                    <div class="card card-allies h-100">
-                        <div class="card-body">
-                            <img src="images/icon-imagen.png"/>
-                            <p>Servicios de imagen</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-4">
-                    <div class="card card-allies h-100">
+                    <div class="card card-allies h-100" onclick="openModal('primaryCare')">
                         <div class="card-body">
                             <img src="images/icon-movil.png"/>
                             <p>Atención primaria</p>
@@ -150,7 +126,23 @@
                     </div>
                 </div>
                 <div class="col mb-4">
-                    <div class="card card-allies h-100">
+                    <div class="card card-allies h-100" onclick="openModal('medicalEquipments')">
+                        <div class="card-body">
+                            <img src="images/icon-imagen.png"/>
+                            <p>Proveedor de material y equipos médicos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card card-allies h-100" onclick="openModal('dentists')">
+                        <div class="card-body">
+                            <img src="images/icon-odontologo.png"/>
+                            <p>Odontólogos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card card-allies h-100" onclick="openModal('ophthalmologists')">
                         <div class="card-body">
                             <img src="images/icon-ojo.png"/>
                             <p>Oftalmologos</p>
@@ -158,15 +150,7 @@
                     </div>
                 </div>
                 <div class="col mb-4">
-                    <div class="card card-allies h-100">
-                        <div class="card-body">
-                            <img src="images/icon-psicologo.png"/>
-                            <p>Psicólogos</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-4">
-                    <div class="card card-allies h-100">
+                    <div class="card card-allies h-100" onclick="openModal('dermatologists')">
                         <div class="card-body">
                             <img src="images/icon-dermatologo.png"/>
                             <p>Dermatólogos</p>
@@ -174,7 +158,15 @@
                     </div>
                 </div>
                 <div class="col mb-4">
-                    <div class="card card-allies h-100">
+                    <div class="card card-allies h-100" onclick="openModal('psychologicalAssistant')">
+                        <div class="card-body">
+                            <img src="images/icon-psicologo.png"/>
+                            <p>Auxiliar Psicológico</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card card-allies h-100" onclick="openModal('funeralServices')">
                         <div class="card-body">
                             <img src="images/icon-u.png"/>
                             <p>Servicios funerarios</p>
@@ -454,288 +446,49 @@
         </div>
     </div>
 </div>
-<!--Modal clinics-->
-<div class="modal fade modal-table" tabindex="-1" role="dialog" id="modal-clinicas">
+<!--Modal allies-->
+<div class="modal fade modal-table" tabindex="-1" role="dialog" id="modal-allies">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <div class="titulo-table">
-                    <h4>Red de aliados</h4>
+                    <h4>Red de Aliados</h4>
                     <div class="row">
-                        <h1>Clínicas</h1>
-                        <span class="image-allies"><img src="images/icon-clinica-primary.png"/></span>
+                        <h1 id="modal-title"></h1>
+                        <span class="image-allies"><img id="modal-icon" src="" alt="Icon"/></span>
                     </div>
                     <span class="line appeared allies details"></span>
                 </div>
                 <img src="images/close.png" alt="Close" class="close" data-dismiss="modal"/>
             </div>
             <div class="modal-body">
-                <div class="table-responsive">
+                <div class="table-responsive" id="data-external" style="display: none;">
                     <table class="table-allies table table-striped table-bordered table-datatable responsive">
                         <thead class="thead-datatable">
                         <tr>
-                            <th>ESTADO</th>
-                            <th>LOCALIDAD</th>
-                            <th>PROVEEDOR DE SALUD</th>
-                            <th>DIRECCION</th>
-                            <th>TELÉFONOS</th>
-                            <th>OBSERVACIÓN</th>
+                            <th>Estado</th>
+                            <th>Ciudad</th>
+                            <th>Municipio</th>
+                            <th>Nombre de la clinica</th>
+                            <th>Dirección</th>
+                            <th>Teléfonos</th>
                         </tr>
                         </thead>
-                        <tbody class="tbody-datatable">
-                        <tr>
-                            <td>ANZOATEGUI</td>
-                            <td>LECHERIA</td>
-                            <td>HUMANITAS SALUD PLUS</td>
-                            <td>AV Jorge Rodríguez Centro Comercial Fimicentro, Piso 5, ofic 5</td>
-                            <td>(0281)<br/>2861445</td>
-                            <td>ACTIVO</td>
-                        </tr>
-                        <tr>
-                            <td>ANZOATEGUI</td>
-                            <td>EL TIGRE</td>
-                            <td>CENTRO QUIRURGICO WINSTON CHURCHILL C.A.</td>
-                            <td>Av Winston Churchill local Nro S/N Sector Pueblo Nuevo Sur El Tigre Anzoategui</td>
-                            <td>(0283)<br/>2413379</td>
-                            <td>ACTIVO</td>
-                        </tr>
-                        <tr>
-                            <td>ANZOATEGUI</td>
-                            <td>PUERTO LA CRUZ</td>
-                            <td>CENTRO DE IMAGENOLOGIA Y ATENCION MEDICA ANZOATEGUI C.A.</td>
-                            <td>Av Bolivar con calle Guzman Díaz, Centro Comercial Beg Center, Nivel PB, Locales 5 y 6
-                            </td>
-                            <td>(0281)<br/>4224928/<br/>4224930</td>
-                            <td>ACTIVO</td>
-                        </tr>
-                        <tr>
-                            <td>ANZOATEGUI</td>
-                            <td>BARCELONA</td>
-                            <td>MEDIC PLUS JGH</td>
-                            <td>Avenida Countrib CLub, calle San Carlos, al lado del Laboratorio Sumilab</td>
-                            <td>(0281)<br/>4228532/33</td>
-                            <td>ACTIVO</td>
-                        </tr>
-                        <tr>
-                            <td>ANZOATEGUI</td>
-                            <td>BARCELONA</td>
-                            <td>FAST MEDICAL GLOBE SALUD C.A.</td>
-                            <td>Calle Freites casa Numero 14-18 Sector Buenos Aires Barcelona</td>
-                            <td>(0281)<br/>2764486</td>
-                            <td>ACTIVO</td>
-                        </tr>
-                        <tr>
-                            <td>APURE</td>
-                            <td>SAN FERNANDO</td>
-                            <td>ASOCIACION COOPERATIVA SERVIMED 85</td>
-                            <td>Avenida Miranda, Urbanizacion El Cañito Paso Apure</td>
-                            <td>(0247)<br/>3420476</td>
-                            <td>ACTIVO</td>
-                        </tr>
-                        <tr>
-                            <td>ARAGUA</td>
-                            <td>CAGUA</td>
-                            <td>APS CAGUA, C.A.</td>
-                            <td>Calle Cajigual Con Sucre, C.C. La Pirámide, Planta Baja, Local A-35, Urb Sucre Estado
-                                Miranda, Blandin Cagua
-                            </td>
-                            <td>(0244)<br/>3957787</td>
-                            <td>ACTIVO</td>
-                        </tr>
-                        </tbody>
-
+                        <tbody class="tbody-datatable"></tbody>
                     </table>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--Modal medical-->
-<div class="modal fade modal-table" tabindex="-1" role="dialog" id="modal-medicos">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <div class="titulo-table">
-                    <h4>Red de aliados</h4>
-                    <div class="row">
-                        <h1>Médicos</h1>
-                        <span class="image-allies"><img src="images/icon-medicos-primary.png"/></span>
-                    </div>
-                    <span class="line appeared allies"></span>
-                </div>
-                <img src="images/close.png" alt="Close" class="close" data-dismiss="modal"/>
-            </div>
-            <div class="modal-body">
-                <div class="table-responsive">
+                <div class="table-responsive" id="data-internal" style="display: none;">
                     <table class="table-allies table table-striped table-bordered table-datatable responsive">
                         <thead class="thead-datatable">
                         <tr>
-                            <th>ESTADO</th>
-                            <th>LOCALIDAD</th>
-                            <th>PROVEEDOR DE SALUD</th>
-                            <th>DIRECCION</th>
-                            <th>TELÉFONOS</th>
-                            <th>OBSERVACIÓN</th>
+                            <th>Nombre</th>
+                            <th>RIF</th>
+                            <th>Dirección</th>
+                            <th>Teléfonos</th>
+                            <th>Página web</th>
                         </tr>
                         </thead>
-                        <tbody class="tbody-datatable">
-                        <tr>
-                            <td>ANZOATEGUI</td>
-                            <td>LECHERIA</td>
-                            <td>HUMANITAS SALUD PLUS</td>
-                            <td>AV Jorge Rodríguez Centro Comercial Fimicentro, Piso 5, ofic 5</td>
-                            <td>(0281)<br/>2861445</td>
-                            <td>ACTIVO</td>
-                        </tr>
-                        <tr>
-                            <td>ANZOATEGUI</td>
-                            <td>EL TIGRE</td>
-                            <td>CENTRO QUIRURGICO WINSTON CHURCHILL C.A.</td>
-                            <td>Av Winston Churchill local Nro S/N Sector Pueblo Nuevo Sur El Tigre Anzoategui</td>
-                            <td>(0283)<br/>2413379</td>
-                            <td>ACTIVO</td>
-                        </tr>
-                        <tr>
-                            <td>ANZOATEGUI</td>
-                            <td>PUERTO LA CRUZ</td>
-                            <td>CENTRO DE IMAGENOLOGIA Y ATENCION MEDICA ANZOATEGUI C.A.</td>
-                            <td>Av Bolivar con calle Guzman Díaz, Centro Comercial Beg Center, Nivel PB, Locales 5 y 6
-                            </td>
-                            <td>(0281)<br/>4224928/<br/>4224930</td>
-                            <td>ACTIVO</td>
-                        </tr>
-                        <tr>
-                            <td>ANZOATEGUI</td>
-                            <td>BARCELONA</td>
-                            <td>MEDIC PLUS JGH</td>
-                            <td>Avenida Countrib CLub, calle San Carlos, al lado del Laboratorio Sumilab</td>
-                            <td>(0281)<br/>4228532/33</td>
-                            <td>ACTIVO</td>
-                        </tr>
-                        <tr>
-                            <td>ANZOATEGUI</td>
-                            <td>BARCELONA</td>
-                            <td>FAST MEDICAL GLOBE SALUD C.A.</td>
-                            <td>Calle Freites casa Numero 14-18 Sector Buenos Aires Barcelona</td>
-                            <td>(0281)<br/>2764486</td>
-                            <td>ACTIVO</td>
-                        </tr>
-                        <tr>
-                            <td>APURE</td>
-                            <td>SAN FERNANDO</td>
-                            <td>ASOCIACION COOPERATIVA SERVIMED 85</td>
-                            <td>Avenida Miranda, Urbanizacion El Cañito Paso Apure</td>
-                            <td>(0247)<br/>3420476</td>
-                            <td>ACTIVO</td>
-                        </tr>
-                        <tr>
-                            <td>ARAGUA</td>
-                            <td>CAGUA</td>
-                            <td>APS CAGUA, C.A.</td>
-                            <td>Calle Cajigual Con Sucre, C.C. La Pirámide, Planta Baja, Local A-35, Urb Sucre Estado
-                                Miranda, Blandin Cagua
-                            </td>
-                            <td>(0244)<br/>3957787</td>
-                            <td>ACTIVO</td>
-                        </tr>
-                        </tbody>
-
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--Modal dentists-->
-<div class="modal fade modal-table" tabindex="-1" role="dialog" id="modal-odontologos">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <div class="titulo-table">
-                    <h4>Red de aliados</h4>
-                    <div class="row">
-                        <h1>Odontólogos</h1>
-                        <span class="image-allies"><img src="images/icon-odontologo-primary.png"/></span>
-                    </div>
-                    <span class="line appeared allies"></span>
-                </div>
-                <img src="images/close.png" alt="Close" class="close" data-dismiss="modal"/>
-            </div>
-            <div class="modal-body">
-                <div class="table-responsive">
-                    <table class="table-allies table table-striped table-bordered table-datatable responsive">
-                        <thead class="thead-datatable">
-                        <tr>
-                            <th>ESTADO</th>
-                            <th>LOCALIDAD</th>
-                            <th>PROVEEDOR DE SALUD</th>
-                            <th>DIRECCION</th>
-                            <th>TELÉFONOS</th>
-                            <th>OBSERVACIÓN</th>
-                        </tr>
-                        </thead>
-                        <tbody class="tbody-datatable">
-                        <tr>
-                            <td>ANZOATEGUI</td>
-                            <td>LECHERIA</td>
-                            <td>HUMANITAS SALUD PLUS</td>
-                            <td>AV Jorge Rodríguez Centro Comercial Fimicentro, Piso 5, ofic 5</td>
-                            <td>(0281)<br/>2861445</td>
-                            <td>ACTIVO</td>
-                        </tr>
-                        <tr>
-                            <td>ANZOATEGUI</td>
-                            <td>EL TIGRE</td>
-                            <td>CENTRO QUIRURGICO WINSTON CHURCHILL C.A.</td>
-                            <td>Av Winston Churchill local Nro S/N Sector Pueblo Nuevo Sur El Tigre Anzoategui</td>
-                            <td>(0283)<br/>2413379</td>
-                            <td>ACTIVO</td>
-                        </tr>
-                        <tr>
-                            <td>ANZOATEGUI</td>
-                            <td>PUERTO LA CRUZ</td>
-                            <td>CENTRO DE IMAGENOLOGIA Y ATENCION MEDICA ANZOATEGUI C.A.</td>
-                            <td>Av Bolivar con calle Guzman Díaz, Centro Comercial Beg Center, Nivel PB, Locales 5 y 6
-                            </td>
-                            <td>(0281)<br/>4224928/<br/>4224930</td>
-                            <td>ACTIVO</td>
-                        </tr>
-                        <tr>
-                            <td>ANZOATEGUI</td>
-                            <td>BARCELONA</td>
-                            <td>MEDIC PLUS JGH</td>
-                            <td>Avenida Countrib CLub, calle San Carlos, al lado del Laboratorio Sumilab</td>
-                            <td>(0281)<br/>4228532/33</td>
-                            <td>ACTIVO</td>
-                        </tr>
-                        <tr>
-                            <td>ANZOATEGUI</td>
-                            <td>BARCELONA</td>
-                            <td>FAST MEDICAL GLOBE SALUD C.A.</td>
-                            <td>Calle Freites casa Numero 14-18 Sector Buenos Aires Barcelona</td>
-                            <td>(0281)<br/>2764486</td>
-                            <td>ACTIVO</td>
-                        </tr>
-                        <tr>
-                            <td>APURE</td>
-                            <td>SAN FERNANDO</td>
-                            <td>ASOCIACION COOPERATIVA SERVIMED 85</td>
-                            <td>Avenida Miranda, Urbanizacion El Cañito Paso Apure</td>
-                            <td>(0247)<br/>3420476</td>
-                            <td>ACTIVO</td>
-                        </tr>
-                        <tr>
-                            <td>ARAGUA</td>
-                            <td>CAGUA</td>
-                            <td>APS CAGUA, C.A.</td>
-                            <td>Calle Cajigual Con Sucre, C.C. La Pirámide, Planta Baja, Local A-35, Urb Sucre Estado
-                                Miranda, Blandin Cagua
-                            </td>
-                            <td>(0244)<br/>3957787</td>
-                            <td>ACTIVO</td>
-                        </tr>
-                        </tbody>
-
+                        <tbody class="tbody-datatable"></tbody>
                     </table>
                 </div>
             </div>
@@ -748,15 +501,5 @@
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript"
         src="https://cdn.datatables.net/responsive/2.2.5/js/dataTables.responsive.min.js"></script>
+<script type="text/javascript" src="js/data.min.js"></script>
 <script type="text/javascript" src="js/seguros.js"></script>
-<script>
-    $(document).on("click", "#clinicas", function () {
-        $("#modal-clinicas").modal({backdrop: 'static', keyboard: false});
-    })
-        .on('click', '#medicos', function () {
-            $("#modal-medicos").modal({backdrop: 'static', keyboard: false});
-        })
-        .on('click', '#odontologos', function () {
-            $("#modal-odontologos").modal({backdrop: 'static', keyboard: false});
-        });
-</script>

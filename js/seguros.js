@@ -1,43 +1,10 @@
+const modalTitle = $('#modal-title');
+const modalAllies = $("#modal-allies");
+const modalIcon = $('#modal-icon');
+const dataTableExternal = $('#data-external');
+const dataTableInternal = $('#data-internal');
+
 $(document).ready(function () {
-    $('#people').click(function () { location.href = 'personas.html'; });
-
-    $('#sureties').click(function () { location.href = 'fianzas.html'; });
-
-    $('#car').click(function () { location.href = 'automovil.html'; });
-
-    $('#patrimonial').click(function () { location.href = 'patrimoniales.html'; });
-
-    $('.table-allies').DataTable({
-        "paging": false,
-        "info": false,
-        "language": {
-            "search": "_INPUT_",
-            "searchPlaceholder": "Buscar...",
-            "sProcessing": "Procesando...",
-            "sLengthMenu": "Mostrar _MENU_ registros",
-            "sZeroRecords": "No se encontraron resultados",
-            "sEmptyTable": "Ningún dato disponible en esta tabla",
-            "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-            "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
-            "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
-            "sInfoPostFix": "",
-            "sSearch": "Buscar:",
-            "sUrl": "",
-            "sInfoThousands": ",",
-            "sLoadingRecords": "Cargando...",
-            "oPaginate": {
-                "sFirst": "Primero",
-                "sLast": "Último",
-                "sNext": "Siguiente",
-                "sPrevious": "Anterior"
-            },
-            "oAria": {
-                "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
-                "sSortDescending": ": Activar para ordenar la columna de manera descendente"
-            }
-        }
-    });
-
     $(window).scroll(function () {
         if ($(this).scrollTop() > 0) {
             $("header").addClass("header2");
@@ -45,6 +12,14 @@ $(document).ready(function () {
             $("header").removeClass("header2");
         }
     });
+
+    $('#people').click(function () { location.href = 'personas.html'; });
+
+    $('#sureties').click(function () { location.href = 'fianzas.html'; });
+
+    $('#car').click(function () { location.href = 'automovil.html'; });
+
+    $('#patrimonial').click(function () { location.href = 'patrimoniales.html'; });
 
     $('.navbar-toggler').on('click', function () {
         openNav();
@@ -115,6 +90,11 @@ $(document).ready(function () {
             $(cardContainerId + ':containsCaseInsensitive(' + searchTerm + ')').show();
         });
     });
+
+    modalAllies.on('hidden.bs.modal', function () {
+        dataTableExternal.hide();
+        dataTableInternal.hide();
+    })
 });
 
 function openNav() {
@@ -131,4 +111,99 @@ function closeNav() {
     $('.navbar-collapse').height(0);
     $(".mobile-overwall").css({'visibility': 'hidden'});
     $('.search-glossary').css({'z-index': '1'});
+}
+
+function openModal(ally = null) {
+    switch (ally) {
+        case 'clinics':
+            modalTitle.text('Clínicas');
+            modalIcon.attr('src', 'images/icon-clinica-primary.png');
+            dataTableExternal.show();
+            fillData(clinics);
+            break;
+        case 'primaryCare':
+            modalTitle.text('Atención primaria');
+            modalIcon.attr('src', 'images/icon-movil-primary.png');
+            dataTableExternal.show();
+            fillData(primaryCare);
+            break;
+        case 'medicalEquipments':
+            modalTitle.text('Proveedor de material y equipos médicos');
+            modalIcon.attr('src', 'images/icon-imagen-primary.png');
+            dataTableExternal.show();
+            fillData(medicalEquipments);
+            break;
+        case 'dentists':
+            modalTitle.text('Odontólogos');
+            modalIcon.attr('src', 'images/icon-odontologo-primary.png');
+            dataTableInternal.show();
+            fillData(dentists, false);
+            break;
+        case 'ophthalmologists':
+            modalTitle.text('Oftalmologos');
+            modalIcon.attr('src', 'images/icon-ojo-primary.png');
+            dataTableInternal.show();
+            fillData(ophthalmologists, false);
+            break;
+        case 'dermatologists':
+            modalTitle.text('Dermatólogos');
+            modalIcon.attr('src', 'images/icon-dermatologo-primary.png');
+            dataTableInternal.show();
+            fillData(dermatologists, false);
+            break;
+        case 'psychologicalAssistant':
+            modalTitle.text('Auxiliar Psicológico');
+            modalIcon.attr('src', 'images/icon-psicologo-primary.png');
+            dataTableInternal.show();
+            fillData(psychologicalAssistant, false);
+            break;
+        case 'funeralServices':
+            modalTitle.text('Servicios funerarios');
+            modalIcon.attr('src', 'images/icon-u-primary.png');
+            dataTableInternal.show();
+            fillData(funeralServices, false);
+            break;
+    }
+
+    if (ally !== null) modalAllies.modal({backdrop: 'static', keyboard: false});
+}
+
+function fillData(data, external = true) {
+    let table = external ? $('#data-external table') : $('#data-internal table');
+    let bodyTable = external ? $('#data-external table tbody') : $('#data-internal table tbody')
+    let content = null;
+    table.dataTable().fnDestroy();
+    bodyTable.empty();
+    data.forEach(element => {
+        if (external) {
+            content += `
+            <tr>
+            <td>${element.state}</td>
+            <td>${element.city}</td>
+            <td>${element.municipality}</td>
+            <td>${element.name}</td>
+            <td>${element.direction}</td>
+            <td>${element.phones}</td>
+            </tr>
+            `;
+        } else {
+            content += `
+            <tr>
+            <td>${element.name}</td>
+            <td>${element.rif}</td>
+            <td>${element.direction}</td>
+            <td>${element.phones}</td>
+            <td>${element.website}</td>
+            </tr>
+            `;
+        }
+    });
+    bodyTable.html(content);
+    table.DataTable({
+        responsive: true,
+        searching: false,
+        paging: false,
+        info: false,
+        language: { url: `/js/es.json` }
+    });
 }

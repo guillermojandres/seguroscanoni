@@ -1201,8 +1201,8 @@ table.dataTable thead .sorting_desc {
 }
 
 .thead-datatable {
-    background-color: #daeef7;
-    color: #797678;
+    background-color: #4ac0e3;
+    color: white;
 }
 
 .tbody-datatable {
@@ -1274,7 +1274,7 @@ df-messenger {
 
 /* Allies styles */
 .container-allies {
-    max-width: 700px !important;
+    max-width: 1000px !important;
     padding: 5%;
     margin-right: auto !important;
     margin-left: auto !important;
