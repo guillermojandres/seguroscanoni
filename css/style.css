@@ -1078,7 +1078,7 @@ div.dataTables_wrapper div.dataTables_filter input:focus {
     display: inline;
     font-weight: bold;
     color: #165da9;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
 }
 
 .titulo-table h2 {
@@ -1087,12 +1087,29 @@ div.dataTables_wrapper div.dataTables_filter input:focus {
 
 .titulo-table h1 {
     color: #165da9;
-    margin-left: 5rem;
+    margin-left: 1rem;
+    font-size: 1.8rem;
+}
+
+.modal-table .modal-header.modal-allies-header {
+    padding: 1rem 0.5rem !important;
 }
 
 .image-allies {
     margin-left: 1rem;
     margin-top: -0.5rem;
+}
+
+.image-allies.clinics {
+    margin-left: 3rem;
+}
+
+.image-allies.primary {
+    margin-left: 2rem;
+}
+
+.image-allies.equipment {
+    margin-left: 0;
 }
 
 .modal-table .modal-header {
@@ -1146,7 +1163,6 @@ div.dataTables_wrapper div.dataTables_filter input:focus {
 
 .modal-header .close {
     width: 4.2rem;
-    margin-right: -4rem !important;
     cursor: pointer;
 }
 
@@ -1164,7 +1180,15 @@ div.dataTables_wrapper div.dataTables_filter input:focus {
 }
 
 .line.appeared.allies {
-    top: 7.5rem;
+    top: 6.5rem;
+}
+
+.line.appeared.allies.primary {
+    top: 8rem;
+}
+
+.line.appeared.allies.equipment {
+    top: 10rem;
 }
 
 /* Datatable styles */

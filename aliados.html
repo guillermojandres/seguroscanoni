@@ -450,16 +450,19 @@
 <div class="modal fade modal-table" tabindex="-1" role="dialog" id="modal-allies">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header modal-allies-header">
                 <div class="titulo-table">
                     <h4>Red de Aliados</h4>
                     <div class="row">
                         <h1 id="modal-title"></h1>
-                        <span class="image-allies"><img id="modal-icon" src="" alt="Icon"/></span>
+                        <span class="image-allies" id="modal-image"><img id="modal-icon" src="" alt="Icon"/></span>
                     </div>
-                    <span class="line appeared allies details"></span>
+                    <span id="modal-line" class="line appeared allies details"></span>
                 </div>
-                <img src="images/close.png" alt="Close" class="close" data-dismiss="modal"/>
+                <div>
+                    <img src="images/close.png" alt="Close" class="close" data-dismiss="modal"/>
+                    <img src="images/print.png" alt="Print" class="close" />
+                </div>
             </div>
             <div class="modal-body">
                 <div class="table-responsive" id="data-external" style="display: none;">
@@ -501,5 +504,5 @@
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript"
         src="https://cdn.datatables.net/responsive/2.2.5/js/dataTables.responsive.min.js"></script>
-<script type="text/javascript" src="js/data.min.js"></script>
+<script type="text/javascript" src="js/data.js"></script>
 <script type="text/javascript" src="js/seguros.js"></script>

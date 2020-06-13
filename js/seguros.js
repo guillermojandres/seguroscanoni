@@ -1,6 +1,8 @@
 const modalTitle = $('#modal-title');
 const modalAllies = $("#modal-allies");
 const modalIcon = $('#modal-icon');
+const modalLine = $('#modal-line');
+const modalImage = $('#modal-image');
 const dataTableExternal = $('#data-external');
 const dataTableInternal = $('#data-internal');
 
@@ -92,6 +94,9 @@ $(document).ready(function () {
     });
 
     modalAllies.on('hidden.bs.modal', function () {
+        modalTitle.removeClass('col-md-4');
+        modalLine.removeClass('primary equipment');
+        modalImage.removeClass('clinics primary equipment');
         dataTableExternal.hide();
         dataTableInternal.hide();
     })
@@ -116,19 +121,24 @@ function closeNav() {
 function openModal(ally = null) {
     switch (ally) {
         case 'clinics':
-            modalTitle.text('Clínicas');
+            modalTitle.text('Clínicas').addClass('col-md-4');
+            modalImage.addClass('clinics');
             modalIcon.attr('src', 'images/icon-clinica-primary.png');
             dataTableExternal.show();
             fillData(clinics);
             break;
         case 'primaryCare':
-            modalTitle.text('Atención primaria');
+            modalTitle.text('Atención primaria').addClass('col-md-4');
+            modalLine.addClass('primary');
+            modalImage.addClass('primary');
             modalIcon.attr('src', 'images/icon-movil-primary.png');
             dataTableExternal.show();
             fillData(primaryCare);
             break;
         case 'medicalEquipments':
-            modalTitle.text('Proveedor de material y equipos médicos');
+            modalTitle.text('Proveedor materiales y equipos').addClass('col-md-4');
+            modalLine.addClass('equipment');
+            modalImage.addClass('equipment');
             modalIcon.attr('src', 'images/icon-imagen-primary.png');
             dataTableExternal.show();
             fillData(medicalEquipments);
