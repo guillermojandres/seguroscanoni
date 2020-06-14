@@ -62,9 +62,9 @@ $(document).ready(function () {
 
     $('#MyModal2').click(function () {
         const office = $('#select-office option').filter(':selected').text();
-        if (office == 'Puerto Ordaz') $("#ordaz").modal({backdrop: true, keyboard: true})
-        else if (office == 'Puerto La Cruz') $("#cruz").modal({backdrop: true, keyboard: true})
         $('#Oficinas').modal('hide');
+        if (office == 'Puerto Ordaz') $("#ordaz").modal({backdrop: true, keyboard: true, focus: true})
+        else if (office == 'Puerto La Cruz') $("#cruz").modal({backdrop: true, keyboard: true, focus: true})
     });
 
     $('.card').on('show.bs.collapse', function () {

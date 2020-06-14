@@ -1017,6 +1017,15 @@ content-input input,
     margin-right: 0.5rem;
 }
 
+.office-icons {
+    float: left;
+    margin-right: 1rem;
+}
+
+.office-icons.phone {
+    margin-right: 0.6rem;
+}
+
 .OficinasSearch .modal-title {
     text-align: left !important;
 }
