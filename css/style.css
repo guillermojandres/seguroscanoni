@@ -1663,12 +1663,14 @@ a.content-link:hover {
 
 /* Products styles */
 .container-poliza .card a,
-.container-poliza ol a {
+.container-poliza ol a,
+.container-poliza .color-text a {
     color: #1a61ac !important;
 }
 
 .container-poliza .card a:hover,
-.container-poliza ol a:hover{
+.container-poliza ol a:hover,
+.container-poliza .color-text a:hover{
     color: #165da9 !important;
     text-decoration: none;
 }

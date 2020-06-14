@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <title>Seguros Caroni</title>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
@@ -21,418 +22,978 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
+
 <body>
-<!--Chatbot-->
-<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-<df-messenger intent="WELCOME" chat-title="Chat - Seguros Caroní" agent-id="f41c53a9-ccf7-4ebd-b167-1a949ce663a6"
-              chat-icon="images/boton_chat.png" language-code="es"></df-messenger>
-<div class="container-fluid no-gutters px-0 poliza">
-    <!--Header-->
-    <header class="py-0">
-        <div class="row topcolors">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 py-2"></div>
-        </div>
-        <div class="row navigation">
-            <div class="col-md-4 col-lg-4 col-8 text-right">
-                <a href="index.html"><img src="images/logo-principal.png"></a>
+    <!--Chatbot-->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger intent="WELCOME" chat-title="Chat - Seguros Caroní" agent-id="f41c53a9-ccf7-4ebd-b167-1a949ce663a6"
+        chat-icon="images/boton_chat.png" language-code="es"></df-messenger>
+    <div class="container-fluid no-gutters px-0 poliza">
+        <!--Header-->
+        <header class="py-0">
+            <div class="row topcolors">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 py-2"></div>
             </div>
-            <div class="col-md-5 col-lg-5 col-2">
-                <nav class="navbar navbar-expand-sm">
-                    <button class="navbar-toggler" type="button">
-                        <img src="images/mobile-menu.svg" class="mobile-menu" alt="Menu bars">
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                        <div class="row topcolors2">
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 py-2">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4 col-sm-12 text-center py-4 logopeq">
-                            <img src="images/logopeq.png">
-                        </div>
-                        <ul class="navbar-nav">
-                            <li class="nav-item d-block d-md-none d-lg-none btn-pago-movil ">
-                                <a class="nav-link" href="#">Pago en línea</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="nosotros.html">Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" id="MyModal">Oficinas</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                                   aria-haspopup="true" aria-expanded="false">Caroní en línea</a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Pago en línea</a>
-                                    <a class="dropdown-item" href="#">Chat en línea</a>
-                                    <a class="dropdown-item" href="#">Cotiza en línea</a>
-                                    <a class="dropdown-item" href="index.html#extranet">Extranet</a>
+            <div class="row navigation">
+                <div class="col-md-4 col-lg-4 col-8 text-right">
+                    <a href="index.html"><img src="images/logo-principal.png"></a>
+                </div>
+                <div class="col-md-5 col-lg-5 col-2">
+                    <nav class="navbar navbar-expand-sm">
+                        <button class="navbar-toggler" type="button">
+                            <img src="images/mobile-menu.svg" class="mobile-menu" alt="Menu bars">
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                            <div class="row topcolors2">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 py-2">
                                 </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="aliados.html">Red de Aliados</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contacto.html">Centro Contacto Caroní</a>
-                            </li>
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-sm-12 text-center py-4 logopeq">
+                                <img src="images/logopeq.png">
+                            </div>
+                            <ul class="navbar-nav">
+                                <li class="nav-item d-block d-md-none d-lg-none btn-pago-movil ">
+                                    <a class="nav-link" href="#">Pago en línea</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" id="MyModal">Oficinas</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Caroní en
+                                        línea</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Pago en línea</a>
+                                        <a class="dropdown-item" href="#">Chat en línea</a>
+                                        <a class="dropdown-item" href="#">Cotiza en línea</a>
+                                        <a class="dropdown-item" href="index.html#extranet">Extranet</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="aliados.html">Red de Aliados</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contacto.html">Centro Contacto Caroní</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-md-3 col-lg-3 col-12 d-none d-md-block d-lg-block">
+                    <div class="pagar">Pago en línea</div>
+                </div>
+            </div>
+        </header>
+        <!--Banner-->
+        <div class="row mt-5 pt-3">
+            <div class="col-sm-12 col-lg-12 col-12 banner-seguros glossary">
+                <div class="card poliza-card">
+                    <img class="card-img " src="images/banner-poliza.png" alt="Card image">
+                    <div class="card-img-overlay">
+                        <h3 class="card-text">Protege</h3>
+                        <h3 class="card-text text-r-1">a quienes</h3>
+                        <h3 class="card-text text-r-2">más amas </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row title-poliza">
+            <div class="col-sm-12 col-lg-12 col-md-12">
+                <h2>Seguros Patrimoniales</h2>
+            </div>
+        </div>
+        <!--Content-->
+        <div class="container-poliza mb-5" id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            <span class="icon"></span>
+                        </button>
+                        <p>Seguro contra incendio</p>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Este producto está orientado al amparo de sus bienes muebles e inmuebles en caso de daños
+                            materiales causados
+                            por la acción directa del fuego, rayo o por sus efectos inmediatos como el calor y el humo,
+                            explosión,
+                            impacto de aeronaves, satélites, cohetes u otros aparatos aéreos o de los objetos
+                            desprendidos de los mismos,
+                            así como el agua u otros agentes de extinción utilizados para apagar un incendio en los
+                            predios ocupados por el Asegurado
+                            o en predios adyacentes.</p>
+                        <h6>Coberturas Opcionales:</h6>
+                        <ul>
+                            <li>Terremoto</li>
+                            <li>Motín</li>
+                            <li>Distrurbios populares</li>
+                            <li>Disturbios Laborales y Daños Maliciosos</li>
+                            <li>Extensión de Cobertura</li>
+                            <li>Daños por Agua</li>
+                            <li>Inundación</li>
+                            <li>Rotura de vidrios</li>
+                            <li>Rotura de anuncios</li>
+                            <li>Reconstrucción de Archivo</li>
+                            <li>Honorarios de Arquitectos</li>
+                            <li>Ingenieros y Topógrafos</li>
+                            <li>Remoción de Escombros</li>
+                            <li>Bienes Refrigerados</li>
+                            <li>Pérdida de Renta</li>
+                            <li>Pérdidas Indirectas.</li>
                         </ul>
                     </div>
-                </nav>
-            </div>
-            <div class="col-md-3 col-lg-3 col-12 d-none d-md-block d-lg-block">
-                <div class="pagar">Pago en línea</div>
-            </div>
-        </div>
-    </header>
-    <!--Banner-->
-    <div class="row mt-5 pt-3">
-        <div class="col-sm-12 col-lg-12 col-12 banner-seguros glossary">
-            <div class="card poliza-card">
-                <img class="card-img " src="images/banner-poliza.png" alt="Card image">
-                <div class="card-img-overlay">
-                    <h3 class="card-text">Protege</h3>
-                    <h3 class="card-text text-r-1">a quienes</h3>
-                    <h3 class="card-text text-r-2">más amas </h3>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="row title-poliza">
-        <div class="col-sm-12 col-lg-12 col-md-12">
-            <h2>Seguros Patrimoniales</h2>
-        </div>
-    </div>
-    <!--Content-->
-    <div class="container-poliza mb-5" id="accordion">
-        <div class="card">
-            <div class="card-header" id="headingOne">
-                <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne"
-                            aria-expanded="true" aria-controls="collapseOne">
-                        <span class="icon"></span>
-                    </button>
-                    <p>Fianza licitacion (garantia de mantenimiento de oferta)</p>
-                </h5>
-            </div>
-            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body">
-                    <p>Garantiza que el contrato será firmado por el oferente, en los términos plazos y condiciones que
-                        ofertó en caso de que resultase favorecido con la adjudicación en el Proceso de Concurso hecho a
-                        tal efecto.</p>
-                    <p>Puedes descargar el formulario de Solicitud de Contrato de Fianza haciendo clic en el siguiente
-                        enlace:</p>
-                    <div class="text-center">
-                        <a target="_blank"
-                           href="https://www.seguroscaroni.com/caroni/formularios/FO-FIA-01_Solicitud_d_Contrato_de_Fianza_PLANTILLA_rev_2.doc"><b>Solicitud
-                            de Contrato de Fianza</b></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" id="headingTwo">
-                <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
                             aria-expanded="false" aria-controls="collapseTwo">
-                        <span class="icon"></span>
-                    </button>
-                    <p>Fianza de anticipo</p>
-                </h5>
-            </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                <div class="card-body">
-                    <p>Garantiza al Acreedor, en caso de incumplimiento por parte del Afianzado, el reintegro del
-                        anticipo (no amortizado) que le fue otorgado al Afianzado en virtud del cumplimiento de las
-                        obligaciones establecidas en el contrato.</p>
-                    <p>Puedes descargar el formulario de Solicitud de Contrato de Fianza haciendo clic en el siguiente
-                        enlace:</p>
-                    <div class="text-center">
-                        <a target="_blank"
-                           href="https://www.seguroscaroni.com/caroni/formularios/FO-FIA-01_Solicitud_d_Contrato_de_Fianza_PLANTILLA_rev_2.doc"><b>Solicitud
-                            de Contrato de Fianza</b></a>
+                            <span class="icon"></span>
+                        </button>
+                        <p>Seguro contra robo (sustracción ilegitima)</p>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Este producto está orientado al amparo de las pérdidas pecuniarias que se produzcan,
+                            a consecuencia de Robo o intento de cometerlo, de los bienes muebles asegurados, aplicable a
+                            Comercios,
+                            Industrias, Riesgos Residenciales e Institucionales, con o sin fines de lucro especificados
+                            en la póliza contratada.</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="card-header" id="headingTree">
-                <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTree"
+            <div class="card">
+                <div class="card-header" id="headingTree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTree"
                             aria-expanded="false" aria-controls="collapseTree">
-                        <span class="icon"></span>
-                    </button>
-                    <p>Fianza de fiel cumplimiento</p>
-                </h5>
-            </div>
-            <div id="collapseTree" class="collapse" aria-labelledby="headingTree" data-parent="#accordion">
-                <div class="card-body">
-                    <p>Garantiza el fiel, cabal y oportuno cumplimiento por parte del Afianzado, de todas y cada una de
-                        las obligaciones que resulten a su cargo y a favor del acreedor, derivadas del contrato suscrito
-                        entre ambos para la realización de una obra, un suministro o la prestación de un servicio.</p>
-                    <p> Fianza de Fiel Cumplimiento</p>
-                    <p> Fianza de Fiel Cumplimiento para la Industria Petrolera</p>
-                    <p> Fianza de Fiel Cumplimiento para Intermediarios de Seguro</p>
-                    <p>Puedes descargar el formulario de Solicitud de Contrato de Fianza haciendo clic en el siguiente
-                        enlace:</p>
-                    <div class="text-center">
-                        <a target="_blank"
-                           href="https://www.seguroscaroni.com/caroni/formularios/FO-FIA-01_Solicitud_d_Contrato_de_Fianza_PLANTILLA_rev_2.doc"><b>Solicitud
-                            de Contrato de Fianza</b></a>
+                            <span class="icon"></span>
+                        </button>
+                        <p>Seguro de dinero y valores</p>
+                    </h5>
+                </div>
+                <div id="collapseTree" class="collapse" aria-labelledby="headingTree" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>A través de esta póliza se ampara el dinero y/o su equivalente en moneda, producto de la
+                            comercialización diaria
+                            y operaciones del negocio asegurado. A tal efecto podrán suscribirse las siguientes
+                            coberturas:</p>
+                        <ul>
+                            <li>Dinero dentro del local.</li>
+                            <li>Dinero en tránsito.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="card-header" id="headingFour">
-                <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
                             aria-expanded="false" aria-controls="collapseFour">
-                        <span class="icon"></span>
-                    </button>
-                    <p>Fianza de obligación laboral</p>
-                </h5>
-            </div>
-            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                <div class="card-body">
-                    <p>Garantiza al Acreedor el cumplimiento de las obligaciones laborales incluyendo las costas
-                        judiciales que éste se vea legalmente obligado a satisfacer, derivadas del contrato suscrito
-                        entre el Afianzado y el Acreedor, como consecuencia de la responsabilidad solidaria establecida
-                        en la Ley Orgánica del Trabajo, las Trabajadoras y los Trabajadores y Ley de Contrataciones
-                        Públicas.</p>
-                    <p>Puedes descargar el formulario de Solicitud de Contrato de Fianza haciendo clic en el siguiente
-                        enlace:</p>
-                    <div class="text-center">
-                        <a target="_blank"
-                           href="https://www.seguroscaroni.com/caroni/formularios/FO-FIA-01_Solicitud_d_Contrato_de_Fianza_PLANTILLA_rev_2.doc"><b>Solicitud
-                            de Contrato de Fianza</b></a>
+                            <span class="icon"></span>
+                        </button>
+                        <p>Fidelidad</p>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Esta póliza ampara el dinero y/o valores propios de la actividad asegurada, bajo dos
+                            coberturas:</p>
+                        <ul>
+                            <li>Cobertura por Empleado.</li>
+                            <li>Cobertura por Colusión.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="card-header" id="headingFive">
-                <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
                             aria-expanded="false" aria-controls="collapseFive">
-                        <span class="icon"></span>
-                    </button>
-                    <p>Fianza de buena calidad</p>
-                </h5>
-            </div>
-            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-                <div class="card-body">
-                    <p>Garantiza al Acreedor, que durante un lapso determinado (generalmente 1 año a partir del Acta de
-                        Recepción Provisional), la obra no se deteriorará con su puesta en operación, tomando en cuenta
-                        que los materiales utilizados son de la misma calidad y condiciones ofrecidos por el contratista
-                        y establecidos en el contrato.</p>
-                    <p>Puedes descargar el formulario de Solicitud de Contrato de Fianza haciendo clic en el siguiente
-                        enlace:</p>
-                    <div class="text-center">
-                        <a target="_blank"
-                           href="https://www.seguroscaroni.com/caroni/formularios/FO-FIA-01_Solicitud_d_Contrato_de_Fianza_PLANTILLA_rev_2.doc"><b>Solicitud
-                            de Contrato de Fianza</b></a>
+                            <span class="icon"></span>
+                        </button>
+                        <p>Póliza 3-D - deshonestidad, desaparición y destrucción</p>
+                    </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>CONVENIO I: Infidelidad (Cobertura simple) Deshonestidad de empleados. (Límite por Empleado o
+                            Colusión)./p>
+                        <p>CONVENIO II: Pérdida dentro de los predios del Asegurado.</p>
+                        <p>CONVENIO III: Pérdida fuera de los predios del Asegurado.</p>
+                        <p>CONVENIO IV: Falsificación de Papel Moneda.</p>
+                        <p>CONVENIO V: Falsificación de Depósitos Bancarios.</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="card-header" id="headingSix">
-                <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix"
+            <div class="card">
+                <div class="card-header" id="headingSix">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix"
                             aria-expanded="false" aria-controls="collapseSix">
-                        <span class="icon"></span>
-                    </button>
-                    <p>Fianza aduanal</p>
-                </h5>
-            </div>
-            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
-                <div class="card-body">
-                    <p>Garantiza a la República (por órgano de cualquier aduana del país), el pago de los impuestos,
-                        tasas de servicios y multas que pudieran ser generados por cualquier actividad aduanal,
-                        derivadas de la Ley Orgánica de Aduanas y su reglamento.</p>
-                    <p>Puedes descargar el formulario de Solicitud de Contrato de Fianza haciendo clic en el siguiente
-                        enlace:</p>
-                    <div class="text-center">
-                        <a target="_blank"
-                           href="https://www.seguroscaroni.com/caroni/formularios/FO-FIA-01_Solicitud_d_Contrato_de_Fianza_PLANTILLA_rev_2.doc"><b>Solicitud
-                            de Contrato de Fianza</b></a>
+                            <span class="icon"></span>
+                        </button>
+                        <p>Responsabilidad civil general</p>
+                    </h5>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Ampara la Responsabilidad Civil Extracontractual por lesiones corporales y/o daños materiales
+                            como
+                            consecuencia de accidentes que le sean imputables al asegurado, producto de una negligencia
+                            o imprudencia
+                            en consecución de las operaciones desarrolladas en sus predios.</p>
+                        <h6>Cobertura Básica:</h6>
+                        <ul>
+                            <li>Predios y Operaciones</li>
+                        </ul>
+                        <h6>Coberturas Opcionales:</h6>
+                        <ul>
+                            <li>Riesgo Locativo</li>
+                            <li>Riesgos ante Vecinos</li>
+                            <li>Daños por agua</li>
+                            <li>Daños por Incendio y Explosión</li>
+                            <li>Contratistas Independientes</li>
+                            <li>Ascensores, Elevadores y Montacargas</li>
+                            <li>Responsabilidad Civil Productos</li>
+                            <li>Operaciones de Carga y Descarga</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!--Blog and footer-->
-    <div class="row myblog">
-        <div class="col-md-4 col-lg-4 col-sm-4 px-0 mx-0 ">
-            <div class="card  blog1 text-white">
-                <img class="card-img " src="images/blog-1.png" alt="Card image">
-                <div class="card-img-overlay">
-                    <a href="#" class="date card-text "> 15 abril | admin </a>
-                    <h3 class="card-text">Inerosajustofacilisisrutrum. Aeneanidullamcorperlibero. Vestibulum
-                        imperdiet</h3>
+            <div class="card">
+                <div class="card-header" id="headingSeven">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven"
+                            aria-expanded="true" aria-controls="collapseSeven">
+                            <span class="icon"></span>
+                        </button>
+                        <p>Rotura de maquinaria</p>
+                    </h5>
+                </div>
+                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>A través de esta póliza se pueden asegurar equipos y/o maquinaria fija, contra daños y/o
+                            pérdidas físicas directas por causas accidentales súbitas e imprevistas tales como:</p>
+                        <ul>
+                            <li>Impericia, descuido y actos malintencionados.</li>
+                            <li>Corto circuitos, arcos voltaicos y efectos similares.</li>
+                            <li>Errores de diseño.</li>
+                            <li>Defectos de mano de obra.</li>
+                            <li>Fuerzas centrífugas.</li>
+                            <li>Explosión física.</li>
+                            <li>Calentamiento por falta de agua.</li>
+                            <li>Vientos.</li>
+                            <li>Cuerpos extraños que se introduzcan en los bienes.</li>
+                            <li>Otros accidentes no excluidos en la póliza.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-4 col-lg-4 col-sm-4  px-0 mx-0 ">
-            <div class="card  blog2 text-white">
-                <img class="card-img " src="images/blog-2.png" alt="Card image">
-                <div class="card-img-overlay">
-                    <a href="#" class="date card-text "> 15 abril | admin </a>
-                    <h3 class="card-text">Inerosajustofacilisisrutrum. Aeneanidullamcorperlibero. Vestibulum
-                        imperdiet</h3>
-                    <a href="#" class="btn-blog card-text">Leer Más</a>
+            <div class="card">
+                <div class="card-header" id="headingEight">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight"
+                            aria-expanded="true" aria-controls="collapseSevenEight">
+                            <span class="icon"></span>
+                        </button>
+                        <p>Seguro equipo electrónico</p>
+                    </h5>
+                </div>
+                <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>A través de esta póliza pueden asegurarse equipos electrónicos contra daños y/o pérdidas
+                            físicas directas por cualquier causa accidental, súbita e imprevista, con excepción de lo
+                            excluido en la Póliza.</p>
+                        <ul>
+                            <li>Incendio y/o Rayo.</li>
+                            <li>Implosión, explosión.</li>
+                            <li>Humo, Hollín, gases o líquidos o polvos corrosivos.</li>
+                            <li>Inundación y daños por agua, siempre y cuando no provengan de condiciones atmosféricas
+                                normales.</li>
+                            <li>Robo, Asalto o Atraco.</li>
+                            <li>Perturbaciones por campos magnéticos, sobretensión, aislamiento insuficiente.</li>
+                            <li>Daños mecánicos y eléctricos incluyendo: la acción directa de la energía eléctrica como
+                                resultado
+                                de cortocircuitos, arcos voltaicos y otros efectos similares así como la acción
+                                indirecta de electricidades atmosféricas.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-4 col-lg-4  px-0 mx-0col-sm-4 d-none d-md-block d-lg-block">
-            <div class="card  blog3 text-white">
-                <img class="card-img " src="images/blog-3.png" alt="Card image">
-                <div class="card-img-overlay">
-                    <a href="#" class="date card-text "> 15 abril | admin </a>
-                    <h3 class="card-text">Inerosajustofacilisisrutrum. Aeneanidullamcorperlibero. Vestibulum
-                        imperdiet</h3>
+            <div class="card">
+                <div class="card-header" id="headingNine">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine"
+                            aria-expanded="true" aria-controls="collapseNine">
+                            <span class="icon"></span>
+                        </button>
+                        <p>Seguro de equipos de contratista</p>
+                    </h5>
+                </div>
+                <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Mediante la contratación de esta póliza pueden asegurarse Equipos Móviles y/o Maquinarias
+                            contra daños y/o pérdidas materiales ocurridas a dichos bienes en forma accidental súbita
+                            e imprevista, causados principalmente por:</p>
+                        <ul>
+                            <li>Incendio y/o rayo</li>
+                            <li>Colisión, choque, vuelco, hundimiento del terreno</li>
+                            <li>Descarrilamiento</li>
+                            <li>Descuido, impericia o negligencia del conductor</li>
+                            <li>Explosión, robo completo de la unidad</li>
+                            <li>Inundación, ventarrón, tempestad, vientos, terremoto</li>
+                            <li>Otros, no excluidos expresamente en la póliza</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container-link">
-            <div class="row text-left">
-                <div class="col-md-3 col-lg-3 col-sm-12">
-                    <h4>Nosotros</h4>
-                    <img src="images/line-link.svg" class="line-link" alt="Line block">
-                    <p>Seguros Caroní, S.A. nace en el año 1993 en la ciudad de Puerto Ordaz con el apoyo y patrocinio
-                        de un
-                        grupo de empresarios guayaneses quienes hicieron realidad la visión del Grupo Caroní de ampliar
-                        los
-                        servicios financieros...</p>
-                    <small class="custom-text"><i class="fa fa-envelope"></i> <a class="content-link"
-                                                                                 href="mailto:tuconsulta@seguroscaroni.com">
-                        tuconsulta@seguroscaroni.com</a></small>
-                    <small class="custom-text"><i class="fa fa-phone"></i> <a class="content-link"
-                                                                              href="tel:0412 SCARONI">0412
-                        SCARONI</a></small>
-                    <small class="custom-text"><i class="fa fa-map-marker"></i> <a
-                            href="https://goo.gl/maps/n5iiJFyHpB7J3Fys6" target="_blank" class="content-link">Caracas,
-                        Venezuela</a></small>
+            <div class="card">
+                <div class="card-header" id="headingTen">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTen"
+                            aria-expanded="true" aria-controls="collapseTen">
+                            <span class="icon"></span>
+                        </button>
+                        <p>Seguro todo riesgo de construcción</p>
+                    </h5>
                 </div>
-                <div class="col-md-3 col-lg-3 col-sm-1 d-none d-md-block d-lg-block pl-lg-2">
-                    <h4>Oficinas</h4>
-                    <img src="images/line-link.svg" class="line-link" alt="Line block">
-                    <div class="list-group">
-                        <div class="list-group-item">
-                            <a href="#"><img src="images/oficina-1.png" class="thumbnail"/></a>
-                            <div class="newstext text-left">
-                                <a href=""><p class="title">Caracas</p></a>
-                                <a href=""><p class="title">Altamira, Chacao</p></a>
-                                <span class="clearfix"></span>
+                <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>La empresa de seguros indemnizará la pérdida o daños materiales sufridos por los bienes
+                            asegurados durante la construcción en el lugar donde se lleven a cabo los trabajos, siempre
+                            que dichas pérdidas o daños ocurran de manera accidental, súbita e imprevista y que hagan
+                            necesaria
+                            su reparación o reposición como consecuencia directa de cualquiera de los riesgos a amparar,
+                            sin exceder
+                            la suma asegurada indicada en el cuadro recibo de póliza.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingEleven">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEleven"
+                            aria-expanded="true" aria-controls="collapseEleven">
+                            <span class="icon"></span>
+                        </button>
+                        <p>Seguro de aviación</p>
+                    </h5>
+                </div>
+                <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>La póliza de seguro de Aviación ampara los daños físicos directos sufridos por la aeronave
+                            descrita en la póliza, siempre que tales daños sean producidos por una causa accidental
+                            externa.
+                            Estas pólizas se suscriben bajo tres (3) secciones:</p>
+                        <ul>
+                            <li>Cobertura casco.</li>
+                            <li>Responsabilidad Civil.</li>
+                            <li>Accidentes Personales.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwelve">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwelve"
+                            aria-expanded="true" aria-controls="collapseTwelve">
+                            <span class="icon"></span>
+                        </button>
+                        <p>Seguro de transporte maritimo/aéreo</p>
+                    </h5>
+                </div>
+                <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>A través de este seguro se ampara el transporte de bienes durante su travesía vía marítima,
+                            aérea o terrestre, generado fundamentalmente del comercio exterior. A tal efecto, se
+                            contempla
+                            una cobertura básica, a ser complementada opcionalmente mediante coberturas adicionales.</p>
+                        <h6>Cobertura básica</h6>
+                        <p>Serán otorgadas de acuerdo con la necesidad del riesgo, medio transportador, ubicación y
+                            embalajes:</p>
+                        <ul>
+                            <li>Vía marítima.</li>
+                            <li>Vía Aérea.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThirteen">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThirteen"
+                            aria-expanded="true" aria-controls="collapseThirteen">
+                            <span class="icon"></span>
+                        </button>
+                        <p>Seguro de transporte terrestre</p>
+                    </h5>
+                </div>
+                <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Este seguro ampara los bienes transportados vía terrestre y/o fluvial y marítima (de
+                            cabotaje),
+                            mediante una Cobertura Básica, a ser complementada con coberturas adicionales (Riesgos
+                            Condicionados).
+                            De acuerdo con lo anterior se tiene:</p>
+                        <h6>Cobertura básica:</h6>
+                        <ul>
+                            <li>Choque, vuelco, colisión, descarrilamiento.</li>
+                            <li>Incendio, rayo, explosión, huracán, ciclón.</li>
+                            <li>Desplome de puentes, muelles alcantarillas.</li>
+                            <li>Deslizamiento de tierra.</li>
+                        </ul>
+                        <h6>Coberturas, condicionadas (Opcionales):</h6>
+                        <ul>
+                            <li>Robo.</li>
+                            <li>Hurto simple.</li>
+                            <li>Carga y descarga.</li>
+                            <li>Falta de entrega o extravío.</li>
+                            <li>Huelga, motín, conmoción civil y daños maliciosos.</li>
+                            <li>Deterioro de bienes refrigerados.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFourteen">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFourteen"
+                            aria-expanded="true" aria-controls="collapseFourteen">
+                            <span class="icon"></span>
+                        </button>
+                        <p>Seguro de embarcaciones-casco naves</p>
+                    </h5>
+                </div>
+                <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>El alcance de la cobertura bajo este ramo se estructura según dos (2) grandes grupos:</p>
+                        <h6>Embarcaciones de recreo</h6>
+                        <ul>
+                            <li>Cobertura Casco Naves.</li>
+                            <li>Protección e Indemnización P and I.</li>
+                        </ul>
+                        <h6>Embarcaciones comerciales</h6>
+                        <ul>
+                            <li>Casco y Maquinarias.</li>
+                            <li>Cobertura Amplia.</li>
+                            <li>Riesgo de Puerto.</li>
+                            <li>Pérdida Total solamente.</li>
+                            <li>Protección e Indemnización P and I.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFifteen">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFifteen"
+                            aria-expanded="true" aria-controls="collapseFifteen">
+                            <span class="icon"></span>
+                        </button>
+                        <p>Riesgos diversos/especiales</p>
+                    </h5>
+                </div>
+                <div id="collapseFifteen" class="collapse" aria-labelledby="headingFifteen" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Este producto está diseñado para amparar una gran variedad de riesgos muy particulares y poco
+                            comunes
+                            que por alguna causa o circunstancia no puedan ser amparados por los Seguros Tradicionales,
+                            para los que
+                            normalmente no se tiene información técnica precisa que permita hacerlos fácilmente
+                            manejables, dentro de un
+                            ramo específico, los cuales no pueden ser asegurados por los diferentes productos que ofrece
+                            la compañía en otros
+                            ramos específicos.
+                            La cobertura ampara los daños y/o pérdidas que sufran los bienes asegurados por cualquier
+                            causa accidental externa
+                            súbita e imprevista, salvo las exclusiones establecidas en la póliza, entre las cuales se
+                            encuentran principalmente:
+                            Pérdidas y/o daños por hurto, Caída o desplome del bien asegurado, infidelidad y/o
+                            negligencia de los empleados del
+                            asegurado, rotura mecánica, daños internos, vicio propio y/o defecto latente.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingSixteen">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSixteen"
+                            aria-expanded="true" aria-controls="collapseSixteen">
+                            <span class="icon"></span>
+                        </button>
+                        <p>Seguro de responsabilidad patronal</p>
+                    </h5>
+                </div>
+                <div id="collapseSixteen" class="collapse" aria-labelledby="headingSixteen" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Esta póliza le garantiza el pago de la indemnización que corresponda por accidentes de
+                            trabajo o
+                            enfermedades profesionales que ocurran a cualquier trabajador asegurado, y que sea la causa
+                            directa y
+                            exclusiva de su muerte, incapacidad permanente o temporal, en virtud de lo establecido en el
+                            Título VIII
+                            de la Ley Orgánica del Trabajo y las sumas por concepto de honorarios médico-quirúrgicos,
+                            hospitalarios y
+                            farmacéuticos, en relación a tales accidentes o enfermedades profesionales.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingSeventeen">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeventeen"
+                            aria-expanded="true" aria-controls="collapseSeventeen">
+                            <span class="icon"></span>
+                        </button>
+                        <p>Seguro de responsabilidad empresarial</p>
+                    </h5>
+                </div>
+                <div id="collapseSeventeen" class="collapse" aria-labelledby="headingSeventeen"
+                    data-parent="#accordion">
+                    <div class="card-body">
+                        <p>La póliza de Responsabilidad Civil Empresarial está dirigida a cubrir la indemnización que
+                            esté obligado
+                            a efectuar el asegurado a cualquiera de sus trabajadores, por las consecuencias de
+                            enfermedades ocupacionales
+                            o accidentes de trabajo en los cuales tenga responsabilidad, y que le causen al trabajador
+                            la muerte, invalidez,
+                            incapacidad o vulneren la facultad humana más allá de la simple pérdida de la capacidad de
+                            ganancias, alterando la
+                            integridad emocional y psíquica del trabajador lesionado, en virtud de lo establecido en la
+                            Ley Orgánica de Prevención,
+                            Condiciones y Medio Ambiente de Trabajo (LOPCYMAT).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingEighteen">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEighteen"
+                            aria-expanded="true" aria-controls="collapseEighteen">
+                            <span class="icon"></span>
+                        </button>
+                        <p>Seguro de todo riesgo industrial</p>
+                    </h5>
+                </div>
+                <div id="collapseEighteen" class="collapse" aria-labelledby="headingEighteen" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Este producto está orientado al amparo de sus bienes muebles e inmuebles para aquellas
+                            industrias cuyo
+                            volumen es de gran cuantía, garantizando el pago de las indemnizaciones dentro de los
+                            límites establecidos
+                            en la Póliza.</p>
+                        <h6>Bienes asegurables</h6>
+                        <ol type="a">
+                            <li>Inmuebles: Edificación, mejoras y bienhechurías.</li>
+                            <li>Muebles: Maquinarias y equipos industriales, instalaciones, existencias, suministros,
+                                mobiliarios
+                                y equipos electrónicos.</li>
+                        </ol>
+                        <h6>Coberturas opcionales</h6>
+                        <ol type="a">
+                            <li>Equipos Electrónicos.</li>
+                            <li>Rotura de Maquinarias.</li>
+                            <li>Equipo de Contratista.</li>
+                            <li>Lucro Cesante por Daños Materiales.</li>
+                            <li>Lucro Cesante por Rotura de Maquinaria./li>
+                            <li>Dinero y Valores.</li>
+                            <li>Equipos Portátiles de Computación.</li>
+                            <li>Hurto.</li>
+                            <li>Artículos Valiosos.</li>
+                            <li>Pérdida de Renta.</li>
+                            <li>Pérdidas Indirectas.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingNineteen">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNineteen"
+                            aria-expanded="true" aria-controls="collapseNineteen">
+                            <span class="icon"></span>
+                        </button>
+                        <p>Seguro combinado Caroni residencial</p>
+                    </h5>
+                </div>
+                <div id="collapseNineteen" class="collapse" aria-labelledby="headingNineteen" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Esta póliza brinda la oportunidad de cubrir la pérdida o daños materiales causados a la
+                            estructura
+                            de su residencia asegurada y/o los bienes asegurados.</p>
+                        <h6>Cobertura básica:</h6>
+                        <ul>
+                            <li>Incendio</li>
+                            <li>Rayo</li>
+                            <li>Explosión</li>
+                            <li>Caída de aeronaves u objetos desprendidos.</li>
+                            <li>Caída de árboles y parte de ellos.</li>
+                            <li>Caída de antenas parabólicas, antenas receptoras de radio y TV,
+                                cables de alta tensión, torres y postes de electricidad.</li>
+                            <li>Caída de muros o paredes pertenecientes a propiedades de terceros,
+                                torres o grúas de construcción y tanques elevados de agua.</li>
+                            <li>Colisión de vehículos terrestres.</li>
+                            <li>Cualquier agente de extinción n. </li>
+                            <li>Agua e inundación.</li>
+                            <li>Humo</li>
+                            <li>Motín, disturbios populares, disturbios laborales y daños maliciosos.</li>
+                            <li>Huracán, ventarrón, tempestad.</li>
+                            <li>Robo, asalto, atraco o su tentativa.</li>
+                            <li>Responsabilidad civil extra contractual
+                                ante terceros que recaiga sobre el Asegurado o sus familiares a
+                                consecuencia de los riesgos amparados por esta póliza.</li>
+                        </ul>
+                        <h6>Coberturas opcionales:</h6>
+                        <ul>
+                            <li>Seguro contra incendio para la Edificación, valor actual de construcción. Incendio y
+                                Aliadas.</li>
+                            <li>Terremoto (Contenido y Edificaciones)</li>
+                            <li>Equipo Electrónico: Equipos de computación (Excluidos Portátiles) Valor de reposición.
+                                (Relación de equipos)</li>
+                            <li>Rotura de Maquinarias: Maquinarias tales como: Aires acondicionados mayor o igual a 5
+                                ton, Bombas Hidroneumáticas,
+                                Plantas Eléctricas, etc. Valor de reposición. (Relación de Maquinarias)</li>
+                        </ul>
+                        <h6>Bienes excluidos:</h6>
+                        <ul>
+                            <li>Las indicadas en el Condicionado de la Póliza de Seguro Combinado Residencial</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwenty">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwenty"
+                            aria-expanded="true" aria-controls="collapseTwenty">
+                            <span class="icon"></span>
+                        </button>
+                        <p>Póliza de seguro combinado modular para industria y comercio</p>
+                    </h5>
+                </div>
+                <div id="collapseTwenty" class="collapse" aria-labelledby="headingTwenty" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Cuidar tu patrimonio es prioritario para nosotros, por lo que este producto que te brinda
+                            indemnización por pérdida de bienes muebles, inmuebles y demás contenidos, a consecuencia de
+                            riesgos amparados por la póliza, SEGUROS CARONI, S.A. a través de este producto pone a su
+                            alcance
+                            la herramienta de tranquilidad y confianza que usted necesita para su comercio o industria.
+                        </p>
+                        <ul>
+                            <li>Este seguro le permite combinar los riesgos que usted considere puedan ser afectados
+                                en su negocio de una forma confiable y a tiempo; por lo que mediante una sola Póliza,
+                                usted tendrá el respaldo y protección que merece.</li>
+                            <li>Dirigido a comercios e industrias pequeñas y medianas (oficinas, panaderías, zapaterías,
+                                restaurantes, estaciones de servicio, bazares, quincallerías, abastos, tiendas de ropa,
+                                etc.).</li>
+                            <li>Diseño adecuado a las necesidades y exigencias de cada cliente.</li>
+                            <li>Tasas competitivas en el mercado.</li>
+                        </ul>
+                        <h6>Bienes asegurables</h6>
+                        <ol type="a">
+                            <li>Las edificaciones</li>
+                            <li>Las Maquinarias y Equipos Industriales</li>
+                            <li>Equipos Electrónicos.</li>
+                            <li>Las instalaciones</li>
+                            <li>mobiliario</li>
+                            <li>Existencias y Suministro</li>
+                            <li>Mejoras o Bienhechurías</li>
+                            <li>Vidrios y Cristales</li>
+                            <li>Dinero y Valores</li>
+                        </ol>
+                        <h6>Qué coberturas ofrece esta Póliza Combinada?</h6>
+                        <ol type="a">
+                            <li>Módulo de Incendio</li>
+                            <li>Módulo de Sustracción Ilegítima</li>
+                            <li>Módulo de Equipo Electrónico</li>
+                            <li>Módulo de Rotura de Maquinarias</li>
+                            <li>Módulo de Responsabilidad Civil General</li>
+                            <li>Módulo de Dinero y Valores</li>
+                        </ol>
+                        <h6>Qué coberturas Opcionales forman parte de esta Póliza Combinada?</h6>
+                        <ol type="a">
+                            <li>Cobertura de daños por Agua.</li>
+                            <li>Cobertura de Inundación.</li>
+                            <li>Cobertura de Motín, Disturbios Populares, Disturbios Laborales y Daños Maliciosos.</li>
+                            <li>Cobertura de Terremoto</li>
+                            <li>Cobertura de Vidrios y Anuncios.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwentyone">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwentyone"
+                            aria-expanded="true" aria-controls="collapseTwentyone">
+                            <span class="icon"></span>
+                        </button>
+                        <p>En caso de siniestros</p>
+                    </h5>
+                </div>
+                <div id="collapseTwentyone" class="collapse" aria-labelledby="headingTwentyone"
+                    data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Al ocurrir cualquier pérdida o daño, el asegurado deberá:</p>
+                        <ul>
+                            <li>Tomar las previsiones necesarias y oportunas para evitar que sobrevenga pérdidas o daños
+                                ulteriores.</li>
+                            <li>Notificar a las autoridades competentes en tiempo, forma y lugar.</li>
+                            <li>El tomador, el asegurado o el beneficiario debe notificar a la empresa de seguros la
+                                ocurrencia del
+                                siniestro dentro de los cinco (5) días hábiles siguientes de haber tenido conocimiento
+                                del hecho, salvo
+                                que se haya fijado en la póliza un plazo mayor.</li>
+                        </ul>
+                        <h6>Recomendaciones a nuestros asegurados:</h6>
+                        <ul>
+                            <li>Permanecer en el lugar de los hechos y esperar a las autoridades competentes siempre y
+                                cuando no se
+                                encuentre en riesgos su vida.</li>
+                            <li>Solicitar a las autoridades competentes la experticia legal a la brevedad posible a fin
+                                de dejar constancia
+                                de los hechos.</li>
+                        </ul>
+                        <h6>La Compañía de Seguros procederá:</h6>
+                        <ul>
+                            <li>Previa verificación de la póliza y todos sus datos, considerando el monto de la pérdida
+                                y las circunstancias
+                                del hecho, a la asignación de un ajustador para la atención del caso.</li>
+                            <li>En caso contrario, la compañía procederá a solicitar la documentación necesaria para el
+                                análisis del caso.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center color-text">
+                <h6>Puedes imprimir las solicitudes de seguros haciendo clic en el enlace correspondiente:</h6>
+                <a target="_blank"
+                href="https://www.seguroscaroni.com/caroni/formularios/FO-PAT-01_Solicitud_de_Seguro_de_Incendio.pdf">Solicitud de Seguro de Incendio</a>
+                <br><a target="_blank"
+                href="https://www.seguroscaroni.com/caroni/formularios/FO-PAT-16_Sustraccion_Ilegitima.pdf">Solicitud de Seguro Contra Robo (Sustracción Ilegítima)</a>
+                <br><a target="_blank"
+                href="https://www.seguroscaroni.com/caroni/formularios/FO-PAT-06_Diner_y_Valores.pdf">Solicitud de Seguro Dinero y Valores</a>
+                <br><a target="_blank"
+                href="https://www.seguroscaroni.com/caroni/formularios/FO-PAT-10_Fidelidad_de_Empleados.pdf">Solicitud de Seguro Fidelidad de Empleados</a>
+                <br><a target="_blank"
+                href="https://www.seguroscaroni.com/caroni/formularios/FO-PAT-03_Seguro_Poliza_3D.pdf">Solicitud de Seguro Póliza 3D</a>
+                <br><a target="_blank"
+                href="https://www.seguroscaroni.com/caroni/formularios/FO-PAT-02 Responsabilidad Civil General.pdf">Solicitud de Seguro de Responsabilidad Civil General</a>
+                <br><a target="_blank"
+                href="https://www.seguroscaroni.com/caroni/formularios/FO-PAT-20_Solicitud_Rotura_de_Maquinaria.pdf">Solicitud de Seguro de Rotura de Maquinarias</a>
+                <br><a target="_blank"
+                href="https://www.seguroscaroni.com/caroni/formularios/FO-PAT-08_Equipos_Electronicos.pdf">Solicitud de Seguro de Equipo electrónicos</a>
+                <br><a target="_blank"
+                href="https://www.seguroscaroni.com/caroni/formularios/FO-PAT-17_Todo_Riesgo_Construccion.pdf">Solicitud de Seguro Todo Riesgo de Construcción</a>
+                <br><a target="_blank"
+                href="https://www.seguroscaroni.com/caroni/formularios/FO-PAT-05_Solicitud_de_Seguro_de_Aviacion.pdf">Solicitud de Seguro de Aviación</a>
+                <br><a target="_blank"
+                href="https://www.seguroscaroni.com/caroni/formularios/FO-PAT-18_Transporte_Maritimo_Aereo.pdf">Solicitud de Seguro de Transporte Marítimo/Aéreo</a>
+                <br><a target="_blank"
+                href="https://www.seguroscaroni.com/caroni/formularios/FO-PAT-19_Transporte_Terrestre.pdf">Solicitud de Seguro de Transporte Terrestre</a>
+                <br><a target="_blank"
+                href="https://www.seguroscaroni.com/caroni/formularios/FO-PAT-07_Seguros_de_Embarcaciones.pdf">Solicitud de Seguro para Embarcaciones</a>
+                <br><a target="_blank"
+                href="https://www.seguroscaroni.com/caroni/formularios/FO-PAT-15_Riesgos_Diversos.pdf">Solicitud de Seguro de Riesgos Diversos</a>
+                <br><a target="_blank"
+                href="https://www.seguroscaroni.com/caroni/formularios/FO-PAT-14_Responsabilidad_Civil_Patronal.pdf">Solicitud de Seguro de Responsabilidad Patronal</a>
+                <br><a target="_blank"
+                href="https://www.seguroscaroni.com/caroni/formularios/FO-PAT-13_Poliza_de_Responsabilidad_Civil_Empresarial.pdf">Solicitud de Seguro de Responsabilidad Empresarial</a>
+                <br><a target="_blank"
+                href="https://www.seguroscaroni.com/caroni/formularios/FO-PAT-24_Solicitud_de_Seguros_Todo_Riesgo_Industrial.pdf">Solicitud de Seguro Todo Riesgo Industrial</a>
+                <br><a target="_blank"
+                href="https://www.seguroscaroni.com/caroni/formularios/FO-PAT-21_Combinado_Caroni_Residencial.pdf">Solicitud de Seguro Combinado Caroní Residencial</a>
+                <br><a target="_blank"
+                href="https://www.seguroscaroni.com/caroni/formularios/FO-PAT-23_Solicitud_De_Cotizacion_Caroni_Residencial_1.pdf">Solicitud de Cotización Seguro Caroní Residencial</a>
+                <br><a target="_blank"
+                href="https://www.seguroscaroni.com/caroni/formularios/FO-PAT-11 Modular Industria y Comercio.pdf">Solicitud de Seguros Combinada Modular de Industria y Comercio</a>
+            </div>
+        </div>
+
+            <!--Blog and footer-->
+            <div class="row myblog">
+                <div class="col-md-4 col-lg-4 col-sm-4 px-0 mx-0 ">
+                    <div class="card  blog1 text-white">
+                        <img class="card-img " src="images/blog-1.png" alt="Card image">
+                        <div class="card-img-overlay">
+                            <a href="#" class="date card-text "> 15 abril | admin </a>
+                            <h3 class="card-text">Inerosajustofacilisisrutrum. Aeneanidullamcorperlibero. Vestibulum
+                                imperdiet</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-4  px-0 mx-0 ">
+                    <div class="card  blog2 text-white">
+                        <img class="card-img " src="images/blog-2.png" alt="Card image">
+                        <div class="card-img-overlay">
+                            <a href="#" class="date card-text "> 15 abril | admin </a>
+                            <h3 class="card-text">Inerosajustofacilisisrutrum. Aeneanidullamcorperlibero. Vestibulum
+                                imperdiet</h3>
+                            <a href="#" class="btn-blog card-text">Leer Más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4  px-0 mx-0col-sm-4 d-none d-md-block d-lg-block">
+                    <div class="card  blog3 text-white">
+                        <img class="card-img " src="images/blog-3.png" alt="Card image">
+                        <div class="card-img-overlay">
+                            <a href="#" class="date card-text "> 15 abril | admin </a>
+                            <h3 class="card-text">Inerosajustofacilisisrutrum. Aeneanidullamcorperlibero. Vestibulum
+                                imperdiet</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-link">
+                    <div class="row text-left">
+                        <div class="col-md-3 col-lg-3 col-sm-12">
+                            <h4>Nosotros</h4>
+                            <img src="images/line-link.svg" class="line-link" alt="Line block">
+                            <p>Seguros Caroní, S.A. nace en el año 1993 en la ciudad de Puerto Ordaz con el apoyo y
+                                patrocinio
+                                de un
+                                grupo de empresarios guayaneses quienes hicieron realidad la visión del Grupo Caroní de
+                                ampliar
+                                los
+                                servicios financieros...</p>
+                            <small class="custom-text"><i class="fa fa-envelope"></i> <a class="content-link"
+                                    href="mailto:tuconsulta@seguroscaroni.com">
+                                    tuconsulta@seguroscaroni.com</a></small>
+                            <small class="custom-text"><i class="fa fa-phone"></i> <a class="content-link"
+                                    href="tel:0412 SCARONI">0412
+                                    SCARONI</a></small>
+                            <small class="custom-text"><i class="fa fa-map-marker"></i> <a
+                                    href="https://goo.gl/maps/n5iiJFyHpB7J3Fys6" target="_blank"
+                                    class="content-link">Caracas,
+                                    Venezuela</a></small>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-sm-1 d-none d-md-block d-lg-block pl-lg-2">
+                            <h4>Oficinas</h4>
+                            <img src="images/line-link.svg" class="line-link" alt="Line block">
+                            <div class="list-group">
+                                <div class="list-group-item">
+                                    <a href="#"><img src="images/oficina-1.png" class="thumbnail" /></a>
+                                    <div class="newstext text-left">
+                                        <a href="">
+                                            <p class="title">Caracas</p>
+                                        </a>
+                                        <a href="">
+                                            <p class="title">Altamira, Chacao</p>
+                                        </a>
+                                        <span class="clearfix"></span>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <a href="#"><img src="images/oficina-1.png" class="thumbnail" /></a>
+                                    <div class="newstext text-left">
+                                        <a href="">
+                                            <p class="title">Caracas</p>
+                                        </a>
+                                        <a href="">
+                                            <p class="title">La lagunita, El Hatillo</p>
+                                        </a>
+                                        <span class="clearfix"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="oficinas" href="#">todas las oficinas ></a>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-sm-12">
+                            <h4>Información Caroní</h4>
+                            <img src="images/line-link.svg" class="line-link" alt="Line block">
+                            <p>Lorem ipsum dolor sit amet, consectetur </p>
+                            <table class="horarios">
+                                <tr>
+                                    <td>MON - FRI:</td>
+                                    <td>9AM - 9PM</td>
+                                </tr>
+                                <tr>
+                                    <td>SATURDAY:</td>
+                                    <td>9AM - 5PM</td>
+                                </tr>
+                                <tr>
+                                    <td>SUNDAY:</td>
+                                    <td>9AM - 5PM</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-sm-12">
+                            <h4>Términos de Seguros</h4>
+                            <img src="images/line-link.svg" class="line-link" alt="Line block">
+                            <p>Entra conoce mas sobre los términos del mundo de seguro.</p>
+                            <a href="glosario.html"><img src="images/btn-glossary.png" alt="Glossary" width="160"></a>
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class="row greybar">
+                        <div class="col-md-4 col-lg-4 col-sm-12 fs d-none d-md-block d-lg-block">
+                            <p>Síguenos</p>
+                            <p> en nuestras redes sociales</p>
+                            <div class="socialmedia-container text-left">
+                                <a href="https://www.instagram.com/seguroscaronioficial/?hl=es-la" title="Instagram"
+                                    target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+                                <a class="pl-2" href="https://www.facebook.com/SegurosCaroniOficial/" title="Facebook"
+                                    target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+                                <a class="pl-2" href="https://twitter.com/caroniseguros?lang=es" title="Twitter"
+                                    target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+                                <a class="pl-2" href="https://api.whatsapp.com/send?phone=0412-7227664" title="WhatsApp"
+                                    target="_blank"><i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i></a>
                             </div>
                         </div>
-                        <div class="list-group-item">
-                            <a href="#"><img src="images/oficina-1.png" class="thumbnail"/></a>
-                            <div class="newstext text-left">
-                                <a href=""><p class="title">Caracas</p></a>
-                                <a href=""><p class="title">La lagunita, El Hatillo</p></a>
-                                <span class="clearfix"></span>
+                        <div class="col-md-4 col-lg-4 col-sm-12 text-center">
+                            <p>Atención a los clientes</p>
+                            <h2><a href="tel:0500 SCARONI" class="phone-footer">0500SCARONI</a></h2>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-sm-12">
+                            <div class="btn-contacto">
+                                <a href="contacto.html"><img src="images/img-bottom.PNG" class="img-fluid"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-sm-12 fs d-block d-md-none d-lg-none">
+                            <p>Síguenos</p>
+                            <p> en nuestras redes sociales</p>
+                            <div class="socialmedia-container text-left">
+                                <a href="https://www.instagram.com/seguroscaronioficial/?hl=es-la" title="Instagram"
+                                    target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+                                <a class="pl-2" href="https://www.facebook.com/SegurosCaroniOficial/" title="Facebook"
+                                    target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+                                <a class="pl-2" href="https://twitter.com/caroniseguros?lang=es" title="Twitter"
+                                    target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+                                <a class="pl-2" href="https://api.whatsapp.com/send?phone=0412-7227664" title="WhatsApp"
+                                    target="_blank"><i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </div>
-                    <a class="oficinas" href="#">todas las oficinas ></a>
-                </div>
-                <div class="col-md-3 col-lg-3 col-sm-12">
-                    <h4>Información Caroní</h4>
-                    <img src="images/line-link.svg" class="line-link" alt="Line block">
-                    <p>Lorem ipsum dolor sit amet, consectetur </p>
-                    <table class="horarios">
-                        <tr>
-                            <td>MON - FRI:</td>
-                            <td>9AM - 9PM</td>
-                        </tr>
-                        <tr>
-                            <td>SATURDAY:</td>
-                            <td>9AM - 5PM</td>
-                        </tr>
-                        <tr>
-                            <td>SUNDAY:</td>
-                            <td>9AM - 5PM</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="col-md-3 col-lg-3 col-sm-12">
-                    <h4>Términos de Seguros</h4>
-                    <img src="images/line-link.svg" class="line-link" alt="Line block">
-                    <p>Entra conoce mas sobre los términos del mundo de seguro.</p>
-                    <a href="glosario.html"><img src="images/btn-glossary.png" alt="Glossary" width="160"></a>
-                </div>
-            </div>
-        </div>
-        <footer>
-            <div class="row greybar">
-                <div class="col-md-4 col-lg-4 col-sm-12 fs d-none d-md-block d-lg-block">
-                    <p>Síguenos</p>
-                    <p> en nuestras redes sociales</p>
-                    <div class="socialmedia-container text-left">
-                        <a href="https://www.instagram.com/seguroscaronioficial/?hl=es-la" title="Instagram"
-                           target="_blank"><i
-                                class="fa fa-instagram fa-lg"
-                                aria-hidden="true"></i></a>
-                        <a class="pl-2" href="https://www.facebook.com/SegurosCaroniOficial/" title="Facebook"
-                           target="_blank"><i
-                                class="fa fa-facebook fa-lg"
-                                aria-hidden="true"></i></a>
-                        <a class="pl-2" href="https://twitter.com/caroniseguros?lang=es" title="Twitter"
-                           target="_blank"><i
-                                class="fa fa-twitter fa-lg"
-                                aria-hidden="true"></i></a>
-                        <a class="pl-2" href="https://api.whatsapp.com/send?phone=0412-7227664" title="WhatsApp"
-                           target="_blank"><i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i></a>
+                    <div class="row text-center cintillo ">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <p class="py-0 my-0">Empresa de Seguros Inscrita en la Superintendencia de la Actividad
+                                Aseguradora
+                                bajo el No 110.</p>
+                            <p class="py-0 my-0">Rif. J-xxxxxxxxxxxx</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-lg-4 col-sm-12 text-center">
-                    <p>Atención a los clientes</p>
-                    <h2><a href="tel:0500 SCARONI" class="phone-footer">0500SCARONI</a></h2>
-                </div>
-                <div class="col-md-4 col-lg-4 col-sm-12">
-                    <div class="btn-contacto">
-                        <a href="contacto.html"><img src="images/img-bottom.PNG" class="img-fluid"></a>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-4 col-sm-12 fs d-block d-md-none d-lg-none">
-                    <p>Síguenos</p>
-                    <p> en nuestras redes sociales</p>
-                    <div class="socialmedia-container text-left">
-                        <a href="https://www.instagram.com/seguroscaronioficial/?hl=es-la" title="Instagram"
-                           target="_blank"><i
-                                class="fa fa-instagram fa-lg"
-                                aria-hidden="true"></i></a>
-                        <a class="pl-2" href="https://www.facebook.com/SegurosCaroniOficial/" title="Facebook"
-                           target="_blank"><i
-                                class="fa fa-facebook fa-lg"
-                                aria-hidden="true"></i></a>
-                        <a class="pl-2" href="https://twitter.com/caroniseguros?lang=es" title="Twitter"
-                           target="_blank"><i
-                                class="fa fa-twitter fa-lg"
-                                aria-hidden="true"></i></a>
-                        <a class="pl-2" href="https://api.whatsapp.com/send?phone=0412-7227664" title="WhatsApp"
-                           target="_blank"><i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i></a>
-                    </div>
-                </div>
+                </footer>
             </div>
-            <div class="row text-center cintillo ">
-                <div class="col-md-12 col-lg-12 col-sm-12">
-                    <p class="py-0 my-0">Empresa de Seguros Inscrita en la Superintendencia de la Actividad Aseguradora
-                        bajo el No 110.</p>
-                    <p class="py-0 my-0">Rif. J-xxxxxxxxxxxx</p>
-                </div>
-            </div>
-        </footer>
-    </div>
-    <div class="mobile-overwall"></div>
+            <div class="mobile-overwall"></div>
 </body>
+
 </html>
 <!--Modal search-->
 <div class="modal fade modal0ficina" tabindex="-1" role="dialog" id="Oficinas">
@@ -476,14 +1037,14 @@
                             <i class="fa fa-phone"></i>
                             <p class="text-office">
                                 <a href="tel:0286 965 21 00" class="phone-number">(0286) 965.21.00</a>
-                                <br/>
+                                <br />
                                 <a href="tel:0286 712 21 00" class="phone-number">(0286) 712.21.00</a>
                             </p>
                             <div class="iconos-modal">
                                 <a href="https://www.waze.com/ul?ll=8.29467,-62.7307&navigate=yes"><img
-                                        src="images/icon-waze.png" width="70"/></a>
+                                        src="images/icon-waze.png" width="70" /></a>
                                 <a href="http://www.google.com/maps/place/8.29467,-62.7307"><img
-                                        src="images/icon-maps.png" width="80"/></a>
+                                        src="images/icon-maps.png" width="80" /></a>
                             </div>
                             <label class="responsive">Cambia de oficina</label>
                             <div class="content-select responsive">
@@ -498,15 +1059,9 @@
                         </div>
                         <div class="col-6 ml-auto">
                             <iframe class="border-rounded"
-                                    src="https://maps.google.com/maps?q=8.29467,-62.7307&hl=es&z=14&amp;output=embed"
-                                    width="300"
-                                    height="445"
-                                    frameborder="0"
-                                    style="border: 0;"
-                                    allowfullscreen=""
-                                    aria-hidden="false"
-                                    tabindex="0"
-                            ></iframe>
+                                src="https://maps.google.com/maps?q=8.29467,-62.7307&hl=es&z=14&amp;output=embed"
+                                width="300" height="445" frameborder="0" style="border: 0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
                         </div>
                     </div>
                 </div>
@@ -533,14 +1088,14 @@
                             <i class="fa fa-phone"></i>
                             <p class="text-office">
                                 <a href="tel:0281 265 26 77" class="phone-number">(0281) 265.26.77</a>
-                                <br/>
+                                <br />
                                 <a href="tel:0281 263 64 83" class="phone-number">(0281) 263.64.83</a>
                             </p>
                             <div class="iconos-modal">
                                 <a href="https://www.waze.com/ul?ll=10.1859,-64.659&navigate=yes"><img
-                                        src="images/icon-waze.png" width="70"/></a>
+                                        src="images/icon-waze.png" width="70" /></a>
                                 <a href="http://www.google.com/maps/place/10.1859,-64.659"><img
-                                        src="images/icon-maps.png" width="80"/></a>
+                                        src="images/icon-maps.png" width="80" /></a>
                             </div>
                             <label class="responsive">Cambia de oficina</label>
                             <div class="content-select responsive">
@@ -555,15 +1110,9 @@
                         </div>
                         <div class="col-6 ml-auto">
                             <iframe class="border-rounded"
-                                    src="https://maps.google.com/maps?q=10.1859,-64.659&hl=es&z=14&amp;output=embed"
-                                    width="300"
-                                    height="445"
-                                    frameborder="0"
-                                    style="border: 0;"
-                                    allowfullscreen=""
-                                    aria-hidden="false"
-                                    tabindex="0"
-                            ></iframe>
+                                src="https://maps.google.com/maps?q=10.1859,-64.659&hl=es&z=14&amp;output=embed"
+                                width="300" height="445" frameborder="0" style="border: 0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
                         </div>
                     </div>
                 </div>
