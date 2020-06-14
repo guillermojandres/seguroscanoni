@@ -1,43 +1,18 @@
+const modalTitle = $('#modal-title');
+const modalLeft = $('#modal-allies-left');
+const modalAllies = $("#modal-allies");
+const modalIcon = $('#modal-icon');
+const modalLine = $('#modal-line');
+const modalImage = $('#modal-image');
+const dataTableExternal = $('#data-external');
+const dataTableInternal = $('#data-internal');
+const showAction = $('#show-icon-actions');
+const hiddenAction = $('#hidden-icon-actions');
+const hiddenFilter = $('#hidden-filter');
+const selectProviders = $('.select-providers');
+let external;
+
 $(document).ready(function () {
-    $('#people').click(function () { location.href = 'personas.html'; });
-
-    $('#sureties').click(function () { location.href = 'fianzas.html'; });
-
-    $('#car').click(function () { location.href = 'automovil.html'; });
-
-    $('#patrimonial').click(function () { location.href = 'patrimoniales.html'; });
-
-    $('.table-allies').DataTable({
-        "paging": false,
-        "info": false,
-        "language": {
-            "search": "_INPUT_",
-            "searchPlaceholder": "Buscar...",
-            "sProcessing": "Procesando...",
-            "sLengthMenu": "Mostrar _MENU_ registros",
-            "sZeroRecords": "No se encontraron resultados",
-            "sEmptyTable": "Ningún dato disponible en esta tabla",
-            "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-            "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
-            "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
-            "sInfoPostFix": "",
-            "sSearch": "Buscar:",
-            "sUrl": "",
-            "sInfoThousands": ",",
-            "sLoadingRecords": "Cargando...",
-            "oPaginate": {
-                "sFirst": "Primero",
-                "sLast": "Último",
-                "sNext": "Siguiente",
-                "sPrevious": "Anterior"
-            },
-            "oAria": {
-                "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
-                "sSortDescending": ": Activar para ordenar la columna de manera descendente"
-            }
-        }
-    });
-
     $(window).scroll(function () {
         if ($(this).scrollTop() > 0) {
             $("header").addClass("header2");
@@ -45,6 +20,14 @@ $(document).ready(function () {
             $("header").removeClass("header2");
         }
     });
+
+    $('#people').click(function () { location.href = 'personas.html'; });
+
+    $('#sureties').click(function () { location.href = 'fianzas.html'; });
+
+    $('#car').click(function () { location.href = 'automovil.html'; });
+
+    $('#patrimonial').click(function () { location.href = 'patrimoniales.html'; });
 
     $('.navbar-toggler').on('click', function () {
         openNav();
@@ -115,6 +98,18 @@ $(document).ready(function () {
             $(cardContainerId + ':containsCaseInsensitive(' + searchTerm + ')').show();
         });
     });
+
+    modalAllies.on('hidden.bs.modal', function () {
+        modalLeft.removeClass('col-lg-4');
+        modalLine.removeClass('primary equipment clinics');
+        modalImage.removeClass('clinics primary equipment dentists ophthalmologists dermatologists psychologicalAssistant funeralServices');
+        hiddenFilter.hide().removeClass('equipment');
+        selectProviders.hide();
+        dataTableExternal.hide();
+        dataTableInternal.hide();
+        showAction.hide();
+        hiddenAction.hide();
+    })
 });
 
 function openNav() {
@@ -131,4 +126,162 @@ function closeNav() {
     $('.navbar-collapse').height(0);
     $(".mobile-overwall").css({'visibility': 'hidden'});
     $('.search-glossary').css({'z-index': '1'});
+}
+
+function openModal(ally = null) {
+    const width = $(window).width();
+
+    switch (ally) {
+        case 'clinics':
+            external = true;
+            modalLeft.addClass('col-lg-4');
+            modalTitle.text('Clínicas');
+            modalLine.addClass('clinics');
+            modalImage.addClass('clinics');
+            modalIcon.attr('src', 'images/icon-clinica-primary.png');
+            hiddenFilter.show();
+            dataTableExternal.show();
+            if (width < 992) hiddenAction.show();
+            else showAction.show();
+            fillData(clinics, external);
+            break;
+        case 'primaryCare':
+            external = true;
+            modalLeft.addClass('col-lg-4');
+            modalTitle.text('Atención primaria');
+            modalLine.addClass('primary');
+            modalImage.addClass('primary');
+            modalIcon.attr('src', 'images/icon-movil-primary.png');
+            selectProviders.show();
+            hiddenFilter.show();
+            dataTableExternal.show();
+            if (width < 992) hiddenAction.show();
+            else showAction.show();
+            fillData(primaryCare, external);
+            break;
+        case 'medicalEquipments':
+            external = true;
+            modalLeft.addClass('col-lg-4');
+            modalTitle.text('Proveedor materiales y equipos');
+            modalLine.addClass('equipment');
+            modalImage.addClass('equipment');
+            modalIcon.attr('src', 'images/icon-imagen-primary.png');
+            hiddenFilter.addClass('equipment').show();
+            dataTableExternal.show();
+            if (width < 992) hiddenAction.show();
+            else showAction.show();
+            fillData(medicalEquipments, external);
+            break;
+        case 'dentists':
+            external = false;
+            modalTitle.text('Odontólogos');
+            modalImage.addClass('dentists');
+            modalIcon.attr('src', 'images/icon-odontologo-primary.png');
+            dataTableInternal.show();
+            showAction.show();
+            fillData(dentists, external);
+            break;
+        case 'ophthalmologists':
+            external = false;
+            modalTitle.text('Oftalmologos');
+            modalImage.addClass('ophthalmologists');
+            modalIcon.attr('src', 'images/icon-ojo-primary.png');
+            dataTableInternal.show();
+            showAction.show();
+            fillData(ophthalmologists, external);
+            break;
+        case 'dermatologists':
+            external = false;
+            modalTitle.text('Dermatólogos');
+            modalImage.addClass('dermatologists');
+            modalIcon.attr('src', 'images/icon-dermatologo-primary.png');
+            dataTableInternal.show();
+            showAction.show();
+            fillData(dermatologists, external);
+            break;
+        case 'psychologicalAssistant':
+            external = false;
+            modalTitle.text('Auxiliar Psicológico');
+            modalImage.addClass('psychologicalAssistant');
+            modalIcon.attr('src', 'images/icon-psicologo-primary.png');
+            dataTableInternal.show();
+            showAction.show();
+            fillData(psychologicalAssistant, external);
+            break;
+        case 'funeralServices':
+            external = false;
+            modalTitle.text('Servicios funerarios');
+            modalImage.addClass('funeralServices');
+            modalIcon.attr('src', 'images/icon-u-primary.png');
+            dataTableInternal.show();
+            showAction.show();
+            fillData(funeralServices, external);
+            break;
+    }
+
+    if (ally !== null) modalAllies.modal({backdrop: 'static', keyboard: false});
+}
+
+function fillData(data, external) {
+    let table = external ? $('#data-external table') : $('#data-internal table');
+    let bodyTable = external ? $('#data-external table tbody') : $('#data-internal table tbody')
+    let content = null;
+    table.dataTable().fnDestroy();
+    bodyTable.empty();
+    data.forEach(element => {
+        if (external) {
+            content += `
+            <tr>
+            <td>${element.state}</td>
+            <td>${element.city}</td>
+            <td>${element.municipality}</td>
+            <td>${element.name}</td>
+            <td>${element.direction}</td>
+            <td>${element.phones}</td>
+            </tr>
+            `;
+        } else {
+            content += `
+            <tr>
+            <td>${element.name}</td>
+            <td>${element.rif}</td>
+            <td>${element.direction}</td>
+            <td>${element.phones}</td>
+            <td>${element.website}</td>
+            </tr>
+            `;
+        }
+    });
+    bodyTable.html(content);
+    table.DataTable({
+        responsive: true,
+        searching: false,
+        paging: false,
+        info: false,
+        language: { url: `/js/es.json` }
+    });
+}
+
+function generatePdf() {
+    let filename = modalTitle.text().toLowerCase().replace(/ /g, '-');
+    const doc = new jsPDF();
+
+    doc.autoTable({
+        didDrawPage: function (data) {
+            doc.setFontSize(20)
+            doc.setTextColor(40)
+            doc.setFontStyle('normal')
+            doc.addImage(imageReport, 'PNG', data.settings.margin.left, 15, 10, 10)
+            doc.text(modalTitle.text(), data.settings.margin.left + 15, 22)
+            const str = 'Página ' + doc.internal.getNumberOfPages() + ' - Seguros Caroní'
+            doc.setFontSize(10)
+            const pageSize = doc.internal.pageSize
+            const pageHeight = pageSize.height ? pageSize.height : pageSize.getHeight()
+            doc.text(str, data.settings.margin.left, pageHeight - 10)
+        },
+        margin: { top: 30 },
+        html: external ? '#external-table' : '#internal-table'
+    });
+
+    doc.save(`${filename}.pdf`);
 }

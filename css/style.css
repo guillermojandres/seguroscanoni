@@ -1078,7 +1078,7 @@ div.dataTables_wrapper div.dataTables_filter input:focus {
     display: inline;
     font-weight: bold;
     color: #165da9;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
 }
 
 .titulo-table h2 {
@@ -1087,17 +1087,74 @@ div.dataTables_wrapper div.dataTables_filter input:focus {
 
 .titulo-table h1 {
     color: #165da9;
-    margin-left: 5rem;
+    font-size: 1.8rem;
 }
 
-.image-allies {
-    margin-left: 1rem;
-    margin-top: -0.5rem;
-}
+/*.modal-table .modal-header.modal-allies-header {
+    padding: 1rem 0.5rem !important;
+}*/
 
 .modal-table .modal-header {
-    padding: 1rem 4rem;
-    border-bottom: none !important;
+    padding: 1rem 1rem 0 1rem !important;
+    border-bottom: none;
+}
+
+.image-allies img {
+    margin-top: -6rem;
+}
+
+.image-allies.clinics {
+    margin-left: 7rem;
+}
+
+.image-allies.clinics img {
+    margin-top: -5rem;
+}
+
+.image-allies.dentists {
+    margin-left: 11rem;
+}
+
+.image-allies.ophthalmologists {
+    margin-left: 12rem;
+}
+
+.image-allies.dermatologists {
+    margin-left: 13rem;
+}
+
+.image-allies.psychologicalAssistant,
+.image-allies.funeralServices{
+    margin-left: 18rem;
+}
+
+.image-allies.primary {
+    margin-left: 8rem;
+}
+
+.image-allies.equipment {
+    margin-left: 12rem;
+}
+
+#hidden-filter {
+    margin-top: 3rem;
+}
+
+#hidden-filter .form-row {
+    margin-right: -9rem;
+}
+
+#hidden-filter.equipment {
+    margin-top: 5rem;
+}
+
+#hidden-filter select {
+    width: 10rem !important;
+    display: inline-block;
+    background-color: #eef4fe;
+    border: none;
+    border-radius: 15px;
+    font-size: 0.7rem !important;
 }
 
 .modal-table .line {
@@ -1146,7 +1203,6 @@ div.dataTables_wrapper div.dataTables_filter input:focus {
 
 .modal-header .close {
     width: 4.2rem;
-    margin-right: -4rem !important;
     cursor: pointer;
 }
 
@@ -1164,7 +1220,15 @@ div.dataTables_wrapper div.dataTables_filter input:focus {
 }
 
 .line.appeared.allies {
-    top: 7.5rem;
+    top: 6.5rem;
+}
+
+.line.appeared.allies.primary {
+    top: 9rem;
+}
+
+.line.appeared.allies.equipment {
+    top: 10rem;
 }
 
 /* Datatable styles */
@@ -1201,8 +1265,8 @@ table.dataTable thead .sorting_desc {
 }
 
 .thead-datatable {
-    background-color: #daeef7;
-    color: #797678;
+    background-color: #4ac0e3;
+    color: white;
 }
 
 .tbody-datatable {
@@ -1274,7 +1338,7 @@ df-messenger {
 
 /* Allies styles */
 .container-allies {
-    max-width: 700px !important;
+    max-width: 1000px !important;
     padding: 5%;
     margin-right: auto !important;
     margin-left: auto !important;

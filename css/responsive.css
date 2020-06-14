@@ -83,10 +83,6 @@
         float: left;
     }
 
-    .titulo-table h1 {
-        margin-left: 2rem;
-    }
-
     .container-poliza {
         width: 90%;
     }
@@ -129,6 +125,37 @@
 
     .container-poliza ol li, .container-poliza ul li {
         font-size: 12px;
+    }
+    .modal-header .close {
+        margin-bottom: -0.5rem !important;
+    }
+    .image-allies.equipment {
+        margin-left: 8rem;
+    }
+    .image-allies.equipment img {
+        margin-top: -4rem;
+    }
+    #hidden-filter,
+    #hidden-filter.equipment {
+        margin-top: 0;
+    }
+    .line.appeared.allies.equipment {
+        top: 11.5rem;
+    }
+    .line.appeared.clinics {
+        top: 9.5rem;
+    }
+    .line.appeared.allies.primary {
+        top: 12rem;
+    }
+    #hidden-filter .form-row {
+        margin-right: 0;
+    }
+    #hidden-filter select {
+        width: 9rem !important;
+    }
+    .image-allies.primary {
+        margin-left: 16rem;
     }
 }
 
@@ -498,6 +525,22 @@
     .btn-send {
         margin-right: auto;
     }
+    #hidden-filter select {
+        width: 100% !important;
+        margin: 0.5rem 0 !important;
+    }
+    .line.appeared.clinics {
+        top: 16rem;
+    }
+    .line.appeared.allies.equipment {
+        top: 18rem;
+    }
+    .line.appeared.allies.primary {
+        top: 19rem;
+    }
+    .mt-2.select-providers {
+        margin-top: 0 !important;
+    }
 }
 
 @media screen and (max-width: 482px) {
@@ -525,6 +568,9 @@
 @media screen and (max-width: 448px) {
     .modal-body label {
         font-size: 1rem;
+    }
+    .image-allies.equipment {
+        margin-left: 9rem;
     }
 }
 
@@ -564,9 +610,61 @@
     .text-office {
         font-size: 0.6rem;
     }
+    .titulo-table h1 {
+        font-size: 1.7rem;
+    }
+    .image-allies.funeralServices,
+    .image-allies.psychologicalAssistant {
+        margin-left: 16.5rem;
+    }
+    .line.appeared.allies.details.clinics {
+        top: 16rem;
+    }
+    .line.appeared.allies.details.primary {
+        top: 19rem;
+    }
+    .line.appeared.allies.details.equipment {
+        top: 18rem;
+    }
+    .image-allies.clinics img {
+        margin-top: 0;
+    }
+    .image-allies.clinics,
+    .image-allies.primary,
+    .image-allies.equipment {
+        margin-left: 0;
+    }
+    .line.appeared.allies.details.clinics {
+        top: 17.5rem;
+    }
+    .line.appeared.allies.details.primary {
+        top: 19.5rem;
+    }
+    .image-allies.equipment img {
+        margin-top: 0;
+    }
+    .line.appeared.allies.details.equipment {
+        top: 19.5rem;
+    }
 }
 
 @media screen and (max-width: 414px) {
+    .titulo-table h4 {
+        font-size: 1.2rem;
+    }
+    .titulo-table h1 {
+        font-size: 1.5rem;
+    }
+    .image-allies.ophthalmologists,
+    .image-allies.dentists,
+    .image-allies.dermatologists,
+    .image-allies.funeralServices,
+    .image-allies.psychologicalAssistant {
+        margin-left: 0;
+    }
+    .image-allies img {
+        margin-top: -1rem;
+    }
 }
 
 @media screen and (max-width: 405px) {
@@ -600,14 +698,6 @@
 }
 
 @media screen and (max-width: 368px) {
-    .titulo-table h1 {
-        font-size: 2rem;
-    }
-
-    .titulo-table h4 {
-        font-size: 1.4rem;
-    }
-
     .line.appeared.allies {
         top: 9rem;
     }
@@ -633,6 +723,12 @@
     }
 }
 
+@media screen and (max-width: 350px) {
+    .line.appeared.allies.details.equipment {
+        top: 21rem;
+    }
+}
+
 @media screen and (max-width: 334px) {
     .iconos-modal img {
         width: 34px;
@@ -642,6 +738,9 @@
 @media screen and (max-width: 331px) {
     .card-body > ul > li {
         margin-left: 1rem;
+    }
+    .titulo-table h1 {
+        font-size: 1.4rem;
     }
 }
 
