@@ -45,29 +45,8 @@
         margin-right: 0;
     }
 
-    .modal-title.office-title {
-        font-size: 1.5rem;
-        margin-left: 0 !important;
-    }
-
     .line.appeared.responsive {
         top: 4.5rem;
-    }
-
-    .text-office {
-        font-size: 0.7rem;
-    }
-
-    .iconos-modal {
-        padding-top: 1rem;
-    }
-
-    .modal-body label.responsive {
-        font-size: 0.9rem;
-    }
-
-    .border-rounded {
-        border-radius: 0 !important;
     }
 
     .content-select.responsive {
@@ -75,8 +54,7 @@
     }
 
     .btn-w.responsive {
-        width: 80%;
-        margin-top: 1rem;
+        width: 30%;
     }
 
     div.dataTables_wrapper div.dataTables_filter {
@@ -156,6 +134,9 @@
     }
     .image-allies.primary {
         margin-left: 16rem;
+    }
+    .frame-google-maps {
+        text-align: center;
     }
 }
 
@@ -479,18 +460,6 @@
         margin-left: 0 !important;
     }
 
-    .modal-title {
-        font-size: 1rem;
-    }
-
-    .modal-title.office-title {
-        font-size: 1.3rem;
-    }
-
-    .modal-body label.responsive {
-        font-size: 0.8rem;
-    }
-
     .glossary-title {
         text-align: center !important;
     }
@@ -543,12 +512,6 @@
     }
 }
 
-@media screen and (max-width: 482px) {
-    .iconos-modal img {
-        width: 50px;
-    }
-}
-
 @media screen and (max-width: 480px) {
     .banner-seguros.glossary {
         margin-top: 5rem;
@@ -559,6 +522,12 @@
     }
 }
 
+@media screen and (max-width: 477px) {
+    .content-select.responsive {
+         width: 50%;
+    }
+}
+
 @media screen and (max-width: 476px) {
     .titulo-table h1 {
         margin-left: 0;
@@ -566,9 +535,6 @@
 }
 
 @media screen and (max-width: 448px) {
-    .modal-body label {
-        font-size: 1rem;
-    }
     .image-allies.equipment {
         margin-left: 9rem;
     }
@@ -592,12 +558,16 @@
         margin-top: 1rem;
     }
 
-    .modal-title {
-        font-size: 0.9rem;
+    .btn-w.responsive {
+        width: 25%;
     }
 
-    .modal-title.office-title {
-        font-size: 1.1rem;
+    .border-rounded {
+        width: auto !important;
+    }
+
+    .content-select.responsive {
+        width: 65%;
     }
 
     .OficinasSearch .modal-body i {
@@ -605,10 +575,6 @@
         padding: 5px;
         width: 20px;
         text-align: center;
-    }
-
-    .text-office {
-        font-size: 0.6rem;
     }
     .titulo-table h1 {
         font-size: 1.7rem;
@@ -667,23 +633,34 @@
     }
 }
 
-@media screen and (max-width: 405px) {
-    .modal-body label.responsive {
-        font-size: 0.6rem;
+@media screen and (max-width: 400px) {
+    .border-rounded {
+        width: auto !important;
+        margin-left: -0.3rem;
     }
-
-    .content-select.responsive {
-        margin-left: -0.8rem;
+    #locations .modal-body p {
+        font-size: 0.8rem;
+    }
+    #locations .modal-title {
+        font-size: 1.2rem;
+    }
+    #locations .modal-title.office-title {
+        font-size: 1.5rem;
     }
 }
 
 @media screen and (max-width: 382px) {
-    .iconos-modal img {
-        width: 42px;
-    }
-
     .banner-seguros.glossary {
         margin-top: 4rem;
+    }
+    .border-rounded {
+        margin-left: -1.3rem;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .line.appeared.search {
+        top: 10.5rem;
     }
 }
 
@@ -707,19 +684,8 @@
     .card-img-overlay {
         top: 50% !important;
     }
-}
-
-@media screen and (max-width: 351px) {
-    .iconos-modal img {
-        width: 38px;
-    }
-
-    .modal-title {
-        font-size: 0.7rem;
-    }
-
-    .modal-title.office-title {
-        font-size: 0.9rem;
+    .btn-w.responsive {
+        width: 30%;
     }
 }
 
@@ -727,11 +693,9 @@
     .line.appeared.allies.details.equipment {
         top: 21rem;
     }
-}
-
-@media screen and (max-width: 334px) {
-    .iconos-modal img {
-        width: 34px;
+    .border-rounded {
+        margin-left: -2.5rem;
+        width: 285px !important;
     }
 }
 

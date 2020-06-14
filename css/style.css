@@ -1010,11 +1010,11 @@ content-input input,
 
 .iconos-modal {
     text-align: center;
-    padding-top: 3rem;
 }
 
-.iconos-modal img {
-    padding: 5%;
+.iconos-modal a {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 .OficinasSearch .modal-title {

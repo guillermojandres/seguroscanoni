@@ -57,13 +57,13 @@ $(document).ready(function () {
     });
 
     $('#MyModal').click(function () {
-        $("#Oficinas").modal({backdrop: true, keyboard: false});
+        $("#Oficinas").modal({backdrop: true, keyboard: true});
     });
 
     $('#MyModal2').click(function () {
         const office = $('#select-office option').filter(':selected').text();
-        if (office == 'Puerto Ordaz') $("#ordaz").modal({backdrop: true, keyboard: false})
-        else if (office == 'Puerto La Cruz') $("#cruz").modal({backdrop: true, keyboard: false})
+        if (office == 'Puerto Ordaz') $("#ordaz").modal({backdrop: true, keyboard: true})
+        else if (office == 'Puerto La Cruz') $("#cruz").modal({backdrop: true, keyboard: true})
         $('#Oficinas').modal('hide');
     });
 
@@ -288,8 +288,8 @@ function generatePdf() {
             doc.setTextColor(40)
             doc.setFontStyle('normal')
             doc.addImage(imageReport, 'PNG', data.settings.margin.left, 15, 10, 10)
-            doc.text(modalTitle.text(), data.settings.margin.left + 15, 22)
-            const str = 'Página ' + doc.internal.getNumberOfPages() + ' - Seguros Caroní'
+            doc.text(modalTitle.text() + ' - Seguros Caroní', data.settings.margin.left + 15, 22)
+            const str = 'Página ' + doc.internal.getNumberOfPages()
             doc.setFontSize(10)
             const pageSize = doc.internal.pageSize
             const pageHeight = pageSize.height ? pageSize.height : pageSize.getHeight()
