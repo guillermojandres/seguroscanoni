@@ -21,13 +21,21 @@ $(document).ready(function () {
         }
     });
 
-    $('#people').click(function () { location.href = 'personas.html'; });
+    $('#people').click(function () {
+        location.href = 'personas.html';
+    });
 
-    $('#sureties').click(function () { location.href = 'fianzas.html'; });
+    $('#sureties').click(function () {
+        location.href = 'fianzas.html';
+    });
 
-    $('#car').click(function () { location.href = 'automovil.html'; });
+    $('#car').click(function () {
+        location.href = 'automovil.html';
+    });
 
-    $('#patrimonial').click(function () { location.href = 'patrimoniales.html'; });
+    $('#patrimonial').click(function () {
+        location.href = 'patrimoniales.html';
+    });
 
     $('.navbar-toggler').on('click', function () {
         openNav();
@@ -61,19 +69,27 @@ $(document).ready(function () {
 
     $('.card').on('show.bs.collapse', function () {
         $(this).addClass('active');
-    });
+    })
+        .on('hide.bs.collapse', function () {
+            $(this).removeClass('active');
+        });
 
-    $('.card').on('hide.bs.collapse', function () {
-        $(this).removeClass('active');
-    });
-
-    $('#tabsOne').click(function(){
+    $('#tabsOne').click(function () {
         $('#Tabs1').show();
         $('#Tabs2').hide();
+        $('#Tabs3').hide();
     });
-    $('#tabsTwo').click(function(){
-       $('#Tabs1').hide();
-       $('#Tabs2').show();
+
+    $('#tabsTwo').click(function () {
+        $('#Tabs1').hide();
+        $('#Tabs2').show();
+        $('#Tabs3').hide();
+    });
+
+    $('#tabsThree').click(function () {
+        $('#Tabs1').hide();
+        $('#Tabs2').hide();
+        $('#Tabs3').show();
     });
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -258,7 +274,7 @@ function fillData(data, external) {
         searching: false,
         paging: false,
         info: false,
-        language: { url: `/js/es.json` }
+        language: {url: `/js/es.json`}
     });
 }
 
@@ -279,7 +295,7 @@ function generatePdf() {
             const pageHeight = pageSize.height ? pageSize.height : pageSize.getHeight()
             doc.text(str, data.settings.margin.left, pageHeight - 10)
         },
-        margin: { top: 30 },
+        margin: {top: 30},
         html: external ? '#external-table' : '#internal-table'
     });
 
