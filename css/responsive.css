@@ -129,6 +129,34 @@
     .modal-header .close {
         margin-bottom: -0.5rem !important;
     }
+    .image-allies.equipment {
+        margin-left: 8rem;
+    }
+    .image-allies.equipment img {
+        margin-top: -4rem;
+    }
+    #hidden-filter,
+    #hidden-filter.equipment {
+        margin-top: 0;
+    }
+    .line.appeared.allies.equipment {
+        top: 11.5rem;
+    }
+    .line.appeared.clinics {
+        top: 9.5rem;
+    }
+    .line.appeared.allies.primary {
+        top: 12rem;
+    }
+    #hidden-filter .form-row {
+        margin-right: 0;
+    }
+    #hidden-filter select {
+        width: 9rem !important;
+    }
+    .image-allies.primary {
+        margin-left: 16rem;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -497,6 +525,22 @@
     .btn-send {
         margin-right: auto;
     }
+    #hidden-filter select {
+        width: 100% !important;
+        margin: 0.5rem 0 !important;
+    }
+    .line.appeared.clinics {
+        top: 16rem;
+    }
+    .line.appeared.allies.equipment {
+        top: 18rem;
+    }
+    .line.appeared.allies.primary {
+        top: 19rem;
+    }
+    .mt-2.select-providers {
+        margin-top: 0 !important;
+    }
 }
 
 @media screen and (max-width: 482px) {
@@ -524,6 +568,9 @@
 @media screen and (max-width: 448px) {
     .modal-body label {
         font-size: 1rem;
+    }
+    .image-allies.equipment {
+        margin-left: 9rem;
     }
 }
 
@@ -569,6 +616,35 @@
     .image-allies.funeralServices,
     .image-allies.psychologicalAssistant {
         margin-left: 16.5rem;
+    }
+    .line.appeared.allies.details.clinics {
+        top: 16rem;
+    }
+    .line.appeared.allies.details.primary {
+        top: 19rem;
+    }
+    .line.appeared.allies.details.equipment {
+        top: 18rem;
+    }
+    .image-allies.clinics img {
+        margin-top: 0;
+    }
+    .image-allies.clinics,
+    .image-allies.primary,
+    .image-allies.equipment {
+        margin-left: 0;
+    }
+    .line.appeared.allies.details.clinics {
+        top: 17.5rem;
+    }
+    .line.appeared.allies.details.primary {
+        top: 19.5rem;
+    }
+    .image-allies.equipment img {
+        margin-top: 0;
+    }
+    .line.appeared.allies.details.equipment {
+        top: 19.5rem;
     }
 }
 
@@ -644,6 +720,12 @@
 
     .modal-title.office-title {
         font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .line.appeared.allies.details.equipment {
+        top: 21rem;
     }
 }
 

@@ -6,8 +6,10 @@ const modalLine = $('#modal-line');
 const modalImage = $('#modal-image');
 const dataTableExternal = $('#data-external');
 const dataTableInternal = $('#data-internal');
+const showAction = $('#show-icon-actions');
+const hiddenAction = $('#hidden-icon-actions');
 const hiddenFilter = $('#hidden-filter');
-const selectProviders = $('#select-providers');
+const selectProviders = $('.select-providers');
 let external;
 
 $(document).ready(function () {
@@ -98,13 +100,15 @@ $(document).ready(function () {
     });
 
     modalAllies.on('hidden.bs.modal', function () {
-        modalLeft.addClass('col-10').removeClass('col-md-4');
-        modalLine.removeClass('primary equipment');
+        modalLeft.removeClass('col-lg-4');
+        modalLine.removeClass('primary equipment clinics');
         modalImage.removeClass('clinics primary equipment dentists ophthalmologists dermatologists psychologicalAssistant funeralServices');
         hiddenFilter.hide().removeClass('equipment');
         selectProviders.hide();
         dataTableExternal.hide();
         dataTableInternal.hide();
+        showAction.hide();
+        hiddenAction.hide();
     })
 });
 
@@ -125,20 +129,25 @@ function closeNav() {
 }
 
 function openModal(ally = null) {
+    const width = $(window).width();
+
     switch (ally) {
         case 'clinics':
             external = true;
-            modalLeft.addClass('col-md-4').removeClass('col-10');
+            modalLeft.addClass('col-lg-4');
             modalTitle.text('Clínicas');
+            modalLine.addClass('clinics');
             modalImage.addClass('clinics');
             modalIcon.attr('src', 'images/icon-clinica-primary.png');
             hiddenFilter.show();
             dataTableExternal.show();
+            if (width < 992) hiddenAction.show();
+            else showAction.show();
             fillData(clinics, external);
             break;
         case 'primaryCare':
             external = true;
-            modalLeft.addClass('col-md-4').removeClass('col-10');
+            modalLeft.addClass('col-lg-4');
             modalTitle.text('Atención primaria');
             modalLine.addClass('primary');
             modalImage.addClass('primary');
@@ -146,17 +155,21 @@ function openModal(ally = null) {
             selectProviders.show();
             hiddenFilter.show();
             dataTableExternal.show();
+            if (width < 992) hiddenAction.show();
+            else showAction.show();
             fillData(primaryCare, external);
             break;
         case 'medicalEquipments':
             external = true;
-            modalLeft.addClass('col-md-4').removeClass('col-10');
+            modalLeft.addClass('col-lg-4');
             modalTitle.text('Proveedor materiales y equipos');
             modalLine.addClass('equipment');
             modalImage.addClass('equipment');
             modalIcon.attr('src', 'images/icon-imagen-primary.png');
             hiddenFilter.addClass('equipment').show();
             dataTableExternal.show();
+            if (width < 992) hiddenAction.show();
+            else showAction.show();
             fillData(medicalEquipments, external);
             break;
         case 'dentists':
@@ -165,6 +178,7 @@ function openModal(ally = null) {
             modalImage.addClass('dentists');
             modalIcon.attr('src', 'images/icon-odontologo-primary.png');
             dataTableInternal.show();
+            showAction.show();
             fillData(dentists, external);
             break;
         case 'ophthalmologists':
@@ -173,6 +187,7 @@ function openModal(ally = null) {
             modalImage.addClass('ophthalmologists');
             modalIcon.attr('src', 'images/icon-ojo-primary.png');
             dataTableInternal.show();
+            showAction.show();
             fillData(ophthalmologists, external);
             break;
         case 'dermatologists':
@@ -181,6 +196,7 @@ function openModal(ally = null) {
             modalImage.addClass('dermatologists');
             modalIcon.attr('src', 'images/icon-dermatologo-primary.png');
             dataTableInternal.show();
+            showAction.show();
             fillData(dermatologists, external);
             break;
         case 'psychologicalAssistant':
@@ -189,6 +205,7 @@ function openModal(ally = null) {
             modalImage.addClass('psychologicalAssistant');
             modalIcon.attr('src', 'images/icon-psicologo-primary.png');
             dataTableInternal.show();
+            showAction.show();
             fillData(psychologicalAssistant, external);
             break;
         case 'funeralServices':
@@ -197,6 +214,7 @@ function openModal(ally = null) {
             modalImage.addClass('funeralServices');
             modalIcon.attr('src', 'images/icon-u-primary.png');
             dataTableInternal.show();
+            showAction.show();
             fillData(funeralServices, external);
             break;
     }

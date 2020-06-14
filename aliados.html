@@ -456,7 +456,11 @@
                     <h1 id="modal-title"></h1>
                     <span class="image-allies" id="modal-image"><img id="modal-icon" src="" alt="Icon"/></span>
                 </div>
-                <div class="col-md-6" id="hidden-filter" style="display: none;">
+                <div class="col-2" id="hidden-icon-actions" style="display: none;">
+                    <img src="images/close.png" alt="Close" class="close" data-dismiss="modal"/>
+                    <img src="images/print.png" alt="Print" class="close" onclick="generatePdf()"/>
+                </div>
+                <div class="col-12 col-lg-6" id="hidden-filter" style="display: none;">
                     <div class="form-row">
                         <div class="col-sm-4">
                             <select class="form-control">
@@ -473,7 +477,7 @@
                                 <option disabled selected>Elige tu Municipio...</option>
                             </select>
                         </div>
-                        <div class="col-sm-4 offset-sm-8 mt-2" id="select-providers" style="display: none">
+                        <div class="col-sm-4 offset-sm-8 mt-2 select-providers" style="display: none">
                             <select class="form-control">
                                 <option disabled selected>Tipo de proveedor...</option>
                                 <option>Centro clínicos de APS</option>
@@ -484,7 +488,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="col-2" id="show-icon-actions" style="display: none;">
                     <img src="images/close.png" alt="Close" class="close" data-dismiss="modal"/>
                     <img src="images/print.png" alt="Print" class="close" onclick="generatePdf()"/>
                 </div>
