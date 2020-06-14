@@ -235,7 +235,7 @@ function openModal(ally = null) {
             break;
     }
 
-    if (ally !== null) modalAllies.modal({backdrop: 'static', keyboard: false});
+    if (ally !== null) modalAllies.modal({backdrop: 'static', keyboard: false, focus: true});
 }
 
 function fillData(data, external) {
