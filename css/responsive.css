@@ -138,6 +138,9 @@
     .frame-google-maps {
         text-align: center;
     }
+    .banner-seguros.policies {
+        margin-top: 2rem;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -537,6 +540,9 @@
 @media screen and (max-width: 448px) {
     .image-allies.equipment {
         margin-left: 9rem;
+    }
+    .banner-seguros.policies {
+        margin-top: 0;
     }
 }
 

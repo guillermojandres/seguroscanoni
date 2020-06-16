@@ -1546,6 +1546,7 @@ nav .nav-tabs {
 }
 
 .card-poliza-box:hover {
+    transform: scale(1.25);
     background-image: url("../images/main-box-active.png");
     background-position: center;
     background-repeat: no-repeat;
