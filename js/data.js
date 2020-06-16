@@ -3,42 +3,42 @@
 const clinics = [
     {
         state: 'Anzoategui',
-        city: 'Lechería',
+        city: 'Lecheria',
         municipality: 'Lorem Ipsum',
         name: 'Humanitas Salud Plus',
-        direction: 'Av Jorge Rodríguez Centro Comercial vFimicentro, Piso 5, Ofic 5',
+        direction: 'Av Jorge Rodriguez Centro Comercial vFimicentro, Piso 5, Ofic 5',
         phones: '(0281) 2861445'
     },
     {
         state: 'Anzoategui',
-        city: 'Lechería',
+        city: 'Lecheria',
         municipality: 'Lorem Ipsum',
         name: 'Humanitas Salud Plus',
-        direction: 'Av Jorge Rodríguez Centro Comercial vFimicentro, Piso 5, Ofic 5',
+        direction: 'Av Jorge Rodriguez Centro Comercial vFimicentro, Piso 5, Ofic 5',
         phones: '(0281) 2861445'
     },
     {
         state: 'Anzoategui',
-        city: 'Lechería',
+        city: 'Lecheria',
         municipality: 'Lorem Ipsum',
         name: 'Humanitas Salud Plus',
-        direction: 'Av Jorge Rodríguez Centro Comercial vFimicentro, Piso 5, Ofic 5',
+        direction: 'Av Jorge Rodriguez Centro Comercial vFimicentro, Piso 5, Ofic 5',
         phones: '(0281) 2861445'
     },
     {
         state: 'Anzoategui',
-        city: 'Lechería',
+        city: 'Lecheria',
         municipality: 'Lorem Ipsum',
         name: 'Humanitas Salud Plus',
-        direction: 'Av Jorge Rodríguez Centro Comercial vFimicentro, Piso 5, Ofic 5',
+        direction: 'Av Jorge Rodriguez Centro Comercial vFimicentro, Piso 5, Ofic 5',
         phones: '(0281) 2861445'
     },
     {
         state: 'Anzoategui',
-        city: 'Lechería',
+        city: 'Lecheria',
         municipality: 'Lorem Ipsum',
         name: 'Humanitas Salud Plus',
-        direction: 'Av Jorge Rodríguez Centro Comercial vFimicentro, Piso 5, Ofic 5',
+        direction: 'Av Jorge Rodriguez Centro Comercial vFimicentro, Piso 5, Ofic 5',
         phones: '(0281) 2861445'
     }
 ]
@@ -46,42 +46,42 @@ const clinics = [
 const primaryCare = [
     {
         state: 'Anzoategui',
-        city: 'Lechería',
+        city: 'Lecheria',
         municipality: 'Lorem Ipsum',
         name: 'Humanitas Salud Plus',
-        direction: 'Av Jorge Rodríguez Centro Comercial vFimicentro, Piso 5, Ofic 5',
+        direction: 'Av Jorge Rodriguez Centro Comercial vFimicentro, Piso 5, Ofic 5',
         phones: '(0281) 2861445'
     },
     {
         state: 'Anzoategui',
-        city: 'Lechería',
+        city: 'Lecheria',
         municipality: 'Lorem Ipsum',
         name: 'Humanitas Salud Plus',
-        direction: 'Av Jorge Rodríguez Centro Comercial vFimicentro, Piso 5, Ofic 5',
+        direction: 'Av Jorge Rodriguez Centro Comercial vFimicentro, Piso 5, Ofic 5',
         phones: '(0281) 2861445'
     },
     {
         state: 'Anzoategui',
-        city: 'Lechería',
+        city: 'Lecheria',
         municipality: 'Lorem Ipsum',
         name: 'Humanitas Salud Plus',
-        direction: 'Av Jorge Rodríguez Centro Comercial vFimicentro, Piso 5, Ofic 5',
+        direction: 'Av Jorge Rodriguez Centro Comercial vFimicentro, Piso 5, Ofic 5',
         phones: '(0281) 2861445'
     },
     {
         state: 'Anzoategui',
-        city: 'Lechería',
+        city: 'Lecheria',
         municipality: 'Lorem Ipsum',
         name: 'Humanitas Salud Plus',
-        direction: 'Av Jorge Rodríguez Centro Comercial vFimicentro, Piso 5, Ofic 5',
+        direction: 'Av Jorge Rodriguez Centro Comercial vFimicentro, Piso 5, Ofic 5',
         phones: '(0281) 2861445'
     },
     {
         state: 'Anzoategui',
-        city: 'Lechería',
+        city: 'Lecheria',
         municipality: 'Lorem Ipsum',
         name: 'Humanitas Salud Plus',
-        direction: 'Av Jorge Rodríguez Centro Comercial vFimicentro, Piso 5, Ofic 5',
+        direction: 'Av Jorge Rodriguez Centro Comercial vFimicentro, Piso 5, Ofic 5',
         phones: '(0281) 2861445'
     }
 ]
@@ -89,42 +89,42 @@ const primaryCare = [
 const medicalEquipments = [
     {
         state: 'Anzoategui',
-        city: 'Lechería',
+        city: 'Lecheria',
         municipality: 'Lorem Ipsum',
         name: 'Humanitas Salud Plus',
-        direction: 'Av Jorge Rodríguez Centro Comercial vFimicentro, Piso 5, Ofic 5',
+        direction: 'Av Jorge Rodriguez Centro Comercial vFimicentro, Piso 5, Ofic 5',
         phones: '(0281) 2861445'
     },
     {
         state: 'Anzoategui',
-        city: 'Lechería',
+        city: 'Lecheria',
         municipality: 'Lorem Ipsum',
         name: 'Humanitas Salud Plus',
-        direction: 'Av Jorge Rodríguez Centro Comercial vFimicentro, Piso 5, Ofic 5',
+        direction: 'Av Jorge Rodriguez Centro Comercial vFimicentro, Piso 5, Ofic 5',
         phones: '(0281) 2861445'
     },
     {
         state: 'Anzoategui',
-        city: 'Lechería',
+        city: 'Lecheria',
         municipality: 'Lorem Ipsum',
         name: 'Humanitas Salud Plus',
-        direction: 'Av Jorge Rodríguez Centro Comercial vFimicentro, Piso 5, Ofic 5',
+        direction: 'Av Jorge Rodriguez Centro Comercial vFimicentro, Piso 5, Ofic 5',
         phones: '(0281) 2861445'
     },
     {
         state: 'Anzoategui',
-        city: 'Lechería',
+        city: 'Lecheria',
         municipality: 'Lorem Ipsum',
         name: 'Humanitas Salud Plus',
-        direction: 'Av Jorge Rodríguez Centro Comercial vFimicentro, Piso 5, Ofic 5',
+        direction: 'Av Jorge Rodriguez Centro Comercial vFimicentro, Piso 5, Ofic 5',
         phones: '(0281) 2861445'
     },
     {
         state: 'Anzoategui',
-        city: 'Lechería',
+        city: 'Lecheria',
         municipality: 'Lorem Ipsum',
         name: 'Humanitas Salud Plus',
-        direction: 'Av Jorge Rodríguez Centro Comercial vFimicentro, Piso 5, Ofic 5',
+        direction: 'Av Jorge Rodriguez Centro Comercial vFimicentro, Piso 5, Ofic 5',
         phones: '(0281) 2861445'
     }
 ]
