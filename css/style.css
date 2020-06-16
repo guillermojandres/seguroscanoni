@@ -1742,3 +1742,7 @@ a.content-link:hover {
 .container-poliza ul li {
     font-family: "WorkSans-Regular";
 }
+.text-primary{
+    color: #165da9 !important;
+    font-weight: bold !important;
+}
