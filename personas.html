@@ -3,8 +3,8 @@
 
 <head>
     <title>Seguros Caroni</title>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
@@ -23,745 +23,750 @@
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
 </head>
 
 <body>
-    <!--Chatbot-->
-    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-    <df-messenger intent="WELCOME" chat-title="Chat - Seguros Caroní" agent-id="f41c53a9-ccf7-4ebd-b167-1a949ce663a6"
-        chat-icon="images/boton_chat.png" language-code="es"></df-messenger>
-    <div class="container-fluid no-gutters px-0 poliza">
-        <!--Header-->
-        <header class="py-0">
-            <div class="row topcolors">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 py-2"></div>
+<!--Chatbot-->
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger intent="WELCOME" chat-title="Chat - Seguros Caroní" agent-id="f41c53a9-ccf7-4ebd-b167-1a949ce663a6"
+              chat-icon="images/boton_chat.png" language-code="es"></df-messenger>
+<div class="container-fluid no-gutters px-0 poliza">
+    <!--Header-->
+    <header class="py-0">
+        <div class="row topcolors">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 py-2"></div>
+        </div>
+        <div class="row navigation">
+            <div class="col-md-4 col-lg-4 col-8 text-right">
+                <a href="index.html"><img src="images/logo-principal.png"></a>
             </div>
-            <div class="row navigation">
-                <div class="col-md-4 col-lg-4 col-8 text-right">
-                    <a href="index.html"><img src="images/logo-principal.png"></a>
-                </div>
-                <div class="col-md-5 col-lg-5 col-2">
-                    <nav class="navbar navbar-expand-sm">
-                        <button class="navbar-toggler" type="button">
-                            <img src="images/mobile-menu.svg" class="mobile-menu" alt="Menu bars">
-                        </button>
-                        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                            <div class="row topcolors2">
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 py-2">
+            <div class="col-md-5 col-lg-5 col-2">
+                <nav class="navbar navbar-expand-sm">
+                    <button class="navbar-toggler" type="button">
+                        <img src="images/mobile-menu.svg" class="mobile-menu" alt="Menu bars">
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <div class="row topcolors2">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 py-2">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-sm-12 text-center py-4 logopeq">
+                            <img src="images/logopeq.png">
+                        </div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item d-block d-md-none d-lg-none btn-pago-movil ">
+                                <a class="nav-link" href="#">Pago en línea</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="MyModal">Oficinas</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Caroní en
+                                    línea</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Pago en línea</a>
+                                    <a class="dropdown-item" href="#">Chat en línea</a>
+                                    <a class="dropdown-item" href="#">Cotiza en línea</a>
+                                    <a class="dropdown-item" href="index.html#extranet">Extranet</a>
                                 </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="aliados.html">Red de Aliados</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Centro Contacto Caroní</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-md-3 col-lg-3 col-12 d-none d-md-block d-lg-block">
+                <div class="pagar">Pago en línea</div>
+            </div>
+        </div>
+    </header>
+    <!--Banner-->
+    <div class="row mt-5 pt-3">
+        <div class="col-sm-12 col-lg-12 col-12 banner-seguros glossary">
+            <div class="card poliza-card">
+                <img class="card-img " src="images/banner-poliza.png" alt="Card image">
+                <div class="card-img-overlay">
+                    <h3 class="card-text">Protege</h3>
+                    <h3 class="card-text text-r-1">a quienes</h3>
+                    <h3 class="card-text text-r-2">más amas </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row title-poliza">
+        <div class="col-sm-12 col-lg-12 col-md-12">
+            <h2>Seguros de personas</h2>
+        </div>
+    </div>
+    <!--Boxes 1 -->
+    <nav>
+        <div class="nav nav-tabs row container-poliza row-cols-1 row-cols-sm-2 row-cols-md-3" id="tabsOne"
+             role="tablist">
+            <a class="nav-item nav-link" id="nav-tabs-1" data-toggle="tab" href="#nav-tabs1" role="tab"
+               aria-controls="nav-tabs1" aria-selected="true">
+                <div class="col mb-4">
+                    <div class="card card-allies card-poliza-box h-100">
+                        <div class="card-body">
+                            <img src="images/icon-poliza-1.png"/>
+                            <p>Póliza</br>Seguros<br>Caroní</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="nav-item nav-link" id="nav-tabs-2" data-toggle="tab" href="#nav-tabs2" role="tab"
+               aria-controls="nav-tabs2" aria-selected="false">
+                <div class="col mb-4">
+                    <div class="card card-allies card-poliza-box  h-100">
+                        <div class="card-body">
+                            <img src="images/icon-poliza-2.png"/>
+                            <p>Póliza <br>Accidentes<br>Personales</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="nav-item nav-link" id="nav-tabs-3" data-toggle="tab" href="#nav-tabs3" role="tab"
+               aria-controls="nav-tabs3" aria-selected="false">
+                <div class="col mb-4">
+                    <div class="card card-allies card-poliza-box h-100">
+                        <div class="card-body">
+                            <img src="images/icon-poliza-3.png"/>
+                            <p>Póliza<br>Accidentes<br>Escolares</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </nav>
+    <div class="tab-content row container-poliza tabs-poliza" id="Tabs1">
+        <div class="tab-pane fade col-12" id="nav-tabs1" role="tabpanel" aria-labelledby="nav-tabs-1">
+            <p>
+                Ofrece protección para el asegurado titular y su grupo familiar, indemnizando los gastos razonables
+                cubiertos, en que incurra el asegurado por atenciones médicas, hospitalizaciones o intervenciones
+                quirúrgicas, como consecuencia
+                directa de enfermedades, accidentes o maternidad, excepto las excluidas, de acuerdo a los límites y
+                condiciones contratadas.
+            </p>
+            <h3 class="my-4">Coberturas</h3>
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                <span class="icon"></span>
+                            </button>
+                            <p>Básica</p>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <h6>-Hospitalización y cirugía</h6>
+                            <p>La cobertura aplica por asegurado, enfermedad o accidente durante el año póliza</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                <span class="icon"></span>
+                            </button>
+                            <p>Opcionales</p>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <h6>Maternidad</h6>
+                            <p>Dirigida a mujer ASEGURADO TITULAR o Cónyuge de EL ASEGURADO TITULAR que esté
+                                amparada
+                                por la cobertura básica, cuya edad no exceda de cincuenta (50) años.</p>
+                            <h6>-Atención primaria de Salud (APS).</h6>
+                            <p>
+                                Asistencia médica programada, conconsultas ilimitadas a nivelnacional (siempre y
+                                cuando
+                                exista una patología); y exámenes de laboratorio, aplica por persona ,asegurado y
+                                año
+                                póliza, hasta el límite indicado
+                                comosuma asegurada. No ampara exámenes con fines diagnósticos ni controles.
+                            </p>
+                            <h6>-Servicio odontológico</h6>
+                            <p>Servicio integrado a nivel nacional, otorgado con calidad técnica, científica y
+                                humana.Permite al asegurado su asistencia bajo un sistemade consulta programada que
+                                se
+                                obtiene a través de:</p>
+                            <ol>
+                                <li>Llamada telefónica al call center del proveedor.</li>
+                                <li>Solicitud de cita por la página web de proveedor.</li>
+                            </ol>
+                            <h6>-Servicio oftalmológico.</h6>
+                            <p>Consulta especializada en consultorios oftalmológicos de la red, dispuesta para la
+                                prestación del servicio.</p>
+                            <h6>-Servicio dermatológico</h6>
+                            <p>Servicio de altísima calidad, enconsultorios y clínicas dermatológicas, con
+                                profesionales
+                                de excelente trayectoria y presencia a nivel nacional.</p>
+                            <h6>-Servicio de auxilio psicológico y/o legal.</h6>
+                            <p>Asesoría psicológica y/o legal a EL ASEGURADO cuando así lo requiera, mediante el uso
+                                de
+                                una red dispuesta para agendar el día de atención</p>
+                            <h6>-Servicio funerario</h6>
+                            <p>Brinda asistencia en todos los trámites, gestiones y servicios necesarios para
+                                auxiliar a
+                                El Asegurado, en caso de fallecimiento del titular o de uno de sus dependientes.</p>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="my-4">Esquema de presentación de los servicios</h3>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <span class="icon"></span>
+                            </button>
+                            <p>Asistencia para Emergencias (Claves o autorizaciones de atención)</p>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                         data-parent="#accordion">
+                        <div class="card-body">
+                            <p>Servicio otorgado por una clínica de la red, para solventar la dolencia ante una
+                                emergencia médica (enfermedad o accidente) de El asegurado.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="Four">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <span class="icon"></span>
+                            </button>
+                            <p>Carta Aval</p>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>Aval de atención que debe ser presentado en la clínica, al momento de requerir
+                                asistenci
+                                amédica para intervenciones quirúrgica selectivas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="Five">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <span class="icon"></span>
+                            </button>
+                            <p>Reembolso de gastos</p>
+                        </h5>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>
+                                Reintegro de gastos cubiertos (consulta, medicinas, exámenes y estudios) a El
+                                Asegurado
+                                ante una necesidad de atención médica, cuya patología se encuentre cubierta por la
+                                póliza. Para el reintegro, es necesario
+                                entregar los documentos que soportan la reclamación, adicionando la planilla informe
+                                de
+                                siniestro (debidamente llena y firmada en todas sus partes).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade col-12" id="nav-tabs2" role="tabpanel" aria-labelledby="nav-tabs-2">
+            <h3 class="my-4">Coberturas</h3>
+            <div id="accordion-2">
+                <div class="card">
+                    <div class="card-header" id="headingSix">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix"
+                                    aria-expanded="true" aria-controls="collapseSix">
+                                <span class="icon"></span>
+                            </button>
+                            <p>Cobertura basica por muerte accidental</p>
+                        </h5>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>Si un accidente sufrido por EL ASEGURADO cubierto por esta Póliza, y ocurrido durante
+                                la
+                                vigencia de la misma, fuese la causa directa y única de su muerte, dentro de los
+                                tres
+                                365 días siguientes a la fecha del accidente, EL ASEGURADOR pagará a los
+                                Beneficiarios
+                                designados por EL ASEGURADO, o a falta de éstos, a sus herederos legales, la Suma
+                                Asegurada para esta Cobertura, indicada en el Certificado de Seguros.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingSeven">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                <span class="icon"></span>
+                            </button>
+                            <p>Cobertura basica por invalidez permanente</p>
+                        </h5>
+                    </div>
+                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                         data-parent="#accordion">
+                        <div class="card-body">
+                            <p>Si un accidente sufrido por EL ASEGURADO durante la vigencia de esta Póliza, fuese la
+                                causa directa y única de cualquiera de las pérdidas anatómica o impotencia
+                                funcional, de
+                                miembros u órganos enumeradas en la Tabla de Indemnizaciones, detallada en la póliza
+                                y
+                                ello ocurriese dentro de los 365 días siguientes a la fecha del accidente, EL
+                                ASEGURADOR
+                                pagará la cantidad que resulte de aplicar el porcentaje indicado en dicha Tabla, a
+                                la
+                                Suma Asegurada para esta Cobertura, indicada en el Certificado de Seguros.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingEight">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                <span class="icon"></span>
+                            </button>
+                            <p>Coberturas adicionales</p>
+                        </h5>
+                    </div>
+                    <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                         data-parent="#accordion">
+                        <div class="card-body">
+                            <ul>
+                                <li>Incapacidad Temporal Total.</li>
+                                <li>Incapacidad Temporal Parcial.</li>
+                                <li>Gastos Médicos por accidentes.</li>
+                                <li>Protección Familiar.</li>
+                                <li>Beneficio Especial.</li>
+                                <li>Indemnización Electiva.</li>
+                            </ul>
+                            <p>Descarga el formulario correspondiente según tu solicitud</p>
+                            <div class="text-center">
+                                <a target="_blank"
+                                   href="https://www.seguroscaroni.com/caroni/formularios/FO-PER-05_Solicitud_Accidentes_Personales_Individuales.pdf"><b>Seguro
+                                    Individual Accidentes Personales</b></a>
                             </div>
-                            <div class="col-md-4 col-lg-4 col-sm-12 text-center py-4 logopeq">
-                                <img src="images/logopeq.png">
-                            </div>
-                            <ul class="navbar-nav">
-                                <li class="nav-item d-block d-md-none d-lg-none btn-pago-movil ">
-                                    <a class="nav-link" href="#">Pago en línea</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingNine">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                <span class="icon"></span>
+                            </button>
+                            <p>Como tramitar la Reclamación</p>
+                        </h5>
+                    </div>
+                    <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>El asegurado deberá realizar la reclamación en un plazo no mayor a 30 días, y
+                                consignar
+                                la siguiente documentación:</p>
+                            <h6>En caso de gastos médicos</h6>
+                            <ul>
+                                <li>Comunicación donde indique todas las circunstancias relativas a la ocurrencia
+                                    del
+                                    siniestro
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                                <li>Informe de la autoridad competente, que intervino en el levantamiento del
+                                    accidente.
+                                    (si fuese el caso)
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#" id="MyModal">Oficinas</a>
+                                <li>Informe Médico</li>
+                                <li>Facturas originales de los gastos médicos incurridos (honorarios, medicinas, Rx)
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" id="navbarDropdown" role="button"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Caroní en
-                                        línea</a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Pago en línea</a>
-                                        <a class="dropdown-item" href="#">Chat en línea</a>
-                                        <a class="dropdown-item" href="#">Cotiza en línea</a>
-                                        <a class="dropdown-item" href="index.html#extranet">Extranet</a>
-                                    </div>
+                                <li>Récipes e indicaciones médicas, en caso de solicitar reintegro de gastos
+                                    farmacéuticos
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="aliados.html">Red de Aliados</a>
+                            </ul>
+                            <h6>En caso de invalidez permanente e incapacidad temporal</h6>
+                            <ul>
+                                <li>Comunicación donde indique todas las circunstancias relativas a la ocurrencia
+                                    del
+                                    siniestro
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contacto.html">Centro Contacto Caroní</a>
+                                <li>Informe de la autoridad competente, que intervino en el levantamiento del
+                                    accidente.
+                                    (si fuese el caso)
+                                </li>
+                                <li>Informe del médico de la atención dada al asegurado al momento del accidente
+                                </li>
+                                <li>Informes médicos y certificados que acrediten la invalidez o incapacidad
+                                    resultante,
+                                    su origen, tipo y duración
+                                </li>
+                            </ul>
+                            <h6>En caso de Incapacidad Temporal</h6>
+                            <ul>
+                                <li>Deberán presentarse informes médicos periódicos sobre la evaluación y evolución
+                                    del
+                                    paciente
+                                </li>
+                            </ul>
+                            <h6>En caso de Muerte Accidental</h6>
+                            <ul>
+                                <li>Comunicación donde indique todas las circunstancias relativas a la ocurrencia
+                                    del
+                                    siniestro
+                                </li>
+                                <li>Informe de la autoridad competente, que intervino en el levantamiento del
+                                    accidente.
+                                    (si fuese el caso)
+                                </li>
+                                <li>Partida de defunción y cédula de identidad del fallecido</li>
+                                <li>Informe del médico Forense. Documentos de identidad de los beneficiarios
+                                    designados
+                                </li>
+                                <li>Justificativo de herederos universales, cuando no se hayan designados
+                                    beneficiarios
+                                    en la solicitud de seguros
+                                </li>
+                                <li>En caso de beneficiarios que sean menores de edad, documentos del representante
+                                    legal autorizado para recibir el pago de la indemnización
+                                </li>
+                                <li>Cuando el cónyuge sea el beneficiario, acta de matrimonio o constancia de
+                                    concubinato
                                 </li>
                             </ul>
                         </div>
-                    </nav>
-                </div>
-                <div class="col-md-3 col-lg-3 col-12 d-none d-md-block d-lg-block">
-                    <div class="pagar">Pago en línea</div>
-                </div>
-            </div>
-        </header>
-        <!--Banner-->
-        <div class="row mt-5 pt-3">
-            <div class="col-sm-12 col-lg-12 col-12 banner-seguros glossary">
-                <div class="card poliza-card">
-                    <img class="card-img " src="images/banner-poliza.png" alt="Card image">
-                    <div class="card-img-overlay">
-                        <h3 class="card-text">Protege</h3>
-                        <h3 class="card-text text-r-1">a quienes</h3>
-                        <h3 class="card-text text-r-2">más amas </h3>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row title-poliza">
-            <div class="col-sm-12 col-lg-12 col-md-12">
-                <h2>Seguros de personas</h2>
-            </div>
-        </div>
-        <!--Boxes 1 -->
-        <nav>
-            <div class="nav nav-tabs row container-poliza row-cols-1 row-cols-sm-2 row-cols-md-3" id="tabsOne"
-                role="tablist">
-                <a class="nav-item nav-link" id="nav-tabs-1" data-toggle="tab" href="#nav-tabs1" role="tab"
-                    aria-controls="nav-tabs1" aria-selected="true">
-                    <div class="col mb-4">
-                        <div class="card card-allies card-poliza-box h-100">
-                            <div class="card-body">
-                                <img src="images/icon-poliza-1.png" />
-                                <p>Póliza</br>Seguros<br>Caroní</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a class="nav-item nav-link" id="nav-tabs-2" data-toggle="tab" href="#nav-tabs2" role="tab"
-                    aria-controls="nav-tabs2" aria-selected="false">
-                    <div class="col mb-4">
-                        <div class="card card-allies card-poliza-box  h-100">
-                            <div class="card-body">
-                                <img src="images/icon-poliza-2.png" />
-                                <p>Póliza <br>Accidentes<br>Personales</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a class="nav-item nav-link" id="nav-tabs-3" data-toggle="tab" href="#nav-tabs3" role="tab"
-                    aria-controls="nav-tabs3" aria-selected="false">
-                    <div class="col mb-4">
-                        <div class="card card-allies card-poliza-box h-100">
-                            <div class="card-body">
-                                <img src="images/icon-poliza-3.png" />
-                                <p>Póliza<br>Accidentes<br>Escolares</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </nav>
-        <div class="tab-content row container-poliza tabs-poliza" id="Tabs1">
-            <div class="tab-pane fade col-12" id="nav-tabs1" role="tabpanel" aria-labelledby="nav-tabs-1">
-                <p>
-                    Ofrece protección para el asegurado titular y su grupo familiar, indemnizando los gastos razonables
-                    cubiertos, en que incurra el asegurado por atenciones médicas, hospitalizaciones o intervenciones
-                    quirúrgicas, como consecuencia
-                    directa de enfermedades, accidentes o maternidad, excepto las excluidas, de acuerdo a los límites y
-                    condiciones contratadas.
-                </p>
-                <h3 class="my-4">Coberturas</h3>
-                <div id="accordion">
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne"
-                                    aria-expanded="true" aria-controls="collapseOne">
-                                    <span class="icon"></span>
-                                </button>
-                                <p>Básica</p>
-                            </h5>
-                        </div>
-
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                            <div class="card-body">
-                                <h6>-Hospitalización y cirugía</h6>
-                                <p>La cobertura aplica por asegurado, enfermedad o accidente durante el año póliza</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingTwo">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                                    aria-expanded="false" aria-controls="collapseTwo">
-                                    <span class="icon"></span>
-                                </button>
-                                <p>Opcionales</p>
-                            </h5>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                            <div class="card-body">
-                                <h6>Maternidad</h6>
-                                <p>Dirigida a mujer ASEGURADO TITULAR o Cónyuge de EL ASEGURADO TITULAR que esté
-                                    amparada
-                                    por la cobertura básica, cuya edad no exceda de cincuenta (50) años.</p>
-                                <h6>-Atención primaria de Salud (APS).</h6>
-                                <p>
-                                    Asistencia médica programada, conconsultas ilimitadas a nivelnacional (siempre y
-                                    cuando
-                                    exista una patología); y exámenes de laboratorio, aplica por persona ,asegurado y
-                                    año
-                                    póliza, hasta el límite indicado
-                                    comosuma asegurada. No ampara exámenes con fines diagnósticos ni controles.
-                                </p>
-                                <h6>-Servicio odontológico</h6>
-                                <p>Servicio integrado a nivel nacional, otorgado con calidad técnica, científica y
-                                    humana.Permite al asegurado su asistencia bajo un sistemade consulta programada que
-                                    se
-                                    obtiene a través de:</p>
-                                <ol>
-                                    <li>Llamada telefónica al call center del proveedor.</li>
-                                    <li>Solicitud de cita por la página web de proveedor.</li>
-                                </ol>
-                                <h6>-Servicio oftalmológico.</h6>
-                                <p>Consulta especializada en consultorios oftalmológicos de la red, dispuesta para la
-                                    prestación del servicio.</p>
-                                <h6>-Servicio dermatológico</h6>
-                                <p>Servicio de altísima calidad, enconsultorios y clínicas dermatológicas, con
-                                    profesionales
-                                    de excelente trayectoria y presencia a nivel nacional.</p>
-                                <h6>-Servicio de auxilio psicológico y/o legal.</h6>
-                                <p>Asesoría psicológica y/o legal a EL ASEGURADO cuando así lo requiera, mediante el uso
-                                    de
-                                    una red dispuesta para agendar el día de atención</p>
-                                <h6>-Servicio funerario</h6>
-                                <p>Brinda asistencia en todos los trámites, gestiones y servicios necesarios para
-                                    auxiliar a
-                                    El Asegurado, en caso de fallecimiento del titular o de uno de sus dependientes.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="my-4">Esquema de presentación de los servicios</h3>
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse"
-                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <span class="icon"></span>
-                                </button>
-                                <p>Asistencia para Emergencias (Claves o autorizaciones de atención)</p>
-                            </h5>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                            data-parent="#accordion">
-                            <div class="card-body">
-                                <p>Servicio otorgado por una clínica de la red, para solventar la dolencia ante una
-                                    emergencia médica (enfermedad o accidente) de El asegurado.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="Four">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse"
-                                    data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    <span class="icon"></span>
-                                </button>
-                                <p>Carta Aval</p>
-                            </h5>
-                        </div>
-                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                            <div class="card-body">
-                                <p>Aval de atención que debe ser presentado en la clínica, al momento de requerir
-                                    asistenci
-                                    amédica para intervenciones quirúrgica selectivas.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="Five">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse"
-                                    data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    <span class="icon"></span>
-                                </button>
-                                <p>Reembolso de gastos</p>
-                            </h5>
-                        </div>
-                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-                            <div class="card-body">
-                                <p>
-                                    Reintegro de gastos cubiertos (consulta, medicinas, exámenes y estudios) a El
-                                    Asegurado
-                                    ante una necesidad de atención médica, cuya patología se encuentre cubierta por la
-                                    póliza. Para el reintegro, es necesario
-                                    entregar los documentos que soportan la reclamación, adicionando la planilla informe
-                                    de
-                                    siniestro (debidamente llena y firmada en todas sus partes).
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane fade col-12" id="nav-tabs2" role="tabpanel" aria-labelledby="nav-tabs-2">
-                <h3 class="my-4">Coberturas</h3>
-                <div id="accordion-2">
-                    <div class="card">
-                        <div class="card-header" id="headingSix">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix"
-                                    aria-expanded="true" aria-controls="collapseSix">
-                                    <span class="icon"></span>
-                                </button>
-                                <p>Cobertura basica por muerte accidental</p>
-                            </h5>
-                        </div>
-                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
-                            <div class="card-body">
-                                <p>Si un accidente sufrido por EL ASEGURADO cubierto por esta Póliza, y ocurrido durante
-                                    la
-                                    vigencia de la misma, fuese la causa directa y única de su muerte, dentro de los
-                                    tres
-                                    365 días siguientes a la fecha del accidente, EL ASEGURADOR pagará a los
-                                    Beneficiarios
-                                    designados por EL ASEGURADO, o a falta de éstos, a sus herederos legales, la Suma
-                                    Asegurada para esta Cobertura, indicada en el Certificado de Seguros.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingSeven">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse"
-                                    data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                    <span class="icon"></span>
-                                </button>
-                                <p>Cobertura basica por invalidez permanente</p>
-                            </h5>
-                        </div>
-                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
-                            data-parent="#accordion">
-                            <div class="card-body">
-                                <p>Si un accidente sufrido por EL ASEGURADO durante la vigencia de esta Póliza, fuese la
-                                    causa directa y única de cualquiera de las pérdidas anatómica o impotencia
-                                    funcional, de
-                                    miembros u órganos enumeradas en la Tabla de Indemnizaciones, detallada en la póliza
-                                    y
-                                    ello ocurriese dentro de los 365 días siguientes a la fecha del accidente, EL
-                                    ASEGURADOR
-                                    pagará la cantidad que resulte de aplicar el porcentaje indicado en dicha Tabla, a
-                                    la
-                                    Suma Asegurada para esta Cobertura, indicada en el Certificado de Seguros.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingEight">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse"
-                                    data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                    <span class="icon"></span>
-                                </button>
-                                <p>Coberturas adicionales</p>
-                            </h5>
-                        </div>
-                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
-                            data-parent="#accordion">
-                            <div class="card-body">
-                                <ul>
-                                    <li>Incapacidad Temporal Total.</li>
-                                    <li>Incapacidad Temporal Parcial.</li>
-                                    <li>Gastos Médicos por accidentes.</li>
-                                    <li>Protección Familiar.</li>
-                                    <li>Beneficio Especial.</li>
-                                    <li>Indemnización Electiva.</li>
-                                </ul>
-                                <p>Descarga el formulario correspondiente según tu solicitud</p>
-                                <div class="text-center">
-                                    <a target="_blank"
-                                        href="https://www.seguroscaroni.com/caroni/formularios/FO-PER-05_Solicitud_Accidentes_Personales_Individuales.pdf"><b>Seguro
-                                            Individual Accidentes Personales</b></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingNine">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse"
-                                    data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                                    <span class="icon"></span>
-                                </button>
-                                <p>Como tramitar la Reclamación</p>
-                            </h5>
-                        </div>
-                        <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
-                            <div class="card-body">
-                                <p>El asegurado deberá realizar la reclamación en un plazo no mayor a 30 días, y
-                                    consignar
-                                    la siguiente documentación:</p>
-                                <h6>En caso de gastos médicos</h6>
-                                <ul>
-                                    <li>Comunicación donde indique todas las circunstancias relativas a la ocurrencia
-                                        del
-                                        siniestro
-                                    </li>
-                                    <li>Informe de la autoridad competente, que intervino en el levantamiento del
-                                        accidente.
-                                        (si fuese el caso)
-                                    </li>
-                                    <li>Informe Médico</li>
-                                    <li>Facturas originales de los gastos médicos incurridos (honorarios, medicinas, Rx)
-                                    </li>
-                                    <li>Récipes e indicaciones médicas, en caso de solicitar reintegro de gastos
-                                        farmacéuticos
-                                    </li>
-                                </ul>
-                                <h6>En caso de invalidez permanente e incapacidad temporal</h6>
-                                <ul>
-                                    <li>Comunicación donde indique todas las circunstancias relativas a la ocurrencia
-                                        del
-                                        siniestro
-                                    </li>
-                                    <li>Informe de la autoridad competente, que intervino en el levantamiento del
-                                        accidente.
-                                        (si fuese el caso)
-                                    </li>
-                                    <li>Informe del médico de la atención dada al asegurado al momento del accidente
-                                    </li>
-                                    <li>Informes médicos y certificados que acrediten la invalidez o incapacidad
-                                        resultante,
-                                        su origen, tipo y duración
-                                    </li>
-                                </ul>
-                                <h6>En caso de Incapacidad Temporal</h6>
-                                <ul>
-                                    <li>Deberán presentarse informes médicos periódicos sobre la evaluación y evolución
-                                        del
-                                        paciente
-                                    </li>
-                                </ul>
-                                <h6>En caso de Muerte Accidental</h6>
-                                <ul>
-                                    <li>Comunicación donde indique todas las circunstancias relativas a la ocurrencia
-                                        del
-                                        siniestro
-                                    </li>
-                                    <li>Informe de la autoridad competente, que intervino en el levantamiento del
-                                        accidente.
-                                        (si fuese el caso)
-                                    </li>
-                                    <li>Partida de defunción y cédula de identidad del fallecido</li>
-                                    <li>Informe del médico Forense. Documentos de identidad de los beneficiarios
-                                        designados
-                                    </li>
-                                    <li>Justificativo de herederos universales, cuando no se hayan designados
-                                        beneficiarios
-                                        en la solicitud de seguros
-                                    </li>
-                                    <li>En caso de beneficiarios que sean menores de edad, documentos del representante
-                                        legal autorizado para recibir el pago de la indemnización
-                                    </li>
-                                    <li>Cuando el cónyuge sea el beneficiario, acta de matrimonio o constancia de
-                                        concubinato
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane fade col-12" id="nav-tabs3" role="tabpanel" aria-labelledby="nav-tabs-3">
-                <p>Esta póliza garantiza indemnización con respecto a lesiones corporales, provenientes de accidentes
-                    sufridos por El Estudiante.</p>
-                <h3 class="my-4">Coberturas</h3>
-                <div id="accordion-3">
-                    <div class="card">
-                        <div class="card-header" id="headingTen">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTen"
+        <div class="tab-pane fade col-12" id="nav-tabs3" role="tabpanel" aria-labelledby="nav-tabs-3">
+            <p>Esta póliza garantiza indemnización con respecto a lesiones corporales, provenientes de accidentes
+                sufridos por El Estudiante.</p>
+            <h3 class="my-4">Coberturas</h3>
+            <div id="accordion-3">
+                <div class="card">
+                    <div class="card-header" id="headingTen">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTen"
                                     aria-expanded="false" aria-controls="collapseTen">
-                                    <span class="icon"></span>
-                                </button>
-                                <p>Básica</p>
-                            </h5>
-                        </div>
-                        <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion">
-                            <div class="card-body">
-                                <h6>- Muerte Accidental</h6>
-                                <p>Seguros Caroní, S.A. pagará a los representantes legales, la suma asegurada
-                                    establecida en el
-                                    cuadro póliza, si el estudiante fallece a consecuencia directa y única de un
-                                    accidente.</p>
-                            </div>
+                                <span class="icon"></span>
+                            </button>
+                            <p>Básica</p>
+                        </h5>
+                    </div>
+                    <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion">
+                        <div class="card-body">
+                            <h6>- Muerte Accidental</h6>
+                            <p>Seguros Caroní, S.A. pagará a los representantes legales, la suma asegurada
+                                establecida en el
+                                cuadro póliza, si el estudiante fallece a consecuencia directa y única de un
+                                accidente.</p>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="heading11">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse11"
+                </div>
+                <div class="card">
+                    <div class="card-header" id="heading11">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse11"
                                     aria-expanded="false" aria-controls="collapse11">
-                                    <span class="icon"></span>
-                                </button>
-                                <p>Cobertura opcionales</p>
-                            </h5>
-                        </div>
-                        <div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#accordion">
-                            <div class="card-body">
-                                <ul>
-                                    <li>Incapacidad Permanente.</li>
-                                    <li>Gastos Médicos por Accidentes.</li>
-                                    <li>Gastos Médicos por Poliomielitis.</li>
-                                    <li>Responsabilidad Civil Extracontractual.</li>
-                                    <li>Gastos Funerarios.</li>
-                                    <li>Gastos de Nivelación por Incapacidad.</li>
-                                    <li>Reembolso de Mensualidades.</li>
-                                    <li>Gastos Médicos por Enfermedad Amparada (Amigdalitis, Poliomielitis).</li>
-                                    <li>Emergencias Odontológicas.</li>
-                                </ul>
-                            </div>
+                                <span class="icon"></span>
+                            </button>
+                            <p>Cobertura opcionales</p>
+                        </h5>
+                    </div>
+                    <div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#accordion">
+                        <div class="card-body">
+                            <ul>
+                                <li>Incapacidad Permanente.</li>
+                                <li>Gastos Médicos por Accidentes.</li>
+                                <li>Gastos Médicos por Poliomielitis.</li>
+                                <li>Responsabilidad Civil Extracontractual.</li>
+                                <li>Gastos Funerarios.</li>
+                                <li>Gastos de Nivelación por Incapacidad.</li>
+                                <li>Reembolso de Mensualidades.</li>
+                                <li>Gastos Médicos por Enfermedad Amparada (Amigdalitis, Poliomielitis).</li>
+                                <li>Emergencias Odontológicas.</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="heading12">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse12"
+                </div>
+                <div class="card">
+                    <div class="card-header" id="heading12">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse12"
                                     aria-expanded="false" aria-controls="collapse12">
-                                    <span class="icon"></span>
-                                </button>
-                                <p>Ámbito del Seguro</p>
-                            </h5>
-                        </div>
-                        <div id="collapse12" class="collapse" aria-labelledby="heading12" data-parent="#accordion">
-                            <div class="card-body">
-                                <ul>
-                                    <li>Cobertura Restringida Horas Escolares</li>
-                                    <li>Cobertura amplia, las 24 horas del día los 365 días del año</li>
-                                </ul>
-                            </div>
+                                <span class="icon"></span>
+                            </button>
+                            <p>Ámbito del Seguro</p>
+                        </h5>
+                    </div>
+                    <div id="collapse12" class="collapse" aria-labelledby="heading12" data-parent="#accordion">
+                        <div class="card-body">
+                            <ul>
+                                <li>Cobertura Restringida Horas Escolares</li>
+                                <li>Cobertura amplia, las 24 horas del día los 365 días del año</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <nav>
-            <div class="nav nav-tabs row container-poliza row-cols-1 row-cols-sm-2 row-cols-md-3" id="tabsTwo"
-                role="tablist">
-                <a class="nav-item nav-link" id="nav-tabs-4" data-toggle="tab" href="#nav-tabs4" role="tab"
-                    aria-controls="nav-tabs5" aria-selected="true">
-                    <div class="col mb-4">
-                        <div class="card card-allies card-poliza-box h-100">
-                            <div class="card-body">
-                                <img src="images/icon-poliza-5.png" />
-                                <p>Póliza</br>Vida<br>Caroní</p>
-                            </div>
+    </div>
+    <nav>
+        <div class="nav nav-tabs row container-poliza row-cols-1 row-cols-sm-2 row-cols-md-3" id="tabsTwo"
+             role="tablist">
+            <a class="nav-item nav-link" id="nav-tabs-4" data-toggle="tab" href="#nav-tabs4" role="tab"
+               aria-controls="nav-tabs5" aria-selected="true">
+                <div class="col mb-4">
+                    <div class="card card-allies card-poliza-box h-100">
+                        <div class="card-body">
+                            <img src="images/icon-poliza-5.png"/>
+                            <p>Póliza</br>Vida<br>Caroní</p>
                         </div>
                     </div>
-                </a>
-                <a class="nav-item nav-link" id="nav-tabs-5" data-toggle="tab" href="#nav-tabs5" role="tab"
-                    aria-controls="nav-tabs3" aria-selected="false">
-                    <div class="col mb-4">
-                        <div class="card card-allies card-poliza-box h-100">
-                            <div class="card-body">
-                                <img src="images/icon-poliza-4.png" />
-                                <p>Póliza servicios<br>Funerarios e<br>inhumanación</p>
-                            </div>
+                </div>
+            </a>
+            <a class="nav-item nav-link" id="nav-tabs-5" data-toggle="tab" href="#nav-tabs5" role="tab"
+               aria-controls="nav-tabs3" aria-selected="false">
+                <div class="col mb-4">
+                    <div class="card card-allies card-poliza-box h-100">
+                        <div class="card-body">
+                            <img src="images/icon-poliza-4.png"/>
+                            <p>Póliza servicios<br>Funerarios e<br>inhumanación</p>
                         </div>
                     </div>
-                </a>
-                <a class="nav-item nav-link" id="nav-tabs-6" data-toggle="tab" href="#nav-tabs6" role="tab"
-                    aria-controls="nav-tabs3" aria-selected="false">
-                    <div class="col mb-4">
-                        <div class="card card-allies card-poliza-box h-100">
-                            <div class="card-body">
-                                <img src="images/savings-protection.png" height="60" />
-                                <p>Póliza<br>Seguros<br>Solidarios</p>
-                            </div>
+                </div>
+            </a>
+            <a class="nav-item nav-link" id="nav-tabs-6" data-toggle="tab" href="#nav-tabs6" role="tab"
+               aria-controls="nav-tabs3" aria-selected="false">
+                <div class="col mb-4">
+                    <div class="card card-allies card-poliza-box h-100">
+                        <div class="card-body">
+                            <img src="images/savings-protection.png" height="60"/>
+                            <p>Póliza<br>Seguros<br>Solidarios</p>
                         </div>
                     </div>
-                </a>
-            </div>
-        </nav>
-        <div class="tab-content row container-poliza tabs-poliza" id="Tabs2">
-            <div class="tab-pane fade col-12" id="nav-tabs4" role="tabpanel" aria-labelledby="nav-tabs-4">
-                <p>La póliza de vida, es un instrumento de protección que permite y garantiza a El Asegurado, el pago de
-                    la suma asegurada contratada a sus beneficiarios, ante el fallecimiento del titular.</p>
-                <h3 class="my-4">Coberturas</h3>
-                <div id="accordion-4">
-                    <div class="card">
-                        <div class="card-header" id="heading13">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse13"
+                </div>
+            </a>
+        </div>
+    </nav>
+    <div class="tab-content row container-poliza tabs-poliza" id="Tabs2">
+        <div class="tab-pane fade col-12" id="nav-tabs4" role="tabpanel" aria-labelledby="nav-tabs-4">
+            <p>La póliza de vida, es un instrumento de protección que permite y garantiza a El Asegurado, el pago de
+                la suma asegurada contratada a sus beneficiarios, ante el fallecimiento del titular.</p>
+            <h3 class="my-4">Coberturas</h3>
+            <div id="accordion-4">
+                <div class="card">
+                    <div class="card-header" id="heading13">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse13"
                                     aria-expanded="false" aria-controls="collapse13">
-                                    <span class="icon"></span>
-                                </button>
-                                <p>Muerte por cualquier causa</p>
-                            </h5>
-                        </div>
-                        <div id="collapse13" class="collapse" aria-labelledby="heading13" data-parent="#accordion">
-                            <div class="card-body">
-                                <p>Garantiza al Beneficiario o Beneficiarios designado(s) el pago de la prestación en
-                                    dinero que pueda corresponderle(s), al fallecimiento de cada uno de los asegurados,
-                                    siempre que al ocurrir la muerte se encuentre en vigor la póliza y el seguro
-                                    correspondiente.</p>
-                            </div>
+                                <span class="icon"></span>
+                            </button>
+                            <p>Muerte por cualquier causa</p>
+                        </h5>
+                    </div>
+                    <div id="collapse13" class="collapse" aria-labelledby="heading13" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>Garantiza al Beneficiario o Beneficiarios designado(s) el pago de la prestación en
+                                dinero que pueda corresponderle(s), al fallecimiento de cada uno de los asegurados,
+                                siempre que al ocurrir la muerte se encuentre en vigor la póliza y el seguro
+                                correspondiente.</p>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="heading14">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse14"
+                </div>
+                <div class="card">
+                    <div class="card-header" id="heading14">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse14"
                                     aria-expanded="false" aria-controls="collapse14">
-                                    <span class="icon"></span>
-                                </button>
-                                <p>Opcional</p>
-                            </h5>
-                        </div>
-                        <div id="collapse14" class="collapse" aria-labelledby="heading14" data-parent="#accordion">
-                            <div class="card-body">
-                                <h6>- Incapacidad Total y Permanente</h6>
-                                <p>Pago que se realiza por incapacidad total o permanentemente a causa de un accidente o
-                                    enfermedad.</p>
-                                <h6>- Desmembramiento</h6>
-                                <p>Consiste en el pago a los Beneficiarios designados por EL ASEGURADO, o a sus
-                                    herederos legales, de la Suma Asegurada contratada en la póliza, en caso de
-                                    fallecimiento del asegurado titular como consecuencia de un accidente.</p>
-                            </div>
+                                <span class="icon"></span>
+                            </button>
+                            <p>Opcional</p>
+                        </h5>
+                    </div>
+                    <div id="collapse14" class="collapse" aria-labelledby="heading14" data-parent="#accordion">
+                        <div class="card-body">
+                            <h6>- Incapacidad Total y Permanente</h6>
+                            <p>Pago que se realiza por incapacidad total o permanentemente a causa de un accidente o
+                                enfermedad.</p>
+                            <h6>- Desmembramiento</h6>
+                            <p>Consiste en el pago a los Beneficiarios designados por EL ASEGURADO, o a sus
+                                herederos legales, de la Suma Asegurada contratada en la póliza, en caso de
+                                fallecimiento del asegurado titular como consecuencia de un accidente.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade col-12" id="nav-tabs5" role="tabpanel" aria-labelledby="nav-tabs-5">
-                <p>Para enfrentar la pérdida de un ser querido o la suya; la cobertura de Gastos Funerarios
-                    le brinda asistencia en todos los trámites, gestiones y servicios necesarios para auxiliarle,
-                    en caso de su fallecimiento o el de uno de los dependientes.</p>
-                <div id="accordion-4">
-                    <div class="card">
-                        <div class="card-header" id="heading15">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse15"
+        </div>
+        <div class="tab-pane fade col-12" id="nav-tabs5" role="tabpanel" aria-labelledby="nav-tabs-5">
+            <p>Para enfrentar la pérdida de un ser querido o la suya; la cobertura de Gastos Funerarios
+                le brinda asistencia en todos los trámites, gestiones y servicios necesarios para auxiliarle,
+                en caso de su fallecimiento o el de uno de los dependientes.</p>
+            <div id="accordion-5">
+                <div class="card">
+                    <div class="card-header" id="heading15">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse15"
                                     aria-expanded="false" aria-controls="collapse15">
-                                    <span class="icon"></span>
-                                </button>
-                                <p>Beneficios y servicios amparados</p>
-                            </h5>
-                        </div>
-                        <div id="collapse15" class="collapse" aria-labelledby="heading15" data-parent="#accordion">
-                            <div class="card-body">
-                                <p>Los beneficios y servicios amparados por esta póliza son los gastos funerarios,
-                                    descritos a continuación:</p>
-                                <ol type="I">
-                                    <li class="text-primary">Gastos por Servicios Funerarios:</li>
-                                    <p>gastos relacionados con los Servicios Funerarios prestados por Funerarias
-                                        u otros Proveedores de Servicios, directamente relacionados con estos, tales
-                                        como: Preparación y arreglo normal
-                                        del fallecido, Almacenamiento, Ataúd, Servicios de capilla y cafetín, Oficios
-                                        religiosos, Habitación de descanso.</p>
-                                    <li class="text-primary">Servicios de Transporte:</li>
-                                    <p> Gastos relacionados con el transporte del fallecido y sus familiares, prestados
-                                        por Funerarias
-                                        u otros Proveedores, tales como:</p>
+                                <span class="icon"></span>
+                            </button>
+                            <p>Beneficios y servicios amparados</p>
+                        </h5>
+                    </div>
+                    <div id="collapse15" class="collapse" aria-labelledby="heading15" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>Los beneficios y servicios amparados por esta póliza son los gastos funerarios,
+                                descritos a continuación:</p>
+                            <ol type="I">
+                                <li class="text-primary">Gastos por Servicios Funerarios:</li>
+                                <p>gastos relacionados con los Servicios Funerarios prestados por Funerarias
+                                    u otros Proveedores de Servicios, directamente relacionados con estos, tales
+                                    como: Preparación y arreglo normal
+                                    del fallecido, Almacenamiento, Ataúd, Servicios de capilla y cafetín, Oficios
+                                    religiosos, Habitación de descanso.</p>
+                                <li class="text-primary">Servicios de Transporte:</li>
+                                <p> Gastos relacionados con el transporte del fallecido y sus familiares, prestados
+                                    por Funerarias
+                                    u otros Proveedores, tales como:</p>
+                                <ol type="a">
+                                    <li>Traslado del fallecido, desde el lugar de fallecimiento hasta la Funeraria.
+                                    </li>
+                                    <li>Cortejo fúnebre: desde la Funeraria hasta el cementerio, en donde se realice
+                                        la inhumación o cremación.
+                                    </li>
+                                    <li>Vehículos para traslado de familiares y acompañantes: desde la Funeraria
+                                        hasta el cementerio, en donde se realice
+                                        la inhumación o cremación.
+                                    </li>
+                                </ol>
+                                <li class="text-primary">Servicios Generales:</li>
+                                <p> Otros gastos relacionados con los servicios funerarios prestados, tales como</p>
+                                <ol type="a">
+                                    <li>Participación por la prensa.</li>
+                                    <li>Cruz de flores naturales.</li>
+                                </ol>
+                                <li class="text-primary">Servicios de Inhumación o Cremación:</li>
+                                <p> Para con EL ASEGURADO fallecido, si el monto de RESPONSABILIDAD Máxima
+                                    Contratado
+                                    lo permite, se podrá optar por uno de los siguientes servicios:</p>
+                                <ol type="i">
+                                    <li>Servicios de Inhumación:</li>
+                                    <p>Servicios de Cementerio o gastos relacionados con los servicios prestados
+                                        directamente por el Cementerio u otros
+                                        proveedores, donde se incluyen:</p>
                                     <ol type="a">
-                                        <li>Traslado del fallecido, desde el lugar de fallecimiento hasta la Funeraria.
-                                        </li>
-                                        <li>Cortejo fúnebre: desde la Funeraria hasta el cementerio, en donde se realice
-                                            la inhumación o cremación.</li>
-                                        <li>Vehículos para traslado de familiares y acompañantes: desde la Funeraria
-                                            hasta el cementerio, en donde se realice
-                                            la inhumación o cremación.</li>
+                                        <li>Parcela de hasta dos (2) puestos en el Cementerio.</li>
+                                        <li>Servicios de inhumación, incluyendo el Servicio Religioso</li>
+                                        <li>Lápida</li>
                                     </ol>
-                                    <li class="text-primary">Servicios Generales:</li>
-                                    <p> Otros gastos relacionados con los servicios funerarios prestados, tales como</p>
+                                    <li>Cremación.</li>
                                     <ol type="a">
-                                        <li>Participación por la prensa.</li>
-                                        <li>Cruz de flores naturales.</li>
-                                    </ol>
-                                    <li class="text-primary">Servicios de Inhumación o Cremación:</li>
-                                    <p> Para con EL ASEGURADO fallecido, si el monto de RESPONSABILIDAD Máxima
-                                        Contratado
-                                        lo permite, se podrá optar por uno de los siguientes servicios:</p>
-                                    <ol type="i">
-                                        <li>Servicios de Inhumación:</li>
-                                        <p>Servicios de Cementerio o gastos relacionados con los servicios prestados
-                                            directamente por el Cementerio u otros
-                                            proveedores, donde se incluyen:</p>
-                                        <ol type="a">
-                                            <li>Parcela de hasta dos (2) puestos en el Cementerio.</li>
-                                            <li>Servicios de inhumación, incluyendo el Servicio Religioso</li>
-                                            <li>Lápida</li>
-                                        </ol>
-                                        <li>Cremación.</li>
-                                        <ol type="a">
-                                            <li>Encoframiento de las cenizas</li>
-                                        </ol>
+                                        <li>Encoframiento de las cenizas</li>
                                     </ol>
                                 </ol>
-                                <p>Puedes imprimir las solicitudes haciendo clic en el enlace correspondiente:</p>
-                                <div class="text-center text-primary">
-                                    <a target="_blank"
-                                        href="https://www.seguroscaroni.com/caroni/formularios/FO-PER-02_Servicios_Funerarios_Individual.pdf">Formulario
-                                        de solicitud de Seguro Servicio Funerario Individual</a>
-                                </div>
-                                <h3 class="my-4">Prestación del servicio</h3>
+                            </ol>
+                            <p>Puedes imprimir las solicitudes haciendo clic en el enlace correspondiente:</p>
+                            <div class="text-center text-primary">
+                                <a target="_blank"
+                                   href="https://www.seguroscaroni.com/caroni/formularios/FO-PER-02_Servicios_Funerarios_Individual.pdf">Formulario
+                                    de solicitud de Seguro Servicio Funerario Individual</a>
                             </div>
+                            <h3 class="my-4">Prestación del servicio</h3>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="heading16">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse16"
+                </div>
+                <div class="card">
+                    <div class="card-header" id="heading16">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse16"
                                     aria-expanded="false" aria-controls="collapse16">
-                                    <span class="icon"></span>
-                                </button>
-                                <p>Asistencia directa en funerarias mediante clave o autoraización de atención</p>
-                            </h5>
-                        </div>
-                        <div id="collapse16" class="collapse" aria-labelledby="heading16" data-parent="#accordion">
-                            <div class="card-body">
-                                <p>El asegurado podrá hacer uso del servicio funerario de la red, de funerarias
-                                    afiliadas a través de
-                                    la plataforma de atención (Call Center) funeraria, donde le permite al Titular y a
-                                    su grupo familiar
-                                    afiliado enfrentar el doloroso momento de la pérdida de un ser querido, gestionando
-                                    el acceso inmediato
-                                    a los servicios funerarios a través de:</p>
-                                <div class="text-center">
-                                    <h3 class="my-4">0800 - SCARONI "0800 - 72.27.664"</h3>
-                                </div>
-                                <ol type="a">
-                                    <li>Para poder hacer uso de los servicios prestados a través de Clave de Servicios
-                                        Funerarios,
-                                        EL ASEGURADO TITULAR o algún familiar de EL ASEGURADO fallecido, deberá hacer la
-                                        solicitud
-                                        respectiva, comunicándose a los números telefónicos antes citados.</li>
-                                    <li>Nuestro Proveedor proveerá los Servicios Funerarios exigidos, tomando en cuenta
-                                        el Plan de
-                                        Seguro contratado para EL ASEGURADO fallecido, las limitaciones particulares y
-                                        el monto máximo
-                                        de responsabilidad establecido en el cuadro recibo de la póliza.</li>
-                                </ol>
+                                <span class="icon"></span>
+                            </button>
+                            <p>Asistencia directa en funerarias mediante clave o autoraización de atención</p>
+                        </h5>
+                    </div>
+                    <div id="collapse16" class="collapse" aria-labelledby="heading16" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>El asegurado podrá hacer uso del servicio funerario de la red, de funerarias
+                                afiliadas a través de
+                                la plataforma de atención (Call Center) funeraria, donde le permite al Titular y a
+                                su grupo familiar
+                                afiliado enfrentar el doloroso momento de la pérdida de un ser querido, gestionando
+                                el acceso inmediato
+                                a los servicios funerarios a través de:</p>
+                            <div class="text-center">
+                                <h3 class="my-4">0800 - SCARONI "0800 - 72.27.664"</h3>
                             </div>
+                            <ol type="a">
+                                <li>Para poder hacer uso de los servicios prestados a través de Clave de Servicios
+                                    Funerarios,
+                                    EL ASEGURADO TITULAR o algún familiar de EL ASEGURADO fallecido, deberá hacer la
+                                    solicitud
+                                    respectiva, comunicándose a los números telefónicos antes citados.
+                                </li>
+                                <li>Nuestro Proveedor proveerá los Servicios Funerarios exigidos, tomando en cuenta
+                                    el Plan de
+                                    Seguro contratado para EL ASEGURADO fallecido, las limitaciones particulares y
+                                    el monto máximo
+                                    de responsabilidad establecido en el cuadro recibo de la póliza.
+                                </li>
+                            </ol>
                         </div>
-                        <div class="card">
-                        <div class="card-header" id="heading17">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse"
-                                        data-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
-                                        <span class="icon"></span>
-                                </button>
-                                <p>Reembolsos de gastos:</p>
-                            </h5>
-                        </div>
-                        <div id="collapse17" class="collapse" aria-labelledby="heading17" data-parent="#accordion">
-                                <div class="card-body">
-                                    <p>Sí, en caso de fallecimiento de algún ASEGURADO, se prestaren servicios
-                                        funerarios
-                                        sin la intervención
-                                        del Proveedor, los gastos incurridos por tales servicios funerarios serán
-                                        reembolsados por EL ASEGURADOR,
-                                        según costos razonables de la atención prestada, en tal caso se deberá presentar
-                                        la
-                                        reclamación dentro de
-                                        los 15 días continuos, siguientes al fallecimiento del Asegurado, presentado la
-                                        documentación correspondiente para tal fin.</p>
-                                </div>
-                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="heading17">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
+                                <span class="icon"></span>
+                            </button>
+                            <p>Reembolsos de gastos:</p>
+                        </h5>
+                    </div>
+                    <div id="collapse17" class="collapse" aria-labelledby="heading17" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>Sí, en caso de fallecimiento de algún ASEGURADO, se prestaren servicios
+                                funerarios
+                                sin la intervención
+                                del Proveedor, los gastos incurridos por tales servicios funerarios serán
+                                reembolsados por EL ASEGURADOR,
+                                según costos razonables de la atención prestada, en tal caso se deberá presentar
+                                la
+                                reclamación dentro de
+                                los 15 días continuos, siguientes al fallecimiento del Asegurado, presentado la
+                                documentación correspondiente para tal fin.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade col-12" id="nav-tabs6" role="tabpanel" aria-labelledby="nav-tabs-6">
+        </div>
+        <div class="tab-pane fade col-12" id="nav-tabs6" role="tabpanel" aria-labelledby="nav-tabs-6">
+            <div class="accordion-6">
                 <h6>Salud (HCM) con cobertura opcional de Maternidad.</h6>
                 <h6>Accidentes Personales.</h6>
                 <h6>Funerarios.</h6>
@@ -773,360 +778,373 @@
                     <li>Adultos(as) mayores de 60 años.</li>
                     <li>Personas con discapacidad.</li>
                     <li>Personas con enfermedades físicas y/o mentales.</li>
-                    <li>Personas cuyos ingresos mensuales no superen el equivalente, a veinticinco unidades tributarias (25 U.T.).</li>
+                    <li>Personas cuyos ingresos mensuales no superen el equivalente, a veinticinco unidades tributarias
+                        (25 U.T.).
+                    </li>
                 </ul>
-                <p>Podrán incluir en la Póliza de Seguro Solidario de Salud y Funerarios, a los familiares que se indican a continuación, 
+                <p>Podrán incluir en la Póliza de Seguro Solidario de Salud y Funerarios, a los familiares que se
+                    indican a continuación,
                     siempre que dependan económicamente del Asegurado Titular:</p>
                 <ul>
                     <li>Cónyuge o la persona con quien mantenga unión estable de hecho, sin límite de edad.</li>
-                    <li>Hijos e hijas menores de veinticinco (25) años de edad del Asegurado Titular o de su 
-                        cónyuge o de la persona con quien mantenga unión estable de hecho.</li>
+                    <li>Hijos e hijas menores de veinticinco (25) años de edad del Asegurado Titular o de su
+                        cónyuge o de la persona con quien mantenga unión estable de hecho.
+                    </li>
                     <li>Los Padres sin límite de edad.</li>
                 </ul>
             </div>
         </div>
-        <nav>
-            <div class="nav nav-tabs row container-poliza row-cols-1 row-cols-sm-2 row-cols-md-3" id="tabsThree"
-                role="tablist">
-                <a class="nav-item nav-link" id="nav-tabs-7" data-toggle="tab" href="#nav-tabs7" role="tab"
-                    aria-controls="nav-tabs6" aria-selected="false">
-                    <div class="col mb-4">
-                        <div class="card card-allies card-poliza-box h-100">
-                            <div class="card-body">
-                                <img src="images/icon-poliza-6.png" />
-                                <p>Seguro <br>Solidario<br>de salud</p>
-                            </div>
+    </div>
+    <nav>
+        <div class="nav nav-tabs row container-poliza row-cols-1 row-cols-sm-2 row-cols-md-3" id="tabsThree"
+             role="tablist">
+            <a class="nav-item nav-link" id="nav-tabs-7" data-toggle="tab" href="#nav-tabs7" role="tab"
+               aria-controls="nav-tabs6" aria-selected="false">
+                <div class="col mb-4">
+                    <div class="card card-allies card-poliza-box h-100">
+                        <div class="card-body">
+                            <img src="images/icon-poliza-6.png"/>
+                            <p>Seguro <br>Solidario<br>de salud</p>
                         </div>
                     </div>
-                </a>
-                <a class="nav-item nav-link" id="nav-tabs-8" data-toggle="tab" href="#nav-tabs8" role="tab"
-                    aria-controls="nav-tabs7" aria-selected="false">
-                    <div class="col mb-4">
-                        <div class="card card-allies card-poliza-box h-100">
-                            <div class="card-body">
-                                <img src="images/icon-poliza-7.png" />
-                                <p>Seguro solidario<br>de Accidentes<br>Personales</p>
-                            </div>
+                </div>
+            </a>
+            <a class="nav-item nav-link" id="nav-tabs-8" data-toggle="tab" href="#nav-tabs8" role="tab"
+               aria-controls="nav-tabs7" aria-selected="false">
+                <div class="col mb-4">
+                    <div class="card card-allies card-poliza-box h-100">
+                        <div class="card-body">
+                            <img src="images/icon-poliza-7.png"/>
+                            <p>Seguro solidario<br>de Accidentes<br>Personales</p>
                         </div>
                     </div>
-                </a>
-                <a class="nav-item nav-link" id="nav-tabs-9" data-toggle="tab" href="#nav-tabs9" role="tab"
-                    aria-controls="nav-tabs8" aria-selected="false">
-                    <div class="col mb-4">
-                        <div class="card card-allies card-poliza-box h-100">
-                            <div class="card-body">
-                                <img src="images/icon-poliza-8.png" />
-                                <p>Seguro solidario<br>de Accidentes<br>Personales</p>
-                            </div>
+                </div>
+            </a>
+            <a class="nav-item nav-link" id="nav-tabs-9" data-toggle="tab" href="#nav-tabs9" role="tab"
+               aria-controls="nav-tabs8" aria-selected="false">
+                <div class="col mb-4">
+                    <div class="card card-allies card-poliza-box h-100">
+                        <div class="card-body">
+                            <img src="images/icon-poliza-8.png"/>
+                            <p>Seguro solidario<br>de Accidentes<br>Personales</p>
                         </div>
                     </div>
-                </a>
+                </div>
+            </a>
+        </div>
+    </nav>
+    <div class="tab-content row container-poliza tabs-poliza" id="Tabs3">
+        <div class="tab-pane fade col-12" id="nav-tabs7" role="tabpanel" aria-labelledby="nav-tabs-7">
+            <h3 class="my-4">Objeto del seguro</h3>
+            <p>El ASEGURADOR se compromete a asumir los riesgos indicados en el Contrato de Seguro Solidario,
+                hasta la suma asegurada señalada en el Cuadro Recibo de Seguro Solidario.</p>
+            <div class="card">
+                <div class="card-header" id="heading18">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                data-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
+                            <span class="icon"></span>
+                        </button>
+                        <p>Población Asegurable: </p>
+                    </h5>
+                </div>
+                <div id="collapse18" class="collapse" aria-labelledby="heading18" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Comprende a los jubilados, jubiladas, pensionados, pensionadas, adultos y adultas
+                            mayores, personas con discapacidad, personas con enfermedades físicas y/o mentales y
+                            las personas cuyos ingresos mensuales no superen el equivalente a Veinticinco Unidades
+                            Tributarias (25 U.T.).</p>
+                        <p>Puedes imprimir la solicitud de Seguro Solidario haciendo clic en el siguiente enlace:</p>
+                        <div class="text-center">
+                            <a target="_blank"
+                               href="https://www.seguroscaroni.com/caroni/formularios/FO-PER-12_SOLICITUD_DE_SEGURO_SOLIDARIO_SALUD.pdf"><b>Solicitud
+                                de Seguro Solidario de Salud</b></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </nav>
-        <div class="tab-content row container-poliza tabs-poliza" id="Tabs3">
-            <div class="tab-pane fade col-12" id="nav-tabs7" role="tabpanel" aria-labelledby="nav-tabs-7">
-                <h3 class="my-4">Objeto del seguro</h3>
-                <p>El ASEGURADOR se compromete a asumir los riesgos indicados en el Contrato de Seguro Solidario, 
-                   hasta la suma asegurada señalada en el Cuadro Recibo de Seguro Solidario.</p>
-                   <div class="card">
-                    <div class="card-header" id="heading18">
+        </div>
+        <div class="tab-pane fade col-12" id="nav-tabs8" role="tabpanel" aria-labelledby="nav-tabs-8">
+            <h3 class="my-4">Objeto del seguro</h3>
+            <p>El ASEGURADOR se compromete a asumir los riesgos indicados en el Contrato de Seguro Solidario,
+                hasta la suma asegurada señalada en el Cuadro Recibo de Seguro Solidario.</p>
+            <div id="accordion-8">
+                <div class="card">
+                    <div class="card-header" id="heading19">
                         <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse"
-                                    data-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
-                                    <span class="icon"></span>
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse19"
+                                    aria-expanded="false" aria-controls="collapse19">
+                                <span class="icon"></span>
                             </button>
-                            <p>Población Asegurable: </p>
+                            <p>Población Asegurable:</p>
                         </h5>
                     </div>
-                    <div id="collapse18" class="collapse" aria-labelledby="heading18" data-parent="#accordion">
-                            <div class="card-body">
-                                <p>Comprende a los jubilados, jubiladas, pensionados, pensionadas, adultos y adultas 
-                                   mayores, personas con discapacidad, personas con enfermedades físicas y/o mentales y 
-                                   las personas cuyos ingresos mensuales no superen el equivalente a Veinticinco Unidades Tributarias (25 U.T.).</p>
-                                <p>Puedes imprimir la solicitud de Seguro Solidario haciendo clic en el siguiente enlace:</p>
-                                <div class="text-center">
-                                    <a target="_blank"
-                                        href="https://www.seguroscaroni.com/caroni/formularios/FO-PER-12_SOLICITUD_DE_SEGURO_SOLIDARIO_SALUD.pdf"><b>Solicitud de Seguro Solidario de Salud</b></a>
-                                </div>
-                            </div>
+                    <div id="collapse19" class="collapse" aria-labelledby="heading19" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>Comprende a los jubilados, jubiladas, pensionados, pensionadas, adultos y adultas
+                                mayores,
+                                personas con discapacidad, personas con enfermedades físicas y/o mentales y las
+                                personas cuyos
+                                ingresos mensuales no superen el equivalente a Veinticinco Unidades Tributarias (25
+                                U.T.).</p>
+                        </div>
                     </div>
-            </div>
-            <div class="tab-pane fade col-12" id="nav-tabs8" role="tabpanel" aria-labelledby="nav-tabs-8">
-                <h3 class="my-4">Objeto del seguro</h3>
-                <p>El ASEGURADOR se compromete a asumir los riesgos indicados en el Contrato de Seguro Solidario, 
-                   hasta la suma asegurada señalada en el Cuadro Recibo de Seguro Solidario.</p>
-                   <div id="accordion-8">
-                    <div class="card">
-                        <div class="card-header" id="heading19">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse19"
-                                    aria-expanded="false" aria-controls="collapse19">
-                                    <span class="icon"></span>
-                                </button>
-                                <p>Población Asegurable:</p>
-                            </h5>
-                        </div>
-                        <div id="collapse19" class="collapse" aria-labelledby="heading19" data-parent="#accordion">
-                            <div class="card-body">
-                                <p>Comprende a los jubilados, jubiladas, pensionados, pensionadas, adultos y adultas mayores, 
-                                    personas con discapacidad, personas con enfermedades físicas y/o mentales y las personas cuyos 
-                                    ingresos mensuales no superen el equivalente a Veinticinco Unidades Tributarias (25 U.T.).</p>
-                            </div>
-                        </div>
                     <h3 class="my-4">Riesgos cubiertos</h3>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="heading20">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse20"
+                </div>
+                <div class="card">
+                    <div class="card-header" id="heading20">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse20"
                                     aria-expanded="false" aria-controls="collapse20">
-                                    <span class="icon"></span>
-                                </button>
-                                <p>Muerte Accidental:</p>
-                            </h5>
-                        </div>
-                        <div id="collapse20" class="collapse" aria-labelledby="heading20" data-parent="#accordion">
-                            <div class="card-body">
-                                <p>Si como consecuencia directa y exclusiva de un accidente amparado por esta Póliza y 
-                                   dentro del plazo de trescientos sesenta y cinco (365) días siguientes a la fecha del 
-                                   mismo, al Asegurado le sobreviene la muerte, el Asegurador pagará la suma asegurada indicada 
-                                   en el Cuadro Recibo de Seguro Solidario.</p>
-                            </div>
+                                <span class="icon"></span>
+                            </button>
+                            <p>Muerte Accidental:</p>
+                        </h5>
+                    </div>
+                    <div id="collapse20" class="collapse" aria-labelledby="heading20" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>Si como consecuencia directa y exclusiva de un accidente amparado por esta Póliza y
+                                dentro del plazo de trescientos sesenta y cinco (365) días siguientes a la fecha del
+                                mismo, al Asegurado le sobreviene la muerte, el Asegurador pagará la suma asegurada
+                                indicada
+                                en el Cuadro Recibo de Seguro Solidario.</p>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="heading21">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse21"
+                </div>
+                <div class="card">
+                    <div class="card-header" id="heading21">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse21"
                                     aria-expanded="false" aria-controls="collapse21">
-                                    <span class="icon"></span>
-                                </button>
-                                <p>Invalidez Permanente:</p>
-                            </h5>
-                        </div>
-                        <div id="collapse21" class="collapse" aria-labelledby="heading21" data-parent="#accordion">
-                            <div class="card-body">
-                                <p>Si como consecuencia directa y exclusiva de un accidente amparado por esta Póliza y 
-                                    dentro del plazo de trescientos sesenta y cinco (365) días siguientes a la fecha del mismo, 
-                                    el Asegurado sufre cualquier invalidez de las mencionadas en la Escala de Indemnizaciones, 
-                                    el Asegurador pagará la cantidad resultante de aplicar el porcentaje estipulado en la referida 
-                                    escala a la suma asegurada indicada en el Cuadro Recibo de Seguro Solidario.</p>>
-                            </div>
+                                <span class="icon"></span>
+                            </button>
+                            <p>Invalidez Permanente:</p>
+                        </h5>
+                    </div>
+                    <div id="collapse21" class="collapse" aria-labelledby="heading21" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>Si como consecuencia directa y exclusiva de un accidente amparado por esta Póliza y
+                                dentro del plazo de trescientos sesenta y cinco (365) días siguientes a la fecha del
+                                mismo,
+                                el Asegurado sufre cualquier invalidez de las mencionadas en la Escala de
+                                Indemnizaciones,
+                                el Asegurador pagará la cantidad resultante de aplicar el porcentaje estipulado en
+                                la referida
+                                escala a la suma asegurada indicada en el Cuadro Recibo de Seguro Solidario.</p>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="heading22">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse22"
+                </div>
+                <div class="card">
+                    <div class="card-header" id="heading22">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse22"
                                     aria-expanded="false" aria-controls="collapse22">
-                                    <span class="icon"></span>
-                                </button>
-                                <p>Gastos Médicos:</p>
-                            </h5>
-                        </div>
-                        <div id="collapse22" class="collapse" aria-labelledby="heading22" data-parent="#accordion">
-                            <div class="card-body">
-                                <p>Si como consecuencia directa y exclusiva de un accidente amparado por esta Póliza, 
-                                    dentro de los ciento ochenta (180) días siguientes a la fecha del mismo, el Asegurado 
-                                    requiere atención médica u hospitalaria para el restablecimiento de su salud, el Asegurador pagará, 
-                                    hasta la suma asegurada indicada en el Cuadro Recibo de Seguro Solidario, los gastos médicos incurridos 
-                                    por el Asegurado en una institución hospitalaria por la atención médica u hospitalaria, incluyendo los gastos 
-                                    por servicios de ambulancia y de farmacia.</p>
-                                <p>Puedes imprimir la solicitud de Seguro Solidario de Accidentes Personales haciendo clic en el siguiente enlace:</p>
-                                <div class="text-center">
-                                    <a target="_blank"
-                                        href="https://www.seguroscaroni.com/caroni/formularios/FO-PER-13_SOLICITUD_DE_SEGURO_SOLIDARIO_ACCIDENTES_PERSONALES.pdf"><b>•	Solicitud de Seguro Solidario de Accidentes Personales</b></a>
-                                </div>
+                                <span class="icon"></span>
+                            </button>
+                            <p>Gastos Médicos:</p>
+                        </h5>
+                    </div>
+                    <div id="collapse22" class="collapse" aria-labelledby="heading22" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>Si como consecuencia directa y exclusiva de un accidente amparado por esta Póliza,
+                                dentro de los ciento ochenta (180) días siguientes a la fecha del mismo, el
+                                Asegurado
+                                requiere atención médica u hospitalaria para el restablecimiento de su salud, el
+                                Asegurador pagará,
+                                hasta la suma asegurada indicada en el Cuadro Recibo de Seguro Solidario, los gastos
+                                médicos incurridos
+                                por el Asegurado en una institución hospitalaria por la atención médica u
+                                hospitalaria, incluyendo los gastos
+                                por servicios de ambulancia y de farmacia.</p>
+                            <p>Puedes imprimir la solicitud de Seguro Solidario de Accidentes Personales haciendo
+                                clic en el siguiente enlace:</p>
+                            <div class="text-center">
+                                <a target="_blank"
+                                   href="https://www.seguroscaroni.com/caroni/formularios/FO-PER-13_SOLICITUD_DE_SEGURO_SOLIDARIO_ACCIDENTES_PERSONALES.pdf"><b>Solicitud
+                                    de Seguro Solidario de Accidentes Personales</b></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <nav>
+        <div class="tab-pane fade col-12" id="nav-tabs9" role="tabpanel" aria-labelledby="nav-tabs-9">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque distinctio perferendis, saepe ipsam
+                amet
+                quod quibusdam aliquid odio consectetur alias. Adipisci ipsa error exercitationem iure architecto
+                animi
+                aspernatur rerum minima!</p>
+            <div class="accordion-9">
 
-
-
-
-
-
-
-
-
-            </div>
-            <div class="tab-pane fade col-12" id="nav-tabs9" role="tabpanel" aria-labelledby="nav-tabs-9">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque distinctio perferendis, saepe ipsam
-                    amet
-                    quod quibusdam aliquid odio consectetur alias. Adipisci ipsa error exercitationem iure architecto
-                    animi
-                    aspernatur rerum minima!</p>
             </div>
         </div>
-        <!--Blog and footer-->
-        <div class="row myblog">
-            <div class="col-md-4 col-lg-4 col-sm-4 px-0 mx-0 ">
-                <div class="card  blog1 text-white">
-                    <img class="card-img " src="images/blog-1.png" alt="Card image">
-                    <div class="card-img-overlay">
-                        <a href="#" class="date card-text "> 15 abril | admin </a>
-                        <h3 class="card-text">Inerosajustofacilisisrutrum. Aeneanidullamcorperlibero. Vestibulum
-                            imperdiet</h3>
-                    </div>
-                </div>
+    </div>
+</div>
+<!--Blog and footer-->
+<div class="row myblog">
+    <div class="col-md-4 col-lg-4 col-sm-4 px-0 mx-0 ">
+        <div class="card  blog1 text-white">
+            <img class="card-img " src="images/blog-1.png" alt="Card image">
+            <div class="card-img-overlay">
+                <a href="#" class="date card-text "> 15 abril | admin </a>
+                <h3 class="card-text">Inerosajustofacilisisrutrum. Aeneanidullamcorperlibero. Vestibulum
+                    imperdiet</h3>
             </div>
-            <div class="col-md-4 col-lg-4 col-sm-4  px-0 mx-0 ">
-                <div class="card  blog2 text-white">
-                    <img class="card-img " src="images/blog-2.png" alt="Card image">
-                    <div class="card-img-overlay">
-                        <a href="#" class="date card-text "> 15 abril | admin </a>
-                        <h3 class="card-text">Inerosajustofacilisisrutrum. Aeneanidullamcorperlibero. Vestibulum
-                            imperdiet</h3>
-                        <a href="#" class="btn-blog card-text">Leer Más</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-4  px-0 mx-0col-sm-4 d-none d-md-block d-lg-block">
-                <div class="card  blog3 text-white">
-                    <img class="card-img " src="images/blog-3.png" alt="Card image">
-                    <div class="card-img-overlay">
-                        <a href="#" class="date card-text "> 15 abril | admin </a>
-                        <h3 class="card-text">Inerosajustofacilisisrutrum. Aeneanidullamcorperlibero. Vestibulum
-                            imperdiet</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="container-link">
-                <div class="row text-left">
-                    <div class="col-md-3 col-lg-3 col-sm-12">
-                        <h4>Nosotros</h4>
-                        <img src="images/line-link.svg" class="line-link" alt="Line block">
-                        <p>Seguros Caroní, S.A. nace en el año 1993 en la ciudad de Puerto Ordaz con el apoyo y
-                            patrocinio
-                            de un
-                            grupo de empresarios guayaneses quienes hicieron realidad la visión del Grupo Caroní de
-                            ampliar
-                            los
-                            servicios financieros...</p>
-                        <small class="custom-text"><i class="fa fa-envelope"></i> <a class="content-link"
-                                href="mailto:tuconsulta@seguroscaroni.com">
-                                tuconsulta@seguroscaroni.com</a></small>
-                        <small class="custom-text"><i class="fa fa-phone"></i> <a class="content-link"
-                                href="tel:0412 SCARONI">0412
-                                SCARONI</a></small>
-                        <small class="custom-text"><i class="fa fa-map-marker"></i> <a
-                                href="https://goo.gl/maps/n5iiJFyHpB7J3Fys6" target="_blank"
-                                class="content-link">Caracas,
-                                Venezuela</a></small>
-                    </div>
-                    <div class="col-md-3 col-lg-3 col-sm-1 d-none d-md-block d-lg-block pl-lg-2">
-                        <h4>Oficinas</h4>
-                        <img src="images/line-link.svg" class="line-link" alt="Line block">
-                        <div class="list-group">
-                            <div class="list-group-item">
-                                <a href="#"><img src="images/oficina-1.png" class="thumbnail" /></a>
-                                <div class="newstext text-left">
-                                    <a href="">
-                                        <p class="title">Caracas</p>
-                                    </a>
-                                    <a href="">
-                                        <p class="title">Altamira, Chacao</p>
-                                    </a>
-                                    <span class="clearfix"></span>
-                                </div>
-                            </div>
-                            <div class="list-group-item">
-                                <a href="#"><img src="images/oficina-1.png" class="thumbnail" /></a>
-                                <div class="newstext text-left">
-                                    <a href="">
-                                        <p class="title">Caracas</p>
-                                    </a>
-                                    <a href="">
-                                        <p class="title">La lagunita, El Hatillo</p>
-                                    </a>
-                                    <span class="clearfix"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="oficinas" href="#">todas las oficinas ></a>
-                    </div>
-                    <div class="col-md-3 col-lg-3 col-sm-12">
-                        <h4>Información Caroní</h4>
-                        <img src="images/line-link.svg" class="line-link" alt="Line block">
-                        <p>Lorem ipsum dolor sit amet, consectetur </p>
-                        <table class="horarios">
-                            <tr>
-                                <td>MON - FRI:</td>
-                                <td>9AM - 9PM</td>
-                            </tr>
-                            <tr>
-                                <td>SATURDAY:</td>
-                                <td>9AM - 5PM</td>
-                            </tr>
-                            <tr>
-                                <td>SUNDAY:</td>
-                                <td>9AM - 5PM</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="col-md-3 col-lg-3 col-sm-12">
-                        <h4>Términos de Seguros</h4>
-                        <img src="images/line-link.svg" class="line-link" alt="Line block">
-                        <p>Entra conoce mas sobre los términos del mundo de seguro.</p>
-                        <a href="glosario.html"><img src="images/btn-glossary.png" alt="Glossary" width="160"></a>
-                    </div>
-                </div>
-            </div>
-            <footer>
-                <div class="row greybar">
-                    <div class="col-md-4 col-lg-4 col-sm-12 fs d-none d-md-block d-lg-block">
-                        <p>Síguenos</p>
-                        <p> en nuestras redes sociales</p>
-                        <div class="socialmedia-container text-left">
-                            <a href="https://www.instagram.com/seguroscaronioficial/?hl=es-la" title="Instagram"
-                                target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
-                            <a class="pl-2" href="https://www.facebook.com/SegurosCaroniOficial/" title="Facebook"
-                                target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
-                            <a class="pl-2" href="https://twitter.com/caroniseguros?lang=es" title="Twitter"
-                                target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
-                            <a class="pl-2" href="https://api.whatsapp.com/send?phone=0412SCARONI" title="WhatsApp"
-                                target="_blank"><i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-lg-4 col-sm-12 text-center">
-                        <p>Atención a los clientes</p>
-                        <h2><a href="tel:0500 SCARONI" class="phone-footer">0500SCARONI</a></h2>
-                    </div>
-                    <div class="col-md-4 col-lg-4 col-sm-12">
-                        <div class="btn-contacto">
-                            <a href="contacto.html"><img src="images/img-bottom.PNG" class="img-fluid"></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-lg-4 col-sm-12 fs d-block d-md-none d-lg-none">
-                        <p>Síguenos</p>
-                        <p> en nuestras redes sociales</p>
-                        <div class="socialmedia-container text-left">
-                            <a href="https://www.instagram.com/seguroscaronioficial/?hl=es-la" title="Instagram"
-                                target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
-                            <a class="pl-2" href="https://www.facebook.com/SegurosCaroniOficial/" title="Facebook"
-                                target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
-                            <a class="pl-2" href="https://twitter.com/caroniseguros?lang=es" title="Twitter"
-                                target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
-                            <a class="pl-2" href="https://api.whatsapp.com/send?phone=0412SCARONI" title="WhatsApp"
-                                target="_blank"><i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row text-center cintillo ">
-                    <div class="col-md-12 col-lg-12 col-sm-12">
-                        <p class="py-0 my-0">Empresa de Seguros Inscrita en la Superintendencia de la Actividad
-                            Aseguradora
-                            bajo el No 110.</p>
-                        <p class="py-0 my-0">Rif. J-xxxxxxxxxxxx</p>
-                    </div>
-                </div>
-            </footer>
         </div>
-        <div class="mobile-overwall"></div>
+    </div>
+    <div class="col-md-4 col-lg-4 col-sm-4  px-0 mx-0 ">
+        <div class="card  blog2 text-white">
+            <img class="card-img " src="images/blog-2.png" alt="Card image">
+            <div class="card-img-overlay">
+                <a href="#" class="date card-text "> 15 abril | admin </a>
+                <h3 class="card-text">Inerosajustofacilisisrutrum. Aeneanidullamcorperlibero. Vestibulum
+                    imperdiet</h3>
+                <a href="#" class="btn-blog card-text">Leer Más</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-lg-4  px-0 mx-0col-sm-4 d-none d-md-block d-lg-block">
+        <div class="card  blog3 text-white">
+            <img class="card-img " src="images/blog-3.png" alt="Card image">
+            <div class="card-img-overlay">
+                <a href="#" class="date card-text "> 15 abril | admin </a>
+                <h3 class="card-text">Inerosajustofacilisisrutrum. Aeneanidullamcorperlibero. Vestibulum
+                    imperdiet</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container-link">
+        <div class="row text-left">
+            <div class="col-md-3 col-lg-3 col-sm-12">
+                <h4>Nosotros</h4>
+                <img src="images/line-link.svg" class="line-link" alt="Line block">
+                <p>Seguros Caroní, S.A. nace en el año 1993 en la ciudad de Puerto Ordaz con el apoyo y
+                    patrocinio
+                    de un
+                    grupo de empresarios guayaneses quienes hicieron realidad la visión del Grupo Caroní de
+                    ampliar
+                    los
+                    servicios financieros...</p>
+                <small class="custom-text"><i class="fa fa-envelope"></i> <a class="content-link"
+                                                                             href="mailto:tuconsulta@seguroscaroni.com">
+                    tuconsulta@seguroscaroni.com</a></small>
+                <small class="custom-text"><i class="fa fa-phone"></i> <a class="content-link"
+                                                                          href="tel:0412 SCARONI">0412
+                    SCARONI</a></small>
+                <small class="custom-text"><i class="fa fa-map-marker"></i> <a
+                        href="https://goo.gl/maps/n5iiJFyHpB7J3Fys6" target="_blank"
+                        class="content-link">Caracas,
+                    Venezuela</a></small>
+            </div>
+            <div class="col-md-3 col-lg-3 col-sm-1 d-none d-md-block d-lg-block pl-lg-2">
+                <h4>Oficinas</h4>
+                <img src="images/line-link.svg" class="line-link" alt="Line block">
+                <div class="list-group">
+                    <div class="list-group-item">
+                        <a href="#"><img src="images/oficina-1.png" class="thumbnail"/></a>
+                        <div class="newstext text-left">
+                            <a href="">
+                                <p class="title">Caracas</p>
+                            </a>
+                            <a href="">
+                                <p class="title">Altamira, Chacao</p>
+                            </a>
+                            <span class="clearfix"></span>
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <a href="#"><img src="images/oficina-1.png" class="thumbnail"/></a>
+                        <div class="newstext text-left">
+                            <a href="">
+                                <p class="title">Caracas</p>
+                            </a>
+                            <a href="">
+                                <p class="title">La lagunita, El Hatillo</p>
+                            </a>
+                            <span class="clearfix"></span>
+                        </div>
+                    </div>
+                </div>
+                <a class="oficinas" href="#">todas las oficinas ></a>
+            </div>
+            <div class="col-md-3 col-lg-3 col-sm-12">
+                <h4>Información Caroní</h4>
+                <img src="images/line-link.svg" class="line-link" alt="Line block">
+                <p>Lorem ipsum dolor sit amet, consectetur </p>
+                <table class="horarios">
+                    <tr>
+                        <td>MON - FRI:</td>
+                        <td>9AM - 9PM</td>
+                    </tr>
+                    <tr>
+                        <td>SATURDAY:</td>
+                        <td>9AM - 5PM</td>
+                    </tr>
+                    <tr>
+                        <td>SUNDAY:</td>
+                        <td>9AM - 5PM</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-md-3 col-lg-3 col-sm-12">
+                <h4>Términos de Seguros</h4>
+                <img src="images/line-link.svg" class="line-link" alt="Line block">
+                <p>Entra conoce mas sobre los términos del mundo de seguro.</p>
+                <a href="glosario.html"><img src="images/btn-glossary.png" alt="Glossary" width="160"></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="row greybar">
+            <div class="col-md-4 col-lg-4 col-sm-12 fs d-none d-md-block d-lg-block">
+                <p>Síguenos</p>
+                <p> en nuestras redes sociales</p>
+                <div class="socialmedia-container text-left">
+                    <a href="https://www.instagram.com/seguroscaronioficial/?hl=es-la" title="Instagram"
+                       target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+                    <a class="pl-2" href="https://www.facebook.com/SegurosCaroniOficial/" title="Facebook"
+                       target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+                    <a class="pl-2" href="https://twitter.com/caroniseguros?lang=es" title="Twitter"
+                       target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+                    <a class="pl-2" href="https://api.whatsapp.com/send?phone=0412SCARONI" title="WhatsApp"
+                       target="_blank"><i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12 text-center">
+                <p>Atención a los clientes</p>
+                <h2><a href="tel:0500 SCARONI" class="phone-footer">0500SCARONI</a></h2>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12">
+                <div class="btn-contacto">
+                    <a href="contacto.html"><img src="images/img-bottom.PNG" class="img-fluid"></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12 fs d-block d-md-none d-lg-none">
+                <p>Síguenos</p>
+                <p> en nuestras redes sociales</p>
+                <div class="socialmedia-container text-left">
+                    <a href="https://www.instagram.com/seguroscaronioficial/?hl=es-la" title="Instagram"
+                       target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+                    <a class="pl-2" href="https://www.facebook.com/SegurosCaroniOficial/" title="Facebook"
+                       target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+                    <a class="pl-2" href="https://twitter.com/caroniseguros?lang=es" title="Twitter"
+                       target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+                    <a class="pl-2" href="https://api.whatsapp.com/send?phone=0412SCARONI" title="WhatsApp"
+                       target="_blank"><i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center cintillo ">
+            <div class="col-md-12 col-lg-12 col-sm-12">
+                <p class="py-0 my-0">Empresa de Seguros Inscrita en la Superintendencia de la Actividad
+                    Aseguradora
+                    bajo el No 110.</p>
+                <p class="py-0 my-0">Rif. J-xxxxxxxxxxxx</p>
+            </div>
+        </div>
+    </footer>
+</div>
+<div class="mobile-overwall"></div>
 </body>
 
 </html>
@@ -1169,14 +1187,14 @@
                     <img src="images/phone-office.png" class="office-icons phone" width="25" alt="Phones">
                     <p class="text-office">
                         <a href="tel:0286 965 21 00" class="phone-number">(0286) 965.21.00</a>
-                        <br />
+                        <br/>
                         <a href="tel:0286 712 21 00" class="phone-number">(0286) 712.21.00</a>
                     </p>
                     <div class="iconos-modal py-3">
                         <a href="https://www.waze.com/ul?ll=8.29467,-62.7307&navigate=yes"><img
-                                src="images/icon-waze.png" height="50" /></a>
+                                src="images/icon-waze.png" height="50"/></a>
                         <a href="http://www.google.com/maps/place/8.29467,-62.7307"><img src="images/icon-maps.png"
-                                height="50" /></a>
+                                                                                         height="50"/></a>
                     </div>
                     <label class="responsive">Cambia de oficina</label>
                     <div class="content-select responsive">
@@ -1191,9 +1209,10 @@
                 </div>
                 <div class="col-lg-6 mt-3 mb-n4 frame-google-maps">
                     <iframe class="border-rounded"
-                        src="https://maps.google.com/maps?q=8.29467,-62.7307&hl=es&z=14&amp;output=embed" width="340"
-                        height="445" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false"
-                        tabindex="0"></iframe>
+                            src="https://maps.google.com/maps?q=8.29467,-62.7307&hl=es&z=14&amp;output=embed"
+                            width="340"
+                            height="445" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false"
+                            tabindex="0"></iframe>
                 </div>
             </div>
         </div>
@@ -1215,14 +1234,14 @@
                     <img src="images/phone-office.png" class="office-icons phone" width="25" alt="Phones">
                     <p class="text-office">
                         <a href="tel:0281 265 26 77" class="phone-number">(0281) 265.26.77</a>
-                        <br />
+                        <br/>
                         <a href="tel:0281 263 64 83" class="phone-number">(0281) 263.64.83</a>
                     </p>
                     <div class="iconos-modal py-3">
                         <a href="https://www.waze.com/ul?ll=10.1859,-64.659&navigate=yes"><img
-                                src="images/icon-waze.png" height="50" /></a>
+                                src="images/icon-waze.png" height="50"/></a>
                         <a href="http://www.google.com/maps/place/10.1859,-64.659"><img src="images/icon-maps.png"
-                                height="50" /></a>
+                                                                                        height="50"/></a>
                     </div>
                     <label class="responsive">Cambia de oficina</label>
                     <div class="content-select responsive">
@@ -1237,9 +1256,9 @@
                 </div>
                 <div class="col-lg-6 mt-3 mb-n4 frame-google-maps">
                     <iframe class="border-rounded"
-                        src="https://maps.google.com/maps?q=10.1859,-64.659&hl=es&z=14&amp;output=embed" width="340"
-                        height="445" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false"
-                        tabindex="0"></iframe>
+                            src="https://maps.google.com/maps?q=10.1859,-64.659&hl=es&z=14&amp;output=embed" width="340"
+                            height="445" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false"
+                            tabindex="0"></iframe>
                 </div>
             </div>
         </div>
