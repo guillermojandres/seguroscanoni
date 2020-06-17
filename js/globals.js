@@ -10,123 +10,32 @@ const showAction = $('#show-icon-actions');
 const hiddenAction = $('#hidden-icon-actions');
 const hiddenFilter = $('#hidden-filter');
 const selectProviders = $('.select-providers');
+const people = $('#people');
+const sureties = $('#sureties');
+const header = $("header");
+const car = $('#car');
+const patrimonial = $('#patrimonial');
+const navToggler = $('.navbar-toggler');
+const mobileOverwall = $('.mobile-overwall');
+const btnLink = $(".btn-link");
+const btnLeer = $("#btn-leer");
+const moreText = $("#more-text");
+const parrafo = $("#parrafo");
+const myModal = $('#MyModal');
+const oficinas = $("#Oficinas");
+const footerOffice = $('.oficinas');
+const myModal2 = $('#MyModal2');
+const caracas = $("#caracas");
+const ordaz = $("#ordaz");
+const linkCaracas = $('.link-caracas');
+const linkOrdaz = $('.link-ordaz');
+const tabsOne = $('#tabsOne');
+const tabsTwo = $('#tabsTwo');
+const tabs1 = $('#Tabs1');
+const tabs2 = $('#Tabs2');
+const searchGlossary = $('#search-glossary');
+
 let external;
-
-$(document).ready(function () {
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 0) {
-            $("header").addClass("header2");
-        } else {
-            $("header").removeClass("header2");
-        }
-    });
-
-    $('#people').click(function () {
-        location.href = 'personas.html';
-    });
-
-    $('#sureties').click(function () {
-        location.href = 'fianzas.html';
-    });
-
-    $('#car').click(function () {
-        location.href = 'automovil.html';
-    });
-
-    $('#patrimonial').click(function () {
-        location.href = 'patrimoniales.html';
-    });
-
-    $('.navbar-toggler').on('click', function () {
-        openNav();
-    });
-
-    $('.mobile-overwall').on('click', function () {
-        closeNav();
-    });
-
-    $(".btn-link").click(function () {
-        $("#accordionExample").toggleClass("main");
-    });
-
-    $("#btn-leer").click(function () {
-        $("#more-text").addClass('esvisible');
-        $("#more-text").removeClass('es0culto');
-        $('#btn-leer').css('display', 'none');
-        $("#parrafo").css('display', 'block');
-    });
-
-    $('#MyModal').click(function () {
-        $("#Oficinas").modal({backdrop: true, keyboard: true});
-    });
-
-    $('#MyModal2').click(function () {
-        const office = $('#select-office option').filter(':selected').text();
-        $('#Oficinas').modal('hide');
-        if (office == 'Puerto Ordaz') $("#ordaz").modal({backdrop: true, keyboard: true, focus: true})
-        else if (office == 'Puerto La Cruz') $("#cruz").modal({backdrop: true, keyboard: true, focus: true})
-    });
-
-    $('.card').on('show.bs.collapse', function () {
-        $(this).addClass('active');
-    })
-        .on('hide.bs.collapse', function () {
-            $(this).removeClass('active');
-        });
-
-    $('#tabsOne').click(function () {
-        $('#Tabs1').show();
-        $('#Tabs2').hide();
-        $('#Tabs3').hide();
-    });
-
-    $('#tabsTwo').click(function () {
-        $('#Tabs1').hide();
-        $('#Tabs2').show();
-        $('#Tabs3').hide();
-    });
-
-    $('#tabsThree').click(function () {
-        $('#Tabs1').hide();
-        $('#Tabs2').hide();
-        $('#Tabs3').show();
-    });
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-
-    let searchTerm, cardContainerId;
-    $.expr[':'].containsCaseInsensitive = function (n, i, m) {
-        return jQuery(n).text().toUpperCase().indexOf(m[3].toUpperCase()) >= 0;
-    };
-
-    $('#search-glossary').on('change keyup paste click', function () {
-        searchTerm = $(this).val();
-        $('#accordionSeguros > .card').each(function () {
-            cardContainerId = '#' + $(this).attr('id');
-            $(cardContainerId + ':not(:containsCaseInsensitive(' + searchTerm + '))').hide();
-            $(cardContainerId + ':containsCaseInsensitive(' + searchTerm + ')').show();
-        });
-    });
-
-    modalAllies.on('hidden.bs.modal', function () {
-        modalLeft.removeClass('col-lg-4');
-        modalLine.removeClass('primary equipment clinics');
-        modalImage.removeClass('clinics primary equipment dentists ophthalmologists dermatologists psychologicalAssistant funeralServices');
-        hiddenFilter.hide().removeClass('equipment');
-        selectProviders.hide();
-        dataTableExternal.hide();
-        dataTableInternal.hide();
-        showAction.hide();
-        hiddenAction.hide();
-    })
-});
 
 function openNav() {
     var height = $(window).height();

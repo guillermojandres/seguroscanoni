@@ -10,6 +10,24 @@
     }
 }
 
+@media screen and (max-width: 1104px) {
+    .btn-read-more {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1087px) {
+    .content-box {
+        width: 85%;
+    }
+    .card-poliza-box .card-body p {
+        font-size: 0.8rem;
+    }
+    .card-poliza-box {
+        height: 12rem;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     header img {
         width: 80%;
@@ -141,6 +159,30 @@
     .banner-seguros.policies {
         margin-top: 2rem;
     }
+    .card-poliza-box img {
+        width: 45px;
+    }
+}
+
+@media screen and (max-width: 944px) {
+    .card-allies p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 831px) {
+    .content-box {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 805px) {
+    .card-allies p {
+        font-size: 0.7rem;
+    }
+    .card-allies img {
+        width: 50px;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -216,6 +258,19 @@
 
     .primary-text-contact-left.small {
         font-size: 0.9rem;
+    }
+    .btn-read-more {
+        width: 20%;
+    }
+    .col-historia {
+         padding-left: 5% !important;
+         padding-right: 5% !important;
+         padding-top: 0 !important;
+        padding-bottom: 2%;
+    }
+    .dinamic-text {
+        width: 100%;
+        padding-left: 6% !important;
     }
 }
 
@@ -436,10 +491,6 @@
         display: block;
     }
 
-    .col-historia {
-        padding-right: 15% !important;
-    }
-
     .card-img-overlay {
         top: 0% !important;
     }
@@ -455,6 +506,9 @@
     .card-home-box .card-body {
         padding-top: 1rem;
         padding-bottom: 1rem;
+    }
+    .btn-read-more {
+        width: 35%;
     }
 }
 
@@ -513,6 +567,13 @@
     .mt-2.select-providers {
         margin-top: 0 !important;
     }
+    .accordion>.card>.card-header {
+        margin-bottom: -1rem !important;
+        margin-top: -1rem !important;
+    }
+    .glosary .card-header p {
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -522,6 +583,9 @@
 
     .banner-contact {
         margin-top: 5rem;
+    }
+    .glosary {
+        width: 95%;
     }
 }
 
@@ -692,6 +756,9 @@
     }
     .btn-w.responsive {
         width: 30%;
+    }
+    .card-home-box p {
+        font-size: 0.8rem;
     }
 }
 

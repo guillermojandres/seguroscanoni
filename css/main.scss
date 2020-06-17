@@ -758,6 +758,10 @@ footer {
 }
 
 /* css Nuestra Historia*/
+#hidden {
+    padding-left: 7px !important;
+}
+
 .content-historia {
     padding-left: 0% !important;
     padding-right: 0 !important;
@@ -768,7 +772,7 @@ footer {
 
 .col-historia {
     padding-left: 15% !important;
-    padding-right: 3% !important;
+    padding-right: 5% !important;
     padding-top: 4% !important;
 }
 
@@ -838,7 +842,11 @@ footer {
 }
 
 .nuestra-historia p {
-    text-align: justify !important;
+    text-align: left !important;
+}
+
+.nuestra-historia p.attention {
+    text-align: center !important;
 }
 
 .esvisible {
@@ -1412,7 +1420,7 @@ img.mobile-menu {
 }
 
 .container-poliza {
-    width: 65%;
+    width: 80%;
     margin-right: auto !important;
     margin-left: auto !important;
     padding-top: 2%;
@@ -1521,18 +1529,22 @@ nav .nav-tabs {
 }
 
 .card-home-box .card-body {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     font-weight: bold;
 }
 
 .card-home-box:hover {
     cursor: pointer;
-    transform: scale(1.35);
+    transform: scale(1.25);
     background-image: url("../images/main-box-active.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.card-poliza-box {
+    height: 14rem;
 }
 
 .card-allies.card-poliza-box {
@@ -1546,7 +1558,7 @@ nav .nav-tabs {
 }
 
 .card-poliza-box:hover {
-    transform: scale(1.25);
+    transform: scale(1.15);
     background-image: url("../images/main-box-active.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -1620,6 +1632,16 @@ a.content-link {
 a.content-link:hover {
     color: lightgray !important;
     text-decoration: none;
+}
+
+.line-link.office {
+    margin-bottom: 0;
+    margin-top: -0.2rem;
+}
+
+.link-caracas,
+.link-ordaz {
+    cursor: pointer;
 }
 
 /* Footer styles */

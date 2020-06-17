@@ -1,5 +1,3 @@
-/* Data to fill modal of allies */
-
 const clinics = [
     {
         state: 'Anzoategui',
