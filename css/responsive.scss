@@ -244,6 +244,12 @@
 }
 
 @media screen and (max-width: 767px) {
+    .text-1,
+    .text-2,
+    .text-3 {
+        font-size: 2rem;
+    }
+
     .card-contact-left > img {
         width: 90px !important;
     }
@@ -287,6 +293,13 @@
 }
 
 @media screen and (max-width: 640px) {
+    .banner {
+        margin-top: 4rem;
+    }
+    .banner .text-cotiza {
+        bottom: 24%;
+        right: 0.5rem;
+    }
     .flotante {
         display: none !important;
     }
