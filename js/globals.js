@@ -73,7 +73,7 @@ function openModal(ally = null) {
         case 'primaryCare':
             external = true;
             modalLeft.addClass('col-lg-4');
-            modalTitle.text('Atención primaria');
+            modalTitle.text('Asistencia primaria');
             modalLine.addClass('primary');
             modalImage.addClass('primary');
             modalIcon.attr('src', 'images/icon-movil-primary.png');
